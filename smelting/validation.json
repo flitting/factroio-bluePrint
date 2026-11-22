@@ -1,0 +1,619 @@
+{
+  "engine_version": "2.1.24",
+  "layouts": [
+    {
+      "key": "682",
+      "import_return_code": 0,
+      "expected_entities": 366,
+      "exported_entities": 366,
+      "revived_entities": 366,
+      "reexported_entities": 366
+    },
+    {
+      "key": "561",
+      "import_return_code": 0,
+      "expected_entities": 342,
+      "exported_entities": 342,
+      "revived_entities": 342,
+      "reexported_entities": 342
+    },
+    {
+      "key": "546",
+      "import_return_code": 0,
+      "expected_entities": 319,
+      "exported_entities": 319,
+      "revived_entities": 319,
+      "reexported_entities": 319
+    },
+    {
+      "key": "525",
+      "import_return_code": 0,
+      "expected_entities": 320,
+      "exported_entities": 320,
+      "revived_entities": 320,
+      "reexported_entities": 320
+    },
+    {
+      "key": "477",
+      "import_return_code": 0,
+      "expected_entities": 313,
+      "exported_entities": 313,
+      "revived_entities": 313,
+      "reexported_entities": 313
+    },
+    {
+      "key": "450",
+      "import_return_code": 0,
+      "expected_entities": 302,
+      "exported_entities": 302,
+      "revived_entities": 302,
+      "reexported_entities": 302
+    },
+    {
+      "key": "442",
+      "import_return_code": 0,
+      "expected_entities": 294,
+      "exported_entities": 294,
+      "revived_entities": 294,
+      "reexported_entities": 294
+    },
+    {
+      "key": "435",
+      "import_return_code": 0,
+      "expected_entities": 274,
+      "exported_entities": 274,
+      "revived_entities": 274,
+      "reexported_entities": 274
+    }
+  ],
+  "warnings": {},
+  "test": "create_blueprint -> export_stack -> import_stack -> build_blueprint -> revive -> create_blueprint",
+  "book": {
+    "import_return_code": 0,
+    "entries": 8,
+    "active_index_lua": 8,
+    "active_label": "08 · 当前最佳布局 · 87×5 = 435格"
+  },
+  "status": "passed",
+  "book_file": "iron-smelting-book.txt",
+  "book_sha256": "4bb0054491de78e3cf1e4c63248346c27c181ec2236ac19d17dc9378cd94b6d0",
+  "layout_metadata": [
+    {
+      "area": 682,
+      "label": "01 · 常见双排布局 · 62×11 = 682格",
+      "width": 62,
+      "height": 11,
+      "entities": 366,
+      "entity_counts": {
+        "underground-belt": 2,
+        "splitter": 2,
+        "transport-belt": 191,
+        "small-electric-pole": 27,
+        "inserter": 96,
+        "stone-furnace": 48
+      },
+      "copper_wires": 39,
+      "source_kind": "已有蓝图按视频方向旋转",
+      "source_file": "base/factorio_animation_middleware/horizontal_blueprints/blueprint-photo-horizontal.json",
+      "file": "blueprints/iron-smelting-682.txt",
+      "sha256": "7f1855e903eca8b49ccab741bf711f0dc06d2acc20b5a235386393794b9a3522",
+      "ports_normalized_tile_centres": {
+        "iron-ore": {
+          "x": 0.5,
+          "y": 6.5,
+          "direction": 4
+        },
+        "coal": {
+          "x": 0.5,
+          "y": 4.5,
+          "direction": 4
+        },
+        "iron-plate": {
+          "x": 61.5,
+          "y": 5.5,
+          "direction": 4
+        }
+      },
+      "roundtrip_geometry_settings_wires": "identical",
+      "copper_connected_components": 1,
+      "max_copper_distance": 5.0,
+      "max_copper_degree": 4,
+      "all_inserters_covered_by_internal_poles": true,
+      "mirrored_inserters": 0,
+      "source_geometry_directions_mirrors_splitters": "identical"
+    },
+    {
+      "area": 561,
+      "label": "02 · 收紧电线杆与石炉间隙 · 51×11 = 561格",
+      "width": 51,
+      "height": 11,
+      "entities": 342,
+      "entity_counts": {
+        "underground-belt": 2,
+        "splitter": 2,
+        "transport-belt": 158,
+        "inserter": 96,
+        "stone-furnace": 48,
+        "small-electric-pole": 36
+      },
+      "copper_wires": 57,
+      "source_kind": "已有蓝图按视频方向旋转",
+      "source_file": "base/factorio_animation_middleware/horizontal_blueprints/blueprint-561-horizontal.json",
+      "file": "blueprints/iron-smelting-561.txt",
+      "sha256": "548b4eac3cd26248bc7928f2e9c6dab5140c0b3cba3959763ce2e34b4726d54b",
+      "ports_normalized_tile_centres": {
+        "iron-ore": {
+          "x": 0.5,
+          "y": 6.5,
+          "direction": 4
+        },
+        "coal": {
+          "x": 0.5,
+          "y": 4.5,
+          "direction": 4
+        },
+        "iron-plate": {
+          "x": 50.5,
+          "y": 5.5,
+          "direction": 4
+        }
+      },
+      "roundtrip_geometry_settings_wires": "identical",
+      "copper_connected_components": 1,
+      "max_copper_distance": 5.09902,
+      "max_copper_degree": 4,
+      "all_inserters_covered_by_internal_poles": true,
+      "mirrored_inserters": 0,
+      "source_geometry_directions_mirrors_splitters": "identical"
+    },
+    {
+      "area": 546,
+      "label": "03 · 四排折叠布局 · 26×21 = 546格",
+      "width": 26,
+      "height": 21,
+      "entities": 319,
+      "entity_counts": {
+        "underground-belt": 10,
+        "splitter": 2,
+        "stone-furnace": 48,
+        "transport-belt": 133,
+        "inserter": 96,
+        "small-electric-pole": 30
+      },
+      "copper_wires": 49,
+      "source_kind": "已有蓝图按视频方向旋转",
+      "source_file": "base/factorio_animation_middleware/horizontal_blueprints/blueprint-546-horizontal.json",
+      "file": "blueprints/iron-smelting-546.txt",
+      "sha256": "33784843b033b472936331b57857d5c9767ed9866edba83005529032795e3792",
+      "ports_normalized_tile_centres": {
+        "iron-ore": {
+          "x": 0.5,
+          "y": 9.5,
+          "direction": 4
+        },
+        "coal": {
+          "x": 0.5,
+          "y": 8.5,
+          "direction": 4
+        },
+        "iron-plate": {
+          "x": 25.5,
+          "y": 10.5,
+          "direction": 4
+        }
+      },
+      "roundtrip_geometry_settings_wires": "identical",
+      "copper_connected_components": 1,
+      "max_copper_distance": 7.0,
+      "max_copper_degree": 4,
+      "all_inserters_covered_by_internal_poles": true,
+      "mirrored_inserters": 0,
+      "source_geometry_directions_mirrors_splitters": "identical"
+    },
+    {
+      "area": 525,
+      "label": "04 · 均衡四排布局 · 25×21 = 525格",
+      "width": 25,
+      "height": 21,
+      "entities": 320,
+      "entity_counts": {
+        "transport-belt": 130,
+        "underground-belt": 14,
+        "splitter": 2,
+        "stone-furnace": 48,
+        "inserter": 96,
+        "small-electric-pole": 30
+      },
+      "copper_wires": 51,
+      "source_kind": "已有蓝图按视频方向旋转",
+      "source_file": "base/factorio_animation_middleware/horizontal_blueprints/blueprint-525-horizontal.json",
+      "file": "blueprints/iron-smelting-525.txt",
+      "sha256": "526a89b8c86248e78ec81d4ee24fcbe6b5fcbd12495c5fd64519d4633228ea01",
+      "ports_normalized_tile_centres": {
+        "iron-ore": {
+          "x": 0.5,
+          "y": 9.5,
+          "direction": 4
+        },
+        "coal": {
+          "x": 0.5,
+          "y": 0.5,
+          "direction": 8
+        },
+        "iron-plate": {
+          "x": 24.5,
+          "y": 10.5,
+          "direction": 4
+        }
+      },
+      "roundtrip_geometry_settings_wires": "identical",
+      "copper_connected_components": 1,
+      "max_copper_distance": 6.708204,
+      "max_copper_degree": 5,
+      "all_inserters_covered_by_internal_poles": true,
+      "mirrored_inserters": 0,
+      "source_geometry_directions_mirrors_splitters": "identical"
+    },
+    {
+      "area": 477,
+      "label": "05 · 五十座石炉 · 53×9 = 477格",
+      "width": 53,
+      "height": 9,
+      "entities": 313,
+      "entity_counts": {
+        "splitter": 2,
+        "transport-belt": 72,
+        "underground-belt": 76,
+        "inserter": 100,
+        "small-electric-pole": 13,
+        "stone-furnace": 50
+      },
+      "copper_wires": 12,
+      "source_kind": "已有精确蓝图及运行设置",
+      "source_file": "build_material_flow/477_runtime/capture_config.json",
+      "file": "blueprints/iron-smelting-477.txt",
+      "sha256": "1fc8d6985d4b5b74cb000aed4251f9288fa50f6d5a23d3778623a118094bd493",
+      "ports_normalized_tile_centres": {
+        "iron-ore": {
+          "x": 0.5,
+          "y": 4.5,
+          "direction": 4
+        },
+        "coal": {
+          "x": 0.5,
+          "y": 7.5,
+          "direction": 4
+        },
+        "iron-plate": {
+          "x": 52.5,
+          "y": 4.5,
+          "direction": 4
+        }
+      },
+      "roundtrip_geometry_settings_wires": "identical",
+      "copper_connected_components": 1,
+      "max_copper_distance": 4.0,
+      "max_copper_degree": 2,
+      "all_inserters_covered_by_internal_poles": true,
+      "mirrored_inserters": 12,
+      "source_geometry_directions_mirrors_splitters": "identical"
+    },
+    {
+      "area": 450,
+      "label": "06 · 九格高紧凑布局 · 50×9 = 450格",
+      "width": 50,
+      "height": 9,
+      "entities": 302,
+      "entity_counts": {
+        "transport-belt": 68,
+        "splitter": 2,
+        "underground-belt": 76,
+        "inserter": 96,
+        "stone-furnace": 48,
+        "small-electric-pole": 12
+      },
+      "copper_wires": 11,
+      "source_kind": "经引擎运行检验的重建版本",
+      "source_file": "build_material_flow/450_runtime/capture_config.json",
+      "file": "blueprints/iron-smelting-450.txt",
+      "sha256": "d5a938f54cbf2f1042be87fdf9d20de2c6d3df94acdb5eac74e8ed7f68e2b71a",
+      "ports_normalized_tile_centres": {
+        "iron-ore": {
+          "x": 0.5,
+          "y": 0.5,
+          "direction": 8
+        },
+        "coal": {
+          "x": 0.5,
+          "y": 8.5,
+          "direction": 0
+        },
+        "iron-plate": {
+          "x": 49.5,
+          "y": 4.5,
+          "direction": 4
+        }
+      },
+      "roundtrip_geometry_settings_wires": "identical",
+      "copper_connected_components": 1,
+      "max_copper_distance": 4.0,
+      "max_copper_degree": 2,
+      "all_inserters_covered_by_internal_poles": true,
+      "mirrored_inserters": 12,
+      "source_geometry_directions_mirrors_splitters": "identical"
+    },
+    {
+      "area": 442,
+      "label": "07 · 紧凑分料布局 · 26×17 = 442格",
+      "width": 26,
+      "height": 17,
+      "entities": 294,
+      "entity_counts": {
+        "transport-belt": 47,
+        "underground-belt": 77,
+        "splitter": 2,
+        "inserter": 96,
+        "small-electric-pole": 24,
+        "stone-furnace": 48
+      },
+      "copper_wires": 96,
+      "source_kind": "经引擎运行检验的重建版本",
+      "source_file": "build_material_flow/442_runtime/capture_config.json",
+      "file": "blueprints/iron-smelting-442.txt",
+      "sha256": "c916d9dc106ccbc3ba1c8d944078b030b2069c41237a3a38f1c05eb40a7cb127",
+      "ports_normalized_tile_centres": {
+        "iron-ore": {
+          "x": 0.5,
+          "y": 0.5,
+          "direction": 8
+        },
+        "coal": {
+          "x": 0.5,
+          "y": 16.5,
+          "direction": 0
+        },
+        "iron-plate": {
+          "x": 25.5,
+          "y": 8.5,
+          "direction": 4
+        }
+      },
+      "roundtrip_geometry_settings_wires": "identical",
+      "copper_connected_components": 1,
+      "max_copper_distance": 7.28011,
+      "max_copper_degree": 12,
+      "all_inserters_covered_by_internal_poles": true,
+      "mirrored_inserters": 0,
+      "source_geometry_directions_mirrors_splitters": "identical"
+    },
+    {
+      "area": 435,
+      "label": "08 · 当前最佳布局 · 87×5 = 435格",
+      "width": 87,
+      "height": 5,
+      "entities": 274,
+      "entity_counts": {
+        "underground-belt": 52,
+        "transport-belt": 39,
+        "stone-furnace": 48,
+        "inserter": 96,
+        "splitter": 15,
+        "small-electric-pole": 24
+      },
+      "copper_wires": 43,
+      "source_kind": "经引擎运行检验的重建版本",
+      "source_file": "engine_material_flow/full435_reconstructed/capture_config.json",
+      "file": "blueprints/iron-smelting-435.txt",
+      "sha256": "94eb431e1d9c7feb177c35493f2ea34dc4d5756ec30abb74e6b871fbfda6ce29",
+      "ports_normalized_tile_centres": {
+        "iron-ore": {
+          "x": 43.5,
+          "y": 0.5,
+          "direction": 8
+        },
+        "coal": {
+          "x": 0.5,
+          "y": 2.5,
+          "direction": 4
+        },
+        "iron-plate": {
+          "x": 43.5,
+          "y": 4.5,
+          "direction": 8
+        }
+      },
+      "roundtrip_geometry_settings_wires": "identical",
+      "copper_connected_components": 1,
+      "max_copper_distance": 7.0,
+      "max_copper_degree": 4,
+      "all_inserters_covered_by_internal_poles": true,
+      "mirrored_inserters": 0,
+      "source_geometry_directions_mirrors_splitters": "identical"
+    }
+  ],
+  "scope": "8 blueprints and book imported and placed in Factorio 2.1.24; geometry, orientations, mirrors, splitter settings and copper wires survive export/import/place/reexport unchanged. This is not a new throughput or global-optimality test.",
+  "structural_checks": {
+    "status": "passed",
+    "book_entries": 8,
+    "active_area": 435,
+    "layouts": [
+      {
+        "area": 682,
+        "width": 62,
+        "height": 11,
+        "entities": 366,
+        "entity_counts": {
+          "underground-belt": 2,
+          "splitter": 2,
+          "transport-belt": 191,
+          "small-electric-pole": 27,
+          "inserter": 96,
+          "stone-furnace": 48
+        },
+        "copper_wires": 39,
+        "pole_count": 27,
+        "copper_connected_components": 1,
+        "max_copper_distance": 5.0,
+        "max_copper_degree": 4,
+        "all_inserters_covered_by_internal_poles": true,
+        "mirrored_inserters": 0,
+        "source_geometry_directions_mirrors_splitters": "identical"
+      },
+      {
+        "area": 561,
+        "width": 51,
+        "height": 11,
+        "entities": 342,
+        "entity_counts": {
+          "underground-belt": 2,
+          "splitter": 2,
+          "transport-belt": 158,
+          "inserter": 96,
+          "stone-furnace": 48,
+          "small-electric-pole": 36
+        },
+        "copper_wires": 57,
+        "pole_count": 36,
+        "copper_connected_components": 1,
+        "max_copper_distance": 5.09902,
+        "max_copper_degree": 4,
+        "all_inserters_covered_by_internal_poles": true,
+        "mirrored_inserters": 0,
+        "source_geometry_directions_mirrors_splitters": "identical"
+      },
+      {
+        "area": 546,
+        "width": 26,
+        "height": 21,
+        "entities": 319,
+        "entity_counts": {
+          "underground-belt": 10,
+          "splitter": 2,
+          "stone-furnace": 48,
+          "transport-belt": 133,
+          "inserter": 96,
+          "small-electric-pole": 30
+        },
+        "copper_wires": 49,
+        "pole_count": 30,
+        "copper_connected_components": 1,
+        "max_copper_distance": 7.0,
+        "max_copper_degree": 4,
+        "all_inserters_covered_by_internal_poles": true,
+        "mirrored_inserters": 0,
+        "source_geometry_directions_mirrors_splitters": "identical"
+      },
+      {
+        "area": 525,
+        "width": 25,
+        "height": 21,
+        "entities": 320,
+        "entity_counts": {
+          "transport-belt": 130,
+          "underground-belt": 14,
+          "splitter": 2,
+          "stone-furnace": 48,
+          "inserter": 96,
+          "small-electric-pole": 30
+        },
+        "copper_wires": 51,
+        "pole_count": 30,
+        "copper_connected_components": 1,
+        "max_copper_distance": 6.708204,
+        "max_copper_degree": 5,
+        "all_inserters_covered_by_internal_poles": true,
+        "mirrored_inserters": 0,
+        "source_geometry_directions_mirrors_splitters": "identical"
+      },
+      {
+        "area": 477,
+        "width": 53,
+        "height": 9,
+        "entities": 313,
+        "entity_counts": {
+          "splitter": 2,
+          "transport-belt": 72,
+          "underground-belt": 76,
+          "inserter": 100,
+          "small-electric-pole": 13,
+          "stone-furnace": 50
+        },
+        "copper_wires": 12,
+        "pole_count": 13,
+        "copper_connected_components": 1,
+        "max_copper_distance": 4.0,
+        "max_copper_degree": 2,
+        "all_inserters_covered_by_internal_poles": true,
+        "mirrored_inserters": 12,
+        "source_geometry_directions_mirrors_splitters": "identical"
+      },
+      {
+        "area": 450,
+        "width": 50,
+        "height": 9,
+        "entities": 302,
+        "entity_counts": {
+          "transport-belt": 68,
+          "splitter": 2,
+          "underground-belt": 76,
+          "inserter": 96,
+          "stone-furnace": 48,
+          "small-electric-pole": 12
+        },
+        "copper_wires": 11,
+        "pole_count": 12,
+        "copper_connected_components": 1,
+        "max_copper_distance": 4.0,
+        "max_copper_degree": 2,
+        "all_inserters_covered_by_internal_poles": true,
+        "mirrored_inserters": 12,
+        "source_geometry_directions_mirrors_splitters": "identical"
+      },
+      {
+        "area": 442,
+        "width": 26,
+        "height": 17,
+        "entities": 294,
+        "entity_counts": {
+          "transport-belt": 47,
+          "underground-belt": 77,
+          "splitter": 2,
+          "inserter": 96,
+          "small-electric-pole": 24,
+          "stone-furnace": 48
+        },
+        "copper_wires": 96,
+        "pole_count": 24,
+        "copper_connected_components": 1,
+        "max_copper_distance": 7.28011,
+        "max_copper_degree": 12,
+        "all_inserters_covered_by_internal_poles": true,
+        "mirrored_inserters": 0,
+        "source_geometry_directions_mirrors_splitters": "identical"
+      },
+      {
+        "area": 435,
+        "width": 87,
+        "height": 5,
+        "entities": 274,
+        "entity_counts": {
+          "underground-belt": 52,
+          "transport-belt": 39,
+          "stone-furnace": 48,
+          "inserter": 96,
+          "splitter": 15,
+          "small-electric-pole": 24
+        },
+        "copper_wires": 43,
+        "pole_count": 24,
+        "copper_connected_components": 1,
+        "max_copper_distance": 7.0,
+        "max_copper_degree": 4,
+        "all_inserters_covered_by_internal_poles": true,
+        "mirrored_inserters": 0,
+        "source_geometry_directions_mirrors_splitters": "identical"
+      }
+    ]
+  },
+  "electricity_note": "All internal pole graphs have one connected component, all copper edges are within 7.5 tiles, and all inserters are covered internally. Factorio 2.0.7 removed the old 5-copper-connection hard limit; high-degree connections in 442 are intentional and preserved from the recorded reconstruction."
+}
