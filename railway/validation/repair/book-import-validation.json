@@ -1,0 +1,10 @@
+{
+  "books": [
+    {
+      "name": "patched-source-book",
+      "import_status": 0,
+      "blueprints": 11
+    }
+  ],
+  "evidence_directory": "experiments/r2-repair-book-import-934bb7082d384a1e"
+}

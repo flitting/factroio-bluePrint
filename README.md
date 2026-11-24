@@ -26,5 +26,7 @@ A savePath for game factroio blueprint
 
 ## 铁路蓝图
 
-- [十字路口](十字路口)
+- **[十字路口：11项完整蓝图簿（已清理涡轮方案孤立轨）](十字路口)**
+- [铁路修复说明、独立蓝图与原生引擎验证](railway/README.md)
+
 
