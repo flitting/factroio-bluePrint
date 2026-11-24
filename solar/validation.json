@@ -1,0 +1,122 @@
+{
+  "book_file": "solar-blueprint-book.txt",
+  "book_sha256": "7e108e10a0f729c4a92e5ec6a9aec345b050f4cc24f937d8ae37bbdbcfadd064",
+  "book_bytes": 2164506,
+  "book_entry_count": 6,
+  "book_unchanged_from_video_delivery": true,
+  "default_index": 0,
+  "tested_engine": "Factorio 2.1.24",
+  "quality": "normal",
+  "export_checks_passed": true,
+  "scope_note": "File export consistency is verified here. Engine construction and energy validation scope is described in README.md; it differs by layout.",
+  "blueprints": [
+    {
+      "book_index": 0,
+      "file": "blueprints/nauvis-50x50.txt",
+      "label": "新地星 | 50×50 便捷方案",
+      "entities": 376,
+      "counts": {
+        "substation": 9,
+        "roboport": 1,
+        "buffer-chest": 1,
+        "active-provider-chest": 1,
+        "solar-panel": 197,
+        "accumulator": 167
+      },
+      "identical_to_book_entry": true,
+      "geometry_and_configuration_unchanged_from_validated_source": true,
+      "geometry_and_configuration_sha256": "7d7148f3650c2dc787d6a05e2eaf7fdeab72e436ba87919cfac9b7999b5a56ff",
+      "sha256": "711cbdc441ce2d6837404fec252eb194a6eec9cdc06f968c89e77a586ee93a9a"
+    },
+    {
+      "book_index": 1,
+      "file": "blueprints/nauvis-1296x792.txt",
+      "label": "新地星 | 1296×792 高密度方案",
+      "entities": 154094,
+      "counts": {
+        "substation": 2628,
+        "roboport": 177,
+        "buffer-chest": 177,
+        "active-provider-chest": 177,
+        "solar-panel": 81728,
+        "accumulator": 69207
+      },
+      "identical_to_book_entry": true,
+      "geometry_and_configuration_unchanged_from_validated_source": true,
+      "geometry_and_configuration_sha256": "e37f55e64e3e4cdd92faaa11f4669ba3ce928f73c150f97551bc1ca7033738a8",
+      "sha256": "548da193656ab7fd22b51da0d7b17e3cfb3c5df8af4566afc238684eff27f5b9"
+    },
+    {
+      "book_index": 2,
+      "file": "blueprints/vulcanus-50x50.txt",
+      "label": "祝融星 | 50×50 便捷方案",
+      "entities": 366,
+      "counts": {
+        "substation": 9,
+        "roboport": 1,
+        "buffer-chest": 1,
+        "active-provider-chest": 1,
+        "solar-panel": 205,
+        "accumulator": 149
+      },
+      "identical_to_book_entry": true,
+      "geometry_and_configuration_unchanged_from_validated_source": true,
+      "geometry_and_configuration_sha256": "ec7d59de211f4c0d5be18263de61f9d708bd53cadd70b554b370ddae00c9d52c",
+      "sha256": "10106458a2c14621d1f44ecbb116b0591c39fba2da4610b5d68b85693adaf0ac"
+    },
+    {
+      "book_index": 3,
+      "file": "blueprints/vulcanus-1296x756.txt",
+      "label": "祝融星 | 1296×756 已验证较优方案",
+      "entities": 143175,
+      "counts": {
+        "substation": 2628,
+        "roboport": 177,
+        "buffer-chest": 177,
+        "active-provider-chest": 177,
+        "solar-panel": 81132,
+        "accumulator": 58884
+      },
+      "identical_to_book_entry": true,
+      "geometry_and_configuration_unchanged_from_validated_source": true,
+      "geometry_and_configuration_sha256": "2d952d427f9a23f8a1757d168892d9ec5e76759c052c89ae349b1a9f7ae370b5",
+      "sha256": "3e7672107731714fe97bfeb405cf1c738b8236ded359f7600ecb45925688d685"
+    },
+    {
+      "book_index": 4,
+      "file": "blueprints/nauvis-36x36.txt",
+      "label": "演进起点 | 新地星36×36",
+      "entities": 188,
+      "counts": {
+        "substation": 4,
+        "roboport": 1,
+        "active-provider-chest": 1,
+        "buffer-chest": 1,
+        "solar-panel": 98,
+        "accumulator": 83
+      },
+      "identical_to_book_entry": true,
+      "geometry_and_configuration_unchanged_from_validated_source": true,
+      "geometry_and_configuration_sha256": "81e934de0f008f8ba471a9df11e0ccd5966e286b9f3266f031aa645943d5a1b0",
+      "sha256": "c0565f325eb6867d2dfd05771e8e9a610548825006f57de987369258519a58c0"
+    },
+    {
+      "book_index": 5,
+      "file": "blueprints/nauvis-324x198.txt",
+      "label": "演进中间结果 | 新地星324×198",
+      "entities": 9636,
+      "counts": {
+        "substation": 171,
+        "roboport": 16,
+        "buffer-chest": 16,
+        "active-provider-chest": 16,
+        "solar-panel": 5096,
+        "accumulator": 4321
+      },
+      "identical_to_book_entry": true,
+      "geometry_and_configuration_unchanged_from_validated_source": true,
+      "geometry_and_configuration_sha256": "52dfe51b44d6245334064e1e4167c6920f08b198fb37569af432bbaed6e65f87",
+      "sha256": "bea085c61b6c428efca1b6f2f4a4591a6ded82a82b7cf7e4176356208801ab40"
+    }
+  ]
+}
