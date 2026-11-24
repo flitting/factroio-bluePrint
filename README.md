@@ -30,3 +30,8 @@ A savePath for game factroio blueprint
 - [铁路修复说明、独立蓝图与原生引擎验证](railway/README.md)
 
 
+
+
+## 铁路优化实验（2026-11-25）
+
+最终清理版蓝图、吞吐/面积/CPU 对照与原生测试说明见 [铁路优化](railway/README.md)。
