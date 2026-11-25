@@ -1,0 +1,48 @@
+{
+  "engine": "2.1.25",
+  "mods": {
+    "base": "2.1.25",
+    "elevated-rails": "2.1.25",
+    "recycler": "2.1.25",
+    "quality": "2.1.25",
+    "space-age": "2.1.25"
+  },
+  "books": [
+    {
+      "file": "junctions-round4.txt",
+      "label": "铁路研究第四轮｜新拓扑与紧凑对照",
+      "import_status": 0,
+      "entry_count": 3,
+      "total_entities": 10033,
+      "entries": [
+        {
+          "source_id": "r4-dir-trident32-32",
+          "slot": 1,
+          "label": "三分叉私有连接网｜大型研究候选",
+          "entities": 8666,
+          "expected_entities": 8666,
+          "matched": true
+        },
+        {
+          "source_id": "r3-sig-turbine2-dense2",
+          "slot": 2,
+          "label": "涡轮二型｜364灯紧凑对照",
+          "entities": 816,
+          "expected_entities": 816,
+          "matched": true
+        },
+        {
+          "source_id": "r2-sig-stacked-cloverleaf-all4-clean",
+          "slot": 3,
+          "label": "叠层苜蓿叶｜169灯紧凑对照",
+          "entities": 551,
+          "expected_entities": 551,
+          "matched": true
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "evidence_directory": "experiments/r4-final-book-native-78a030923abaa99e"
+}

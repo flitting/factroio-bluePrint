@@ -1,0 +1,3735 @@
+{
+  "generated_utc": "2026-11-25T04:53:33.922075+00:00",
+  "publication_gate_complete": true,
+  "engine": "Factorio Headless2.1.25 build88022",
+  "scope": {
+    "external_ports": 8,
+    "incoming_per_compass_direction": 1,
+    "outgoing_per_compass_direction": 1,
+    "train": "1 locomotive +4 empty cargo wagons; normal quality; nuclear fuel; braking1..7",
+    "demand": "12 non-U-turn OD, uniform near/straight/far; independent FIFO at each incoming bank",
+    "physics": "native train physics, pathfinder, signals and collisions; no speed writes or teleports",
+    "primary_metric": "finite saturated full-train completions per game minute, not proven maximum stable service rate",
+    "area_metric": "AABB of native transformed primary and secondary entity boxes, including all candidate adapters, buffers and elevation projection; common fixture excluded"
+  },
+  "search_counts": {
+    "generated_utc": "2026-11-25T04:53:33.452485+00:00",
+    "completed_cases": 136,
+    "new_exact_configurations_tested": 95,
+    "new_distinct_non_signal_geometries_tested": 54,
+    "definitions": [
+      "Geometries are exact rail, ramp and support layouts modulo translation, excluding signals and circuit/power entities; not abstract graph isomorphism classes.",
+      "Configurations include signals; labels and entity numbering do not count as changes.",
+      "Only native exit_code0 with final result is a completed experiment.",
+      "Unchanged IDs with changed bytes are reported and cannot silently inherit previous test evidence.",
+      "No mixed-bank, mixed-window or mixed-scenario aggregate should be ranked."
+    ]
+  },
+  "selection_protocol": {
+    "bank": 150,
+    "warmup_ticks": 3600,
+    "measurement_ticks": 10800,
+    "seeds": [
+      17,
+      31,
+      47
+    ]
+  },
+  "selection": [
+    {
+      "id": "r4-dir-trident32-32",
+      "name_zh": "三分叉私有连接网",
+      "seeds": [
+        17,
+        31,
+        47
+      ],
+      "n": 3,
+      "mean_trains_per_minute": 119.11111111111111,
+      "sample_sd": 2.2194427061597954,
+      "seed_values": {
+        "17": 121.0,
+        "31": 116.66666666666667,
+        "47": 119.66666666666667
+      },
+      "area_tiles2": 808933.8130493164,
+      "signals": 2824,
+      "entities": 8666,
+      "all_12_od_served": true,
+      "zero_damage": true,
+      "all_source_banks_nonempty": true,
+      "evidence_directories": [
+        "round4/protocol/experiments/bank-r4-dir-trident32-32-S1-14427dbd4107ca3a",
+        "round4/protocol/experiments/bank-r4-dir-trident32-32-S1-fdb0b611b369a8e3",
+        "round4/protocol/experiments/bank-r4-dir-trident32-32-S1-ca2670be84781fbf"
+      ]
+    },
+    {
+      "id": "r3-sig-turbine2-dense2",
+      "name_zh": "涡轮二型·364灯对照",
+      "seeds": [
+        17,
+        31,
+        47
+      ],
+      "n": 3,
+      "mean_trains_per_minute": 101.66666666666667,
+      "sample_sd": 3.3829638550307353,
+      "seed_values": {
+        "17": 105.33333333333333,
+        "31": 101.0,
+        "47": 98.66666666666667
+      },
+      "area_tiles2": 17417.813049316406,
+      "signals": 364,
+      "entities": 816,
+      "all_12_od_served": true,
+      "zero_damage": true,
+      "all_source_banks_nonempty": true,
+      "evidence_directories": [
+        "round4/protocol/experiments/bank-r3-sig-turbine2-dense2-S1-6c679bf6fadc8024",
+        "round4/protocol/experiments/bank-r3-sig-turbine2-dense2-S1-d644a55601457a38",
+        "round4/protocol/experiments/bank-r3-sig-turbine2-dense2-S1-6b232061a9fd2287"
+      ]
+    },
+    {
+      "id": "r4-sig-partially-unrolled-cloverleaf-d4",
+      "name_zh": "部分展开苜蓿叶·d4",
+      "seeds": [
+        17,
+        31,
+        47
+      ],
+      "n": 3,
+      "mean_trains_per_minute": 96.11111111111111,
+      "sample_sd": 3.5013225014641622,
+      "seed_values": {
+        "17": 92.66666666666667,
+        "31": 96.0,
+        "47": 99.66666666666667
+      },
+      "area_tiles2": 15881.214905568326,
+      "signals": 152,
+      "entities": 529,
+      "all_12_od_served": true,
+      "zero_damage": true,
+      "all_source_banks_nonempty": true,
+      "evidence_directories": [
+        "round4/protocol/experiments/bank-r4-sig-partially-unrolled-cloverleaf-d4-S1-15d5dcbc52fceee1",
+        "round4/protocol/experiments/bank-r4-sig-partially-unrolled-cloverleaf-d4-S1-28658567df5ad804",
+        "round4/protocol/experiments/bank-r4-sig-partially-unrolled-cloverleaf-d4-S1-d0d73249f4c14442"
+      ]
+    },
+    {
+      "id": "r4-sig-three-chunk-square-d4",
+      "name_zh": "三块方形·d4",
+      "seeds": [
+        17,
+        31,
+        47
+      ],
+      "n": 3,
+      "mean_trains_per_minute": 94.44444444444444,
+      "sample_sd": 1.2619796324000592,
+      "seed_values": {
+        "17": 93.0,
+        "31": 95.33333333333333,
+        "47": 95.0
+      },
+      "area_tiles2": 12538.750549316406,
+      "signals": 160,
+      "entities": 478,
+      "all_12_od_served": true,
+      "zero_damage": true,
+      "all_source_banks_nonempty": true,
+      "evidence_directories": [
+        "round4/protocol/experiments/bank-r4-sig-three-chunk-square-d4-S1-394b05d9cc458ef9",
+        "round4/protocol/experiments/bank-r4-sig-three-chunk-square-d4-S1-61dfb6c6b6afa7fa",
+        "round4/protocol/experiments/bank-r4-sig-three-chunk-square-d4-S1-a9396516015a22aa"
+      ]
+    },
+    {
+      "id": "r2-sig-stacked-cloverleaf-all4-clean",
+      "name_zh": "叠层苜蓿叶·169灯对照",
+      "seeds": [
+        17,
+        31,
+        47
+      ],
+      "n": 3,
+      "mean_trains_per_minute": 93.77777777777779,
+      "sample_sd": 3.371997978998561,
+      "seed_values": {
+        "17": 91.66666666666667,
+        "31": 97.66666666666667,
+        "47": 92.0
+      },
+      "area_tiles2": 13263.56505076796,
+      "signals": 169,
+      "entities": 551,
+      "all_12_od_served": true,
+      "zero_damage": true,
+      "all_source_banks_nonempty": true,
+      "evidence_directories": [
+        "round4/protocol/experiments/bank-r2-sig-stacked-cloverleaf-all4-clean-S1-fdd43c6707b09e0d",
+        "round4/protocol/experiments/bank-r2-sig-stacked-cloverleaf-all4-clean-S1-f622c74d1d6d7c85",
+        "round4/protocol/experiments/bank-r2-sig-stacked-cloverleaf-all4-clean-S1-1653fd3a88511096"
+      ]
+    },
+    {
+      "id": "r4-sig-crossover-displaced-left-turn-d4",
+      "name_zh": "交叉移位左转·d4",
+      "seeds": [
+        17,
+        31,
+        47
+      ],
+      "n": 3,
+      "mean_trains_per_minute": 93.0,
+      "sample_sd": 2.1858128414339975,
+      "seed_values": {
+        "17": 92.66666666666667,
+        "31": 95.33333333333333,
+        "47": 91.0
+      },
+      "area_tiles2": 15892.335511820243,
+      "signals": 148,
+      "entities": 510,
+      "all_12_od_served": true,
+      "zero_damage": true,
+      "all_source_banks_nonempty": true,
+      "evidence_directories": [
+        "round4/protocol/experiments/bank-r4-sig-crossover-displaced-left-turn-d4-S1-de418081cd5dd3fa",
+        "round4/protocol/experiments/bank-r4-sig-crossover-displaced-left-turn-d4-S1-5439a28cf17fe1f0",
+        "round4/protocol/experiments/bank-r4-sig-crossover-displaced-left-turn-d4-S1-8c60b22687e3f418"
+      ]
+    }
+  ],
+  "selection_pair": {
+    "pairs": [
+      {
+        "seed": 17,
+        "reference": 105.33333333333333,
+        "trident": 121.0,
+        "difference": 15.666666666666671,
+        "relative_difference_percent": 14.873417721519,
+        "completed_difference": 47,
+        "identical_demand_verified": true,
+        "origin_rate_differences": {
+          "N": 5.0,
+          "E": 3.3333333333333335,
+          "S": 7.666666666666667,
+          "W": -0.3333333333333333
+        },
+        "reference_origin_rates": {
+          "N": 29.666666666666668,
+          "E": 21.0,
+          "S": 28.0,
+          "W": 26.666666666666668
+        },
+        "trident_origin_rates": {
+          "N": 34.666666666666664,
+          "E": 24.333333333333332,
+          "S": 35.666666666666664,
+          "W": 26.333333333333332
+        }
+      },
+      {
+        "seed": 31,
+        "reference": 101.0,
+        "trident": 116.66666666666667,
+        "difference": 15.666666666666671,
+        "relative_difference_percent": 15.51155115511551,
+        "completed_difference": 47,
+        "identical_demand_verified": true,
+        "origin_rate_differences": {
+          "N": 13.666666666666666,
+          "E": -3.0,
+          "S": 12.333333333333334,
+          "W": -7.333333333333333
+        },
+        "reference_origin_rates": {
+          "N": 22.0,
+          "E": 28.333333333333332,
+          "S": 23.333333333333332,
+          "W": 27.333333333333332
+        },
+        "trident_origin_rates": {
+          "N": 35.666666666666664,
+          "E": 25.333333333333332,
+          "S": 35.666666666666664,
+          "W": 20.0
+        }
+      },
+      {
+        "seed": 47,
+        "reference": 98.66666666666667,
+        "trident": 119.66666666666667,
+        "difference": 21.0,
+        "relative_difference_percent": 21.283783783783772,
+        "completed_difference": 63,
+        "identical_demand_verified": true,
+        "origin_rate_differences": {
+          "N": 9.0,
+          "E": 8.0,
+          "S": 7.666666666666667,
+          "W": -3.6666666666666665
+        },
+        "reference_origin_rates": {
+          "N": 24.666666666666668,
+          "E": 26.0,
+          "S": 29.0,
+          "W": 19.0
+        },
+        "trident_origin_rates": {
+          "N": 33.666666666666664,
+          "E": 34.0,
+          "S": 36.666666666666664,
+          "W": 15.333333333333334
+        }
+      }
+    ],
+    "reference_mean": 101.66666666666667,
+    "trident_mean": 119.11111111111111,
+    "mean_paired_difference": 17.444444444444443,
+    "relative_gain_percent": 17.158469945355193,
+    "wins": 3,
+    "n": 3,
+    "mean_reference_origin_rates": {
+      "N": 25.444444444444446,
+      "E": 25.11111111111111,
+      "S": 26.77777777777778,
+      "W": 24.333333333333332
+    },
+    "mean_trident_origin_rates": {
+      "N": 34.666666666666664,
+      "E": 27.88888888888889,
+      "S": 36.0,
+      "W": 20.555555555555557
+    },
+    "mean_origin_rate_differences": {
+      "N": 9.222222222222221,
+      "E": 2.7777777777777777,
+      "S": 9.222222222222223,
+      "W": -3.7777777777777777
+    }
+  },
+  "holdout_protocol": {
+    "written_utc": "2026-11-25T04:07:06.376655+00:00",
+    "stage": "fresh-seed-longer-horizon-confirmation",
+    "ids": [
+      "r3-sig-turbine2-dense2",
+      "r4-dir-trident32-32"
+    ],
+    "seeds": [
+      211,
+      307,
+      401
+    ],
+    "bank": 240,
+    "warmup": 7200,
+    "duration": 14400,
+    "scenario": "S1",
+    "spacing": 8,
+    "loaded": false,
+    "timeout": 1200,
+    "reason": "Large new geometry has longer travel time and more internal train storage. Use2min warmup and4min measurement on fresh predeclared seeds, with larger preloaded bank, paired old reference. Do not pool with bank150/1+3minute selection group.",
+    "primary_endpoint": "paired difference in completed full1+4 trains per game minute, provided all12OD receive service, no rolling-stock damage and every source retains never-entered bank throughout measurement.",
+    "secondary_diagnostics": [
+      "per-origin and per-destination completions",
+      "per-OD maximum observed service gap",
+      "within-window60second bins",
+      "internal unfinished trains at warmup and end",
+      "mean andp95 crossing latency"
+    ],
+    "blueprint_sha256": {
+      "r3-sig-turbine2-dense2": "5df0e4f446392fc49e81fe26d3f6767aa4802159663924bc0ede2a4852d02b89",
+      "r4-dir-trident32-32": "a4de7224f5b42070247951511da129a23b8beada6161e048e0dd68b31dcd6f19"
+    },
+    "protocol_lua_sha256": "9d70df162462d393ad80d3793ce1a94dc33cbec8add00ba1d11ff6491b864ea3",
+    "no_pooled_cross_protocol_capacity_claim": true
+  },
+  "holdout": [
+    {
+      "id": "r4-dir-trident32-32",
+      "name_zh": "三分叉私有连接网",
+      "seeds": [
+        211,
+        307,
+        401
+      ],
+      "n": 3,
+      "mean_trains_per_minute": 117.5,
+      "sample_sd": 3.6827299656640586,
+      "seed_values": {
+        "211": 113.5,
+        "307": 120.75,
+        "401": 118.25
+      },
+      "area_tiles2": 808933.8130493164,
+      "signals": 2824,
+      "entities": 8666,
+      "all_12_od_served": true,
+      "zero_damage": true,
+      "all_source_banks_nonempty": true,
+      "evidence_directories": [
+        "round4/protocol/experiments/bank-r4-dir-trident32-32-S1-7233e67195d9a491",
+        "round4/protocol/experiments/bank-r4-dir-trident32-32-S1-e4ac9317a6df2044",
+        "round4/protocol/experiments/bank-r4-dir-trident32-32-S1-c0df8aa206d7ec54"
+      ]
+    },
+    {
+      "id": "r3-sig-turbine2-dense2",
+      "name_zh": "涡轮二型·364灯对照",
+      "seeds": [
+        211,
+        307,
+        401
+      ],
+      "n": 3,
+      "mean_trains_per_minute": 102.41666666666667,
+      "sample_sd": 2.9190466480228325,
+      "seed_values": {
+        "211": 105.0,
+        "307": 99.25,
+        "401": 103.0
+      },
+      "area_tiles2": 17417.813049316406,
+      "signals": 364,
+      "entities": 816,
+      "all_12_od_served": true,
+      "zero_damage": true,
+      "all_source_banks_nonempty": true,
+      "evidence_directories": [
+        "round4/protocol/experiments/bank-r3-sig-turbine2-dense2-S1-df8d2e564c770319",
+        "round4/protocol/experiments/bank-r3-sig-turbine2-dense2-S1-5ef314dcd1d96971",
+        "round4/protocol/experiments/bank-r3-sig-turbine2-dense2-S1-271108af7b61de34"
+      ]
+    }
+  ],
+  "holdout_pair": {
+    "pairs": [
+      {
+        "seed": 211,
+        "reference": 105.0,
+        "trident": 113.5,
+        "difference": 8.5,
+        "relative_difference_percent": 8.095238095238088,
+        "completed_difference": 34,
+        "identical_demand_verified": true,
+        "origin_rate_differences": {
+          "N": 5.0,
+          "E": -5.5,
+          "S": 6.75,
+          "W": 2.25
+        },
+        "reference_origin_rates": {
+          "N": 29.75,
+          "E": 20.5,
+          "S": 29.0,
+          "W": 25.75
+        },
+        "trident_origin_rates": {
+          "N": 34.75,
+          "E": 15.0,
+          "S": 35.75,
+          "W": 28.0
+        }
+      },
+      {
+        "seed": 307,
+        "reference": 99.25,
+        "trident": 120.75,
+        "difference": 21.5,
+        "relative_difference_percent": 21.662468513853895,
+        "completed_difference": 86,
+        "identical_demand_verified": true,
+        "origin_rate_differences": {
+          "N": 1.5,
+          "E": 5.5,
+          "S": 14.5,
+          "W": 0.0
+        },
+        "reference_origin_rates": {
+          "N": 27.75,
+          "E": 24.5,
+          "S": 21.25,
+          "W": 25.75
+        },
+        "trident_origin_rates": {
+          "N": 29.25,
+          "E": 30.0,
+          "S": 35.75,
+          "W": 25.75
+        }
+      },
+      {
+        "seed": 401,
+        "reference": 103.0,
+        "trident": 118.25,
+        "difference": 15.25,
+        "relative_difference_percent": 14.805825242718452,
+        "completed_difference": 61,
+        "identical_demand_verified": true,
+        "origin_rate_differences": {
+          "N": 14.75,
+          "E": 0.0,
+          "S": 10.0,
+          "W": -9.5
+        },
+        "reference_origin_rates": {
+          "N": 20.75,
+          "E": 27.0,
+          "S": 25.0,
+          "W": 30.25
+        },
+        "trident_origin_rates": {
+          "N": 35.5,
+          "E": 27.0,
+          "S": 35.0,
+          "W": 20.75
+        }
+      }
+    ],
+    "reference_mean": 102.41666666666667,
+    "trident_mean": 117.5,
+    "mean_paired_difference": 15.083333333333329,
+    "relative_gain_percent": 14.727420667209113,
+    "wins": 3,
+    "n": 3,
+    "mean_reference_origin_rates": {
+      "N": 26.083333333333332,
+      "E": 24.0,
+      "S": 25.083333333333332,
+      "W": 27.25
+    },
+    "mean_trident_origin_rates": {
+      "N": 33.166666666666664,
+      "E": 24.0,
+      "S": 35.5,
+      "W": 24.833333333333332
+    },
+    "mean_origin_rate_differences": {
+      "N": 7.083333333333333,
+      "E": 0.0,
+      "S": 10.416666666666666,
+      "W": -2.4166666666666665
+    }
+  },
+  "trident_area_ratio_to_reference": 46.44290363887357,
+  "cpu": [
+    {
+      "id": "r3-sig-turbine2-dense2",
+      "timers": {
+        "trainPathFinder": {
+          "unit": "microseconds/tick",
+          "mean": 23.063085694444442,
+          "sample_sd": 0.37754919568041934,
+          "repeat_values": [
+            23.498704166666666,
+            22.86013597222222,
+            22.830416944444444
+          ]
+        },
+        "trains": {
+          "unit": "microseconds/tick",
+          "mean": 106.46397375000001,
+          "sample_sd": 1.0761773534799293,
+          "repeat_values": [
+            107.70657805555555,
+            105.83225041666667,
+            105.85309277777779
+          ]
+        },
+        "scriptUpdate": {
+          "unit": "microseconds/tick",
+          "mean": 67.46936782407408,
+          "sample_sd": 1.0780275223248719,
+          "repeat_values": [
+            68.51266347222223,
+            67.5357625,
+            66.3596775
+          ]
+        },
+        "wholeUpdate": {
+          "unit": "microseconds/tick",
+          "mean": 417.8670278703704,
+          "sample_sd": 22.16601799833675,
+          "repeat_values": [
+            443.17833583333334,
+            401.91962347222227,
+            408.50312430555556
+          ]
+        }
+      },
+      "flows": [
+        {
+          "protocol": "round4-expanded-offered-warmed-profile-v1",
+          "id": "r3-sig-turbine2-dense2",
+          "scenario": "S1",
+          "seed": 17,
+          "measurement_ticks": 7200,
+          "first_tick": 7201,
+          "last_tick": 14400,
+          "checkpoint_tick": 7200,
+          "completed": 111,
+          "entered": 110,
+          "arrived": 114,
+          "active_world": 15,
+          "uncompleted_active": 12,
+          "pending_requests": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "mean_active_world": 17.264027777777777,
+          "mean_stopped_world": 0.061388888888888896,
+          "mean_virtual_pending": 1.7968055555555555,
+          "damage_events": 0,
+          "next_event": 219,
+          "total_completed": 205,
+          "total_records": 218,
+          "demand_sha256": "677d5188072c4933a75005c010f8b1e809947ac591f49e06853ca8777ec399ff",
+          "no_train_speed_writes": true,
+          "no_teleports": true
+        },
+        {
+          "protocol": "round4-expanded-offered-warmed-profile-v1",
+          "id": "r3-sig-turbine2-dense2",
+          "scenario": "S1",
+          "seed": 17,
+          "measurement_ticks": 7200,
+          "first_tick": 7201,
+          "last_tick": 14400,
+          "checkpoint_tick": 7200,
+          "completed": 111,
+          "entered": 110,
+          "arrived": 114,
+          "active_world": 15,
+          "uncompleted_active": 12,
+          "pending_requests": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "mean_active_world": 17.264027777777777,
+          "mean_stopped_world": 0.061388888888888896,
+          "mean_virtual_pending": 1.7968055555555555,
+          "damage_events": 0,
+          "next_event": 219,
+          "total_completed": 205,
+          "total_records": 218,
+          "demand_sha256": "677d5188072c4933a75005c010f8b1e809947ac591f49e06853ca8777ec399ff",
+          "no_train_speed_writes": true,
+          "no_teleports": true
+        },
+        {
+          "protocol": "round4-expanded-offered-warmed-profile-v1",
+          "id": "r3-sig-turbine2-dense2",
+          "scenario": "S1",
+          "seed": 17,
+          "measurement_ticks": 7200,
+          "first_tick": 7201,
+          "last_tick": 14400,
+          "checkpoint_tick": 7200,
+          "completed": 111,
+          "entered": 110,
+          "arrived": 114,
+          "active_world": 15,
+          "uncompleted_active": 12,
+          "pending_requests": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "mean_active_world": 17.264027777777777,
+          "mean_stopped_world": 0.061388888888888896,
+          "mean_virtual_pending": 1.7968055555555555,
+          "damage_events": 0,
+          "next_event": 219,
+          "total_completed": 205,
+          "total_records": 218,
+          "demand_sha256": "677d5188072c4933a75005c010f8b1e809947ac591f49e06853ca8777ec399ff",
+          "no_train_speed_writes": true,
+          "no_teleports": true
+        }
+      ],
+      "repeated_flow_identical": true,
+      "evidence_directory": "round4/cpu/profiles/r3-sig-turbine2-dense2-2e2bcf1c0d052cfd"
+    },
+    {
+      "id": "r4-dir-trident32-32",
+      "timers": {
+        "trainPathFinder": {
+          "unit": "microseconds/tick",
+          "mean": 57.12938166666667,
+          "sample_sd": 8.99815385064632,
+          "repeat_values": [
+            49.25030861111111,
+            66.9346601388889,
+            55.20317625
+          ]
+        },
+        "trains": {
+          "unit": "microseconds/tick",
+          "mean": 248.12418074074074,
+          "sample_sd": 30.182925096401753,
+          "repeat_values": [
+            224.18761347222224,
+            282.03077625,
+            238.1541525
+          ]
+        },
+        "scriptUpdate": {
+          "unit": "microseconds/tick",
+          "mean": 139.72306953703702,
+          "sample_sd": 15.620784443039348,
+          "repeat_values": [
+            127.09200236111111,
+            157.18988166666665,
+            134.88732458333334
+          ]
+        },
+        "wholeUpdate": {
+          "unit": "microseconds/tick",
+          "mean": 747.5221000462963,
+          "sample_sd": 125.6200336356163,
+          "repeat_values": [
+            657.1360505555555,
+            890.9656433333333,
+            694.46460625
+          ]
+        }
+      },
+      "flows": [
+        {
+          "protocol": "round4-expanded-offered-warmed-profile-v1",
+          "id": "r4-dir-trident32-32",
+          "scenario": "S1",
+          "seed": 17,
+          "measurement_ticks": 7200,
+          "first_tick": 7201,
+          "last_tick": 14400,
+          "checkpoint_tick": 7200,
+          "completed": 114,
+          "entered": 110,
+          "arrived": 114,
+          "active_world": 30,
+          "uncompleted_active": 26,
+          "pending_requests": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "mean_active_world": 33.9025,
+          "mean_stopped_world": 0.07305555555555555,
+          "mean_virtual_pending": 1.7968055555555555,
+          "damage_events": 0,
+          "next_event": 219,
+          "total_completed": 191,
+          "total_records": 218,
+          "demand_sha256": "677d5188072c4933a75005c010f8b1e809947ac591f49e06853ca8777ec399ff",
+          "no_train_speed_writes": true,
+          "no_teleports": true
+        },
+        {
+          "protocol": "round4-expanded-offered-warmed-profile-v1",
+          "id": "r4-dir-trident32-32",
+          "scenario": "S1",
+          "seed": 17,
+          "measurement_ticks": 7200,
+          "first_tick": 7201,
+          "last_tick": 14400,
+          "checkpoint_tick": 7200,
+          "completed": 114,
+          "entered": 110,
+          "arrived": 114,
+          "active_world": 30,
+          "uncompleted_active": 26,
+          "pending_requests": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "mean_active_world": 33.9025,
+          "mean_stopped_world": 0.07305555555555555,
+          "mean_virtual_pending": 1.7968055555555555,
+          "damage_events": 0,
+          "next_event": 219,
+          "total_completed": 191,
+          "total_records": 218,
+          "demand_sha256": "677d5188072c4933a75005c010f8b1e809947ac591f49e06853ca8777ec399ff",
+          "no_train_speed_writes": true,
+          "no_teleports": true
+        },
+        {
+          "protocol": "round4-expanded-offered-warmed-profile-v1",
+          "id": "r4-dir-trident32-32",
+          "scenario": "S1",
+          "seed": 17,
+          "measurement_ticks": 7200,
+          "first_tick": 7201,
+          "last_tick": 14400,
+          "checkpoint_tick": 7200,
+          "completed": 114,
+          "entered": 110,
+          "arrived": 114,
+          "active_world": 30,
+          "uncompleted_active": 26,
+          "pending_requests": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "mean_active_world": 33.9025,
+          "mean_stopped_world": 0.07305555555555555,
+          "mean_virtual_pending": 1.7968055555555555,
+          "damage_events": 0,
+          "next_event": 219,
+          "total_completed": 191,
+          "total_records": 218,
+          "demand_sha256": "677d5188072c4933a75005c010f8b1e809947ac591f49e06853ca8777ec399ff",
+          "no_train_speed_writes": true,
+          "no_teleports": true
+        }
+      ],
+      "repeated_flow_identical": true,
+      "evidence_directory": "round4/cpu/profiles/r4-dir-trident32-32-d37fb5c7f6261130"
+    }
+  ],
+  "W_open_destination_cohort_delays": [
+    {
+      "id": "r3-sig-turbine2-dense2",
+      "seed": 17,
+      "cohort_count": 242,
+      "cohort_definition": "Every requested train whose destination is not W, including unaffected preclosure completions; identical logical IDs in open and closed runs. Negative differences retained.",
+      "mean_added_completion_seconds": 17.06728650137741,
+      "median_added_completion_seconds": 0.0,
+      "p95_added_completion_seconds": 71.13333333333334,
+      "negative_differences": 42,
+      "zero_differences": 99,
+      "positive_differences": 101,
+      "cohort_ids_sha256": "6d5304f886ce79c99f5819488b6ae2072de56dd1b2b08a23a6406518c83c7543"
+    },
+    {
+      "id": "r4-dir-trident32-32",
+      "seed": 17,
+      "cohort_count": 242,
+      "cohort_definition": "Every requested train whose destination is not W, including unaffected preclosure completions; identical logical IDs in open and closed runs. Negative differences retained.",
+      "mean_added_completion_seconds": 0.0,
+      "median_added_completion_seconds": 0.0,
+      "p95_added_completion_seconds": 0.0,
+      "negative_differences": 0,
+      "zero_differences": 242,
+      "positive_differences": 0,
+      "cohort_ids_sha256": "6d5304f886ce79c99f5819488b6ae2072de56dd1b2b08a23a6406518c83c7543"
+    }
+  ],
+  "all_exits_recovery": [
+    {
+      "id": "r4-dir-trident32-32",
+      "mode": "bank",
+      "scenario": "S1",
+      "seed": 17,
+      "warmup": 1800,
+      "duration": 19800,
+      "exit_clearance": 8,
+      "exit_plane": 80,
+      "sink_plane": 400,
+      "rate": null,
+      "throughput": 56.54545454545455,
+      "od": {
+        "N-E": {
+          "measured_completed": 25,
+          "completed_per_minute": 4.545454545454546,
+          "arrivals_in_window": 0,
+          "backlog_before_window": 25,
+          "backlog_after_window": 0,
+          "backlog_delta": -25,
+          "longest_uncompleted_seconds": 0,
+          "last_complete_tick": 10936
+        },
+        "N-S": {
+          "measured_completed": 28,
+          "completed_per_minute": 5.090909090909091,
+          "arrivals_in_window": 0,
+          "backlog_before_window": 28,
+          "backlog_after_window": 0,
+          "backlog_delta": -28,
+          "longest_uncompleted_seconds": 0,
+          "last_complete_tick": 9814
+        },
+        "N-W": {
+          "measured_completed": 25,
+          "completed_per_minute": 4.545454545454546,
+          "arrivals_in_window": 0,
+          "backlog_before_window": 25,
+          "backlog_after_window": 0,
+          "backlog_delta": -25,
+          "longest_uncompleted_seconds": 0,
+          "last_complete_tick": 13023
+        },
+        "E-N": {
+          "measured_completed": 24,
+          "completed_per_minute": 4.363636363636363,
+          "arrivals_in_window": 0,
+          "backlog_before_window": 24,
+          "backlog_after_window": 0,
+          "backlog_delta": -24,
+          "longest_uncompleted_seconds": 0,
+          "last_complete_tick": 14050
+        },
+        "E-S": {
+          "measured_completed": 25,
+          "completed_per_minute": 4.545454545454546,
+          "arrivals_in_window": 0,
+          "backlog_before_window": 25,
+          "backlog_after_window": 0,
+          "backlog_delta": -25,
+          "longest_uncompleted_seconds": 0,
+          "last_complete_tick": 14012
+        },
+        "E-W": {
+          "measured_completed": 30,
+          "completed_per_minute": 5.454545454545454,
+          "arrivals_in_window": 0,
+          "backlog_before_window": 30,
+          "backlog_after_window": 0,
+          "backlog_delta": -30,
+          "longest_uncompleted_seconds": 0,
+          "last_complete_tick": 15086
+        },
+        "S-N": {
+          "measured_completed": 31,
+          "completed_per_minute": 5.636363636363637,
+          "arrivals_in_window": 0,
+          "backlog_before_window": 31,
+          "backlog_after_window": 0,
+          "backlog_delta": -31,
+          "longest_uncompleted_seconds": 0,
+          "last_complete_tick": 10707
+        },
+        "S-E": {
+          "measured_completed": 25,
+          "completed_per_minute": 4.545454545454546,
+          "arrivals_in_window": 0,
+          "backlog_before_window": 25,
+          "backlog_after_window": 0,
+          "backlog_delta": -25,
+          "longest_uncompleted_seconds": 0,
+          "last_complete_tick": 12883
+        },
+        "S-W": {
+          "measured_completed": 21,
+          "completed_per_minute": 3.8181818181818183,
+          "arrivals_in_window": 0,
+          "backlog_before_window": 21,
+          "backlog_after_window": 0,
+          "backlog_delta": -21,
+          "longest_uncompleted_seconds": 0,
+          "last_complete_tick": 10948
+        },
+        "W-N": {
+          "measured_completed": 17,
+          "completed_per_minute": 3.090909090909091,
+          "arrivals_in_window": 0,
+          "backlog_before_window": 17,
+          "backlog_after_window": 0,
+          "backlog_delta": -17,
+          "longest_uncompleted_seconds": 0,
+          "last_complete_tick": 17722
+        },
+        "W-E": {
+          "measured_completed": 29,
+          "completed_per_minute": 5.2727272727272725,
+          "arrivals_in_window": 0,
+          "backlog_before_window": 29,
+          "backlog_after_window": 0,
+          "backlog_delta": -29,
+          "longest_uncompleted_seconds": 0,
+          "last_complete_tick": 17730
+        },
+        "W-S": {
+          "measured_completed": 31,
+          "completed_per_minute": 5.636363636363637,
+          "arrivals_in_window": 0,
+          "backlog_before_window": 31,
+          "backlog_after_window": 0,
+          "backlog_delta": -31,
+          "longest_uncompleted_seconds": 0,
+          "last_complete_tick": 16802
+        }
+      },
+      "per_origin": {
+        "N": {
+          "spawned_in_window": 0,
+          "completed_in_window": 78
+        },
+        "E": {
+          "spawned_in_window": 0,
+          "completed_in_window": 79
+        },
+        "S": {
+          "spawned_in_window": 0,
+          "completed_in_window": 77
+        },
+        "W": {
+          "spawned_in_window": 0,
+          "completed_in_window": 77
+        }
+      },
+      "minimum_external_bank_by_origin": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "ticks_without_external_bank_by_origin": [
+        13464,
+        10107,
+        13470,
+        6714
+      ],
+      "damage_events": 0,
+      "damaged_amount": 0,
+      "no_completion_ticks": 3870,
+      "all_od_completed_in_window": true,
+      "uncompleted_requests": 0,
+      "conservation_verified": true,
+      "evidence_directory": "round4/blockage-all/experiments/bank-r4-dir-trident32-32-S1-eef12bd872dff29a",
+      "claims": "Finite native observation; no maximum-capacity or deadlock-free proof; no CPU timing.",
+      "closure_commands_verified": true,
+      "controlled_exits": [
+        {
+          "exit": "N",
+          "offset": 8,
+          "signal_position": {
+            "y": -473.5,
+            "x": -237.5
+          }
+        },
+        {
+          "exit": "E",
+          "offset": 8,
+          "signal_position": {
+            "y": 338.5,
+            "x": 441.5
+          }
+        },
+        {
+          "exit": "S",
+          "offset": 8,
+          "signal_position": {
+            "y": 473.5,
+            "x": 239.5
+          }
+        },
+        {
+          "exit": "W",
+          "offset": 8,
+          "signal_position": {
+            "y": -402.5,
+            "x": -441.5
+          }
+        }
+      ],
+      "block_signal_samples": [
+        {
+          "tick": 3602,
+          "states": [
+            {
+              "exit": "N",
+              "command_closed": true,
+              "signal_state": 1,
+              "signal_state_name": "closed"
+            },
+            {
+              "exit": "E",
+              "command_closed": true,
+              "signal_state": 2,
+              "signal_state_name": "reserved"
+            },
+            {
+              "exit": "S",
+              "command_closed": true,
+              "signal_state": 2,
+              "signal_state_name": "reserved"
+            },
+            {
+              "exit": "W",
+              "command_closed": true,
+              "signal_state": 2,
+              "signal_state_name": "reserved"
+            }
+          ]
+        },
+        {
+          "tick": 3720,
+          "states": [
+            {
+              "exit": "N",
+              "command_closed": true,
+              "signal_state": 3,
+              "signal_state_name": "reserved_by_circuit_network"
+            },
+            {
+              "exit": "E",
+              "command_closed": true,
+              "signal_state": 3,
+              "signal_state_name": "reserved_by_circuit_network"
+            },
+            {
+              "exit": "S",
+              "command_closed": true,
+              "signal_state": 3,
+              "signal_state_name": "reserved_by_circuit_network"
+            },
+            {
+              "exit": "W",
+              "command_closed": true,
+              "signal_state": 3,
+              "signal_state_name": "reserved_by_circuit_network"
+            }
+          ]
+        },
+        {
+          "tick": 5400,
+          "states": [
+            {
+              "exit": "N",
+              "command_closed": true,
+              "signal_state": 3,
+              "signal_state_name": "reserved_by_circuit_network"
+            },
+            {
+              "exit": "E",
+              "command_closed": true,
+              "signal_state": 3,
+              "signal_state_name": "reserved_by_circuit_network"
+            },
+            {
+              "exit": "S",
+              "command_closed": true,
+              "signal_state": 3,
+              "signal_state_name": "reserved_by_circuit_network"
+            },
+            {
+              "exit": "W",
+              "command_closed": true,
+              "signal_state": 3,
+              "signal_state_name": "reserved_by_circuit_network"
+            }
+          ]
+        },
+        {
+          "tick": 7199,
+          "states": [
+            {
+              "exit": "N",
+              "command_closed": true,
+              "signal_state": 3,
+              "signal_state_name": "reserved_by_circuit_network"
+            },
+            {
+              "exit": "E",
+              "command_closed": true,
+              "signal_state": 3,
+              "signal_state_name": "reserved_by_circuit_network"
+            },
+            {
+              "exit": "S",
+              "command_closed": true,
+              "signal_state": 3,
+              "signal_state_name": "reserved_by_circuit_network"
+            },
+            {
+              "exit": "W",
+              "command_closed": true,
+              "signal_state": 3,
+              "signal_state_name": "reserved_by_circuit_network"
+            }
+          ]
+        },
+        {
+          "tick": 7202,
+          "states": [
+            {
+              "exit": "N",
+              "command_closed": false,
+              "signal_state": 0,
+              "signal_state_name": "open"
+            },
+            {
+              "exit": "E",
+              "command_closed": false,
+              "signal_state": 0,
+              "signal_state_name": "open"
+            },
+            {
+              "exit": "S",
+              "command_closed": false,
+              "signal_state": 0,
+              "signal_state_name": "open"
+            },
+            {
+              "exit": "W",
+              "command_closed": false,
+              "signal_state": 0,
+              "signal_state_name": "open"
+            }
+          ]
+        },
+        {
+          "tick": 7320,
+          "states": [
+            {
+              "exit": "N",
+              "command_closed": false,
+              "signal_state": 1,
+              "signal_state_name": "closed"
+            },
+            {
+              "exit": "E",
+              "command_closed": false,
+              "signal_state": 1,
+              "signal_state_name": "closed"
+            },
+            {
+              "exit": "S",
+              "command_closed": false,
+              "signal_state": 1,
+              "signal_state_name": "closed"
+            },
+            {
+              "exit": "W",
+              "command_closed": false,
+              "signal_state": 1,
+              "signal_state_name": "closed"
+            }
+          ]
+        }
+      ],
+      "all_four_midpoint_native_red": true,
+      "all_four_midpoint_circuit_reserved": true,
+      "total_requested": 320,
+      "total_completed": 320,
+      "remaining": 0,
+      "active_world": 0,
+      "retired": 320,
+      "complete_drain_observed": true,
+      "block_history": [
+        {
+          "tick": 3600,
+          "exit": "N",
+          "closed": true
+        },
+        {
+          "tick": 3600,
+          "exit": "E",
+          "closed": true
+        },
+        {
+          "tick": 3600,
+          "exit": "S",
+          "closed": true
+        },
+        {
+          "tick": 3600,
+          "exit": "W",
+          "closed": true
+        },
+        {
+          "tick": 7200,
+          "exit": "N",
+          "closed": false
+        },
+        {
+          "tick": 7200,
+          "exit": "E",
+          "closed": false
+        },
+        {
+          "tick": 7200,
+          "exit": "S",
+          "closed": false
+        },
+        {
+          "tick": 7200,
+          "exit": "W",
+          "closed": false
+        }
+      ],
+      "last_complete_tick": 17730,
+      "interpretation": "Finite all-exit closure and recovery gate; does not prove no deadlock for every future demand."
+    }
+  ],
+  "limits": [
+    "Selection and holdout have different bank sizes/windows and are never pooled.",
+    "Small paired seed samples; observed gain is not global optimality or an asymptotic capacity estimate.",
+    "Only uniform mixed-OD throughput is independently confirmed in this round; biased mixes, loaded cargo, other train lengths and rotated layouts need future paired testing.",
+    "Completed-cohort transit excludes outstanding trains; inventory and OD gaps are reported separately.",
+    "Three-way forks, geometry, buffering and signals change together; no single-factor causal gain is claimed.",
+    "Native selected-path block DAG and finite closure recovery do not prove all-demand deadlock freedom.",
+    "CPU uses a separate common lower offered load and three identical-save repetitions, not saturated-bank CPU.",
+    "Distinct rail geometries/configurations are not a count of nonisomorphic abstract topology families."
+  ],
+  "case_diagnostics": [
+    {
+      "id": "r3-sig-turbine2-dense2",
+      "name_zh": "涡轮二型·364灯对照",
+      "seed": 17,
+      "bank_per_origin": 150,
+      "warmup_ticks": 3600,
+      "measurement_ticks": 10800,
+      "completed": 316,
+      "throughput": 105.33333333333333,
+      "entered_in_window": 313,
+      "inside_start": 25,
+      "inside_end": 22,
+      "inventory_balance_verified": true,
+      "external_entry_FIFO_verified": true,
+      "all_12_od_served": true,
+      "source_banks_never_empty": true,
+      "minimum_external_bank_by_origin": [
+        27,
+        63,
+        33,
+        46
+      ],
+      "damage_events": 0,
+      "per_origin_completed": {
+        "N": 89,
+        "E": 63,
+        "S": 84,
+        "W": 80
+      },
+      "per_destination_completed": {
+        "N": 80,
+        "E": 72,
+        "S": 84,
+        "W": 80
+      },
+      "minute_bins": [
+        {
+          "from_tick": 3600,
+          "to_tick_exclusive": 7200,
+          "completed": 106,
+          "trains_per_minute": 106.0
+        },
+        {
+          "from_tick": 7200,
+          "to_tick_exclusive": 10800,
+          "completed": 111,
+          "trains_per_minute": 111.0
+        },
+        {
+          "from_tick": 10800,
+          "to_tick_exclusive": 14400,
+          "completed": 99,
+          "trains_per_minute": 99.0
+        }
+      ],
+      "completed_cohort_mean_transit_seconds": 12.904324894514767,
+      "completed_cohort_p95_transit_seconds": 29.5,
+      "demand_trace_sha256": "315a823ae5849e4f9624241b997dc72fdb19bfd4ccce559416d173479b9b72fd",
+      "blueprint_sha256": "5df0e4f446392fc49e81fe26d3f6767aa4802159663924bc0ede2a4852d02b89",
+      "protocol_source_sha256": "9d70df162462d393ad80d3793ce1a94dc33cbec8add00ba1d11ff6491b864ea3",
+      "engine_identity_sha256": "ee92372fe043bfd51934237008ef48568b161d0d8be58c701fb6f546ed41059e",
+      "comparison_settings": {
+        "scenario": "S1",
+        "bank": 150,
+        "gap": 40,
+        "length": 6200,
+        "spacing": 8,
+        "warmup": 3600,
+        "duration": 10800,
+        "near": 0.3333333333333333,
+        "straight": 0.3333333333333333,
+        "loaded": false,
+        "exit_clearance": 8,
+        "entry_plane": 80,
+        "exit_plane": 80,
+        "sink_plane": 400,
+        "outlet_length": 2400,
+        "stop_offset": 2300
+      },
+      "evidence_directory": "round4/protocol/experiments/bank-r3-sig-turbine2-dense2-S1-6c679bf6fadc8024"
+    },
+    {
+      "id": "r3-sig-turbine2-dense2",
+      "name_zh": "涡轮二型·364灯对照",
+      "seed": 31,
+      "bank_per_origin": 150,
+      "warmup_ticks": 3600,
+      "measurement_ticks": 10800,
+      "completed": 303,
+      "throughput": 101.0,
+      "entered_in_window": 306,
+      "inside_start": 21,
+      "inside_end": 24,
+      "inventory_balance_verified": true,
+      "external_entry_FIFO_verified": true,
+      "all_12_od_served": true,
+      "source_banks_never_empty": true,
+      "minimum_external_bank_by_origin": [
+        55,
+        38,
+        56,
+        30
+      ],
+      "damage_events": 0,
+      "per_origin_completed": {
+        "N": 66,
+        "E": 85,
+        "S": 70,
+        "W": 82
+      },
+      "per_destination_completed": {
+        "N": 84,
+        "E": 76,
+        "S": 68,
+        "W": 75
+      },
+      "minute_bins": [
+        {
+          "from_tick": 3600,
+          "to_tick_exclusive": 7200,
+          "completed": 102,
+          "trains_per_minute": 102.0
+        },
+        {
+          "from_tick": 7200,
+          "to_tick_exclusive": 10800,
+          "completed": 104,
+          "trains_per_minute": 104.0
+        },
+        {
+          "from_tick": 10800,
+          "to_tick_exclusive": 14400,
+          "completed": 97,
+          "trains_per_minute": 97.0
+        }
+      ],
+      "completed_cohort_mean_transit_seconds": 13.873652365236524,
+      "completed_cohort_p95_transit_seconds": 32.71666666666667,
+      "demand_trace_sha256": "db7e08c90478ace7e207797033f21844ceb3191278559fe64030e5db3aa0710e",
+      "blueprint_sha256": "5df0e4f446392fc49e81fe26d3f6767aa4802159663924bc0ede2a4852d02b89",
+      "protocol_source_sha256": "9d70df162462d393ad80d3793ce1a94dc33cbec8add00ba1d11ff6491b864ea3",
+      "engine_identity_sha256": "ee92372fe043bfd51934237008ef48568b161d0d8be58c701fb6f546ed41059e",
+      "comparison_settings": {
+        "scenario": "S1",
+        "bank": 150,
+        "gap": 40,
+        "length": 6200,
+        "spacing": 8,
+        "warmup": 3600,
+        "duration": 10800,
+        "near": 0.3333333333333333,
+        "straight": 0.3333333333333333,
+        "loaded": false,
+        "exit_clearance": 8,
+        "entry_plane": 80,
+        "exit_plane": 80,
+        "sink_plane": 400,
+        "outlet_length": 2400,
+        "stop_offset": 2300
+      },
+      "evidence_directory": "round4/protocol/experiments/bank-r3-sig-turbine2-dense2-S1-d644a55601457a38"
+    },
+    {
+      "id": "r3-sig-turbine2-dense2",
+      "name_zh": "涡轮二型·364灯对照",
+      "seed": 47,
+      "bank_per_origin": 150,
+      "warmup_ticks": 3600,
+      "measurement_ticks": 10800,
+      "completed": 296,
+      "throughput": 98.66666666666667,
+      "entered_in_window": 293,
+      "inside_start": 26,
+      "inside_end": 23,
+      "inventory_balance_verified": true,
+      "external_entry_FIFO_verified": true,
+      "all_12_od_served": true,
+      "source_banks_never_empty": true,
+      "minimum_external_bank_by_origin": [
+        47,
+        37,
+        39,
+        63
+      ],
+      "damage_events": 0,
+      "per_origin_completed": {
+        "N": 74,
+        "E": 78,
+        "S": 87,
+        "W": 57
+      },
+      "per_destination_completed": {
+        "N": 79,
+        "E": 82,
+        "S": 60,
+        "W": 75
+      },
+      "minute_bins": [
+        {
+          "from_tick": 3600,
+          "to_tick_exclusive": 7200,
+          "completed": 96,
+          "trains_per_minute": 96.0
+        },
+        {
+          "from_tick": 7200,
+          "to_tick_exclusive": 10800,
+          "completed": 103,
+          "trains_per_minute": 103.0
+        },
+        {
+          "from_tick": 10800,
+          "to_tick_exclusive": 14400,
+          "completed": 97,
+          "trains_per_minute": 97.0
+        }
+      ],
+      "completed_cohort_mean_transit_seconds": 14.506925675675676,
+      "completed_cohort_p95_transit_seconds": 32.833333333333336,
+      "demand_trace_sha256": "469b7b11b26e44c643053050effa4f24d55452923d69516ea213cb3203498c28",
+      "blueprint_sha256": "5df0e4f446392fc49e81fe26d3f6767aa4802159663924bc0ede2a4852d02b89",
+      "protocol_source_sha256": "9d70df162462d393ad80d3793ce1a94dc33cbec8add00ba1d11ff6491b864ea3",
+      "engine_identity_sha256": "ee92372fe043bfd51934237008ef48568b161d0d8be58c701fb6f546ed41059e",
+      "comparison_settings": {
+        "scenario": "S1",
+        "bank": 150,
+        "gap": 40,
+        "length": 6200,
+        "spacing": 8,
+        "warmup": 3600,
+        "duration": 10800,
+        "near": 0.3333333333333333,
+        "straight": 0.3333333333333333,
+        "loaded": false,
+        "exit_clearance": 8,
+        "entry_plane": 80,
+        "exit_plane": 80,
+        "sink_plane": 400,
+        "outlet_length": 2400,
+        "stop_offset": 2300
+      },
+      "evidence_directory": "round4/protocol/experiments/bank-r3-sig-turbine2-dense2-S1-6b232061a9fd2287"
+    },
+    {
+      "id": "r2-sig-stacked-cloverleaf-all4-clean",
+      "name_zh": "叠层苜蓿叶·169灯对照",
+      "seed": 17,
+      "bank_per_origin": 150,
+      "warmup_ticks": 3600,
+      "measurement_ticks": 10800,
+      "completed": 275,
+      "throughput": 91.66666666666667,
+      "entered_in_window": 274,
+      "inside_start": 19,
+      "inside_end": 18,
+      "inventory_balance_verified": true,
+      "external_entry_FIFO_verified": true,
+      "all_12_od_served": true,
+      "source_banks_never_empty": true,
+      "minimum_external_bank_by_origin": [
+        52,
+        62,
+        60,
+        53
+      ],
+      "damage_events": 0,
+      "per_origin_completed": {
+        "N": 72,
+        "E": 63,
+        "S": 70,
+        "W": 70
+      },
+      "per_destination_completed": {
+        "N": 72,
+        "E": 60,
+        "S": 74,
+        "W": 69
+      },
+      "minute_bins": [
+        {
+          "from_tick": 3600,
+          "to_tick_exclusive": 7200,
+          "completed": 91,
+          "trains_per_minute": 91.0
+        },
+        {
+          "from_tick": 7200,
+          "to_tick_exclusive": 10800,
+          "completed": 92,
+          "trains_per_minute": 92.0
+        },
+        {
+          "from_tick": 10800,
+          "to_tick_exclusive": 14400,
+          "completed": 92,
+          "trains_per_minute": 92.0
+        }
+      ],
+      "completed_cohort_mean_transit_seconds": 12.825878787878787,
+      "completed_cohort_p95_transit_seconds": 22.883333333333333,
+      "demand_trace_sha256": "315a823ae5849e4f9624241b997dc72fdb19bfd4ccce559416d173479b9b72fd",
+      "blueprint_sha256": "bbcc02668b1919cf01be7f2787ebb35157b98bd16731ebc185b4f2e7cd4f5e74",
+      "protocol_source_sha256": "9d70df162462d393ad80d3793ce1a94dc33cbec8add00ba1d11ff6491b864ea3",
+      "engine_identity_sha256": "ee92372fe043bfd51934237008ef48568b161d0d8be58c701fb6f546ed41059e",
+      "comparison_settings": {
+        "scenario": "S1",
+        "bank": 150,
+        "gap": 40,
+        "length": 6200,
+        "spacing": 8,
+        "warmup": 3600,
+        "duration": 10800,
+        "near": 0.3333333333333333,
+        "straight": 0.3333333333333333,
+        "loaded": false,
+        "exit_clearance": 8,
+        "entry_plane": 80,
+        "exit_plane": 80,
+        "sink_plane": 400,
+        "outlet_length": 2400,
+        "stop_offset": 2300
+      },
+      "evidence_directory": "round4/protocol/experiments/bank-r2-sig-stacked-cloverleaf-all4-clean-S1-fdd43c6707b09e0d"
+    },
+    {
+      "id": "r2-sig-stacked-cloverleaf-all4-clean",
+      "name_zh": "叠层苜蓿叶·169灯对照",
+      "seed": 31,
+      "bank_per_origin": 150,
+      "warmup_ticks": 3600,
+      "measurement_ticks": 10800,
+      "completed": 293,
+      "throughput": 97.66666666666667,
+      "entered_in_window": 291,
+      "inside_start": 20,
+      "inside_end": 18,
+      "inventory_balance_verified": true,
+      "external_entry_FIFO_verified": true,
+      "all_12_od_served": true,
+      "source_banks_never_empty": true,
+      "minimum_external_bank_by_origin": [
+        51,
+        54,
+        52,
+        43
+      ],
+      "damage_events": 0,
+      "per_origin_completed": {
+        "N": 76,
+        "E": 70,
+        "S": 72,
+        "W": 75
+      },
+      "per_destination_completed": {
+        "N": 77,
+        "E": 78,
+        "S": 65,
+        "W": 73
+      },
+      "minute_bins": [
+        {
+          "from_tick": 3600,
+          "to_tick_exclusive": 7200,
+          "completed": 95,
+          "trains_per_minute": 95.0
+        },
+        {
+          "from_tick": 7200,
+          "to_tick_exclusive": 10800,
+          "completed": 95,
+          "trains_per_minute": 95.0
+        },
+        {
+          "from_tick": 10800,
+          "to_tick_exclusive": 14400,
+          "completed": 103,
+          "trains_per_minute": 103.0
+        }
+      ],
+      "completed_cohort_mean_transit_seconds": 12.423890784982936,
+      "completed_cohort_p95_transit_seconds": 26.7,
+      "demand_trace_sha256": "db7e08c90478ace7e207797033f21844ceb3191278559fe64030e5db3aa0710e",
+      "blueprint_sha256": "bbcc02668b1919cf01be7f2787ebb35157b98bd16731ebc185b4f2e7cd4f5e74",
+      "protocol_source_sha256": "9d70df162462d393ad80d3793ce1a94dc33cbec8add00ba1d11ff6491b864ea3",
+      "engine_identity_sha256": "ee92372fe043bfd51934237008ef48568b161d0d8be58c701fb6f546ed41059e",
+      "comparison_settings": {
+        "scenario": "S1",
+        "bank": 150,
+        "gap": 40,
+        "length": 6200,
+        "spacing": 8,
+        "warmup": 3600,
+        "duration": 10800,
+        "near": 0.3333333333333333,
+        "straight": 0.3333333333333333,
+        "loaded": false,
+        "exit_clearance": 8,
+        "entry_plane": 80,
+        "exit_plane": 80,
+        "sink_plane": 400,
+        "outlet_length": 2400,
+        "stop_offset": 2300
+      },
+      "evidence_directory": "round4/protocol/experiments/bank-r2-sig-stacked-cloverleaf-all4-clean-S1-f622c74d1d6d7c85"
+    },
+    {
+      "id": "r2-sig-stacked-cloverleaf-all4-clean",
+      "name_zh": "叠层苜蓿叶·169灯对照",
+      "seed": 47,
+      "bank_per_origin": 150,
+      "warmup_ticks": 3600,
+      "measurement_ticks": 10800,
+      "completed": 276,
+      "throughput": 92.0,
+      "entered_in_window": 276,
+      "inside_start": 21,
+      "inside_end": 21,
+      "inventory_balance_verified": true,
+      "external_entry_FIFO_verified": true,
+      "all_12_od_served": true,
+      "source_banks_never_empty": true,
+      "minimum_external_bank_by_origin": [
+        61,
+        52,
+        64,
+        34
+      ],
+      "damage_events": 0,
+      "per_origin_completed": {
+        "N": 62,
+        "E": 62,
+        "S": 68,
+        "W": 84
+      },
+      "per_destination_completed": {
+        "N": 71,
+        "E": 83,
+        "S": 60,
+        "W": 62
+      },
+      "minute_bins": [
+        {
+          "from_tick": 3600,
+          "to_tick_exclusive": 7200,
+          "completed": 101,
+          "trains_per_minute": 101.0
+        },
+        {
+          "from_tick": 7200,
+          "to_tick_exclusive": 10800,
+          "completed": 91,
+          "trains_per_minute": 91.0
+        },
+        {
+          "from_tick": 10800,
+          "to_tick_exclusive": 14400,
+          "completed": 84,
+          "trains_per_minute": 84.0
+        }
+      ],
+      "completed_cohort_mean_transit_seconds": 13.221195652173913,
+      "completed_cohort_p95_transit_seconds": 25.516666666666666,
+      "demand_trace_sha256": "469b7b11b26e44c643053050effa4f24d55452923d69516ea213cb3203498c28",
+      "blueprint_sha256": "bbcc02668b1919cf01be7f2787ebb35157b98bd16731ebc185b4f2e7cd4f5e74",
+      "protocol_source_sha256": "9d70df162462d393ad80d3793ce1a94dc33cbec8add00ba1d11ff6491b864ea3",
+      "engine_identity_sha256": "ee92372fe043bfd51934237008ef48568b161d0d8be58c701fb6f546ed41059e",
+      "comparison_settings": {
+        "scenario": "S1",
+        "bank": 150,
+        "gap": 40,
+        "length": 6200,
+        "spacing": 8,
+        "warmup": 3600,
+        "duration": 10800,
+        "near": 0.3333333333333333,
+        "straight": 0.3333333333333333,
+        "loaded": false,
+        "exit_clearance": 8,
+        "entry_plane": 80,
+        "exit_plane": 80,
+        "sink_plane": 400,
+        "outlet_length": 2400,
+        "stop_offset": 2300
+      },
+      "evidence_directory": "round4/protocol/experiments/bank-r2-sig-stacked-cloverleaf-all4-clean-S1-1653fd3a88511096"
+    },
+    {
+      "id": "r4-sig-crossover-displaced-left-turn-d4",
+      "name_zh": "交叉移位左转·d4",
+      "seed": 17,
+      "bank_per_origin": 150,
+      "warmup_ticks": 3600,
+      "measurement_ticks": 10800,
+      "completed": 278,
+      "throughput": 92.66666666666667,
+      "entered_in_window": 278,
+      "inside_start": 21,
+      "inside_end": 21,
+      "inventory_balance_verified": true,
+      "external_entry_FIFO_verified": true,
+      "all_12_od_served": true,
+      "source_banks_never_empty": true,
+      "minimum_external_bank_by_origin": [
+        61,
+        50,
+        65,
+        45
+      ],
+      "damage_events": 0,
+      "per_origin_completed": {
+        "N": 67,
+        "E": 73,
+        "S": 62,
+        "W": 76
+      },
+      "per_destination_completed": {
+        "N": 75,
+        "E": 58,
+        "S": 73,
+        "W": 72
+      },
+      "minute_bins": [
+        {
+          "from_tick": 3600,
+          "to_tick_exclusive": 7200,
+          "completed": 86,
+          "trains_per_minute": 86.0
+        },
+        {
+          "from_tick": 7200,
+          "to_tick_exclusive": 10800,
+          "completed": 87,
+          "trains_per_minute": 87.0
+        },
+        {
+          "from_tick": 10800,
+          "to_tick_exclusive": 14400,
+          "completed": 105,
+          "trains_per_minute": 105.0
+        }
+      ],
+      "completed_cohort_mean_transit_seconds": 12.876378896882494,
+      "completed_cohort_p95_transit_seconds": 25.1,
+      "demand_trace_sha256": "315a823ae5849e4f9624241b997dc72fdb19bfd4ccce559416d173479b9b72fd",
+      "blueprint_sha256": "7ee5237b2dc82e847a96cf910a71680afebdbddfc48cfdc1fee8ac8737d8efd5",
+      "protocol_source_sha256": "9d70df162462d393ad80d3793ce1a94dc33cbec8add00ba1d11ff6491b864ea3",
+      "engine_identity_sha256": "ee92372fe043bfd51934237008ef48568b161d0d8be58c701fb6f546ed41059e",
+      "comparison_settings": {
+        "scenario": "S1",
+        "bank": 150,
+        "gap": 40,
+        "length": 6200,
+        "spacing": 8,
+        "warmup": 3600,
+        "duration": 10800,
+        "near": 0.3333333333333333,
+        "straight": 0.3333333333333333,
+        "loaded": false,
+        "exit_clearance": 8,
+        "entry_plane": 80,
+        "exit_plane": 80,
+        "sink_plane": 400,
+        "outlet_length": 2400,
+        "stop_offset": 2300
+      },
+      "evidence_directory": "round4/protocol/experiments/bank-r4-sig-crossover-displaced-left-turn-d4-S1-de418081cd5dd3fa"
+    },
+    {
+      "id": "r4-sig-crossover-displaced-left-turn-d4",
+      "name_zh": "交叉移位左转·d4",
+      "seed": 31,
+      "bank_per_origin": 150,
+      "warmup_ticks": 3600,
+      "measurement_ticks": 10800,
+      "completed": 286,
+      "throughput": 95.33333333333333,
+      "entered_in_window": 290,
+      "inside_start": 17,
+      "inside_end": 21,
+      "inventory_balance_verified": true,
+      "external_entry_FIFO_verified": true,
+      "all_12_od_served": true,
+      "source_banks_never_empty": true,
+      "minimum_external_bank_by_origin": [
+        42,
+        55,
+        75,
+        39
+      ],
+      "damage_events": 0,
+      "per_origin_completed": {
+        "N": 81,
+        "E": 73,
+        "S": 49,
+        "W": 83
+      },
+      "per_destination_completed": {
+        "N": 74,
+        "E": 77,
+        "S": 67,
+        "W": 68
+      },
+      "minute_bins": [
+        {
+          "from_tick": 3600,
+          "to_tick_exclusive": 7200,
+          "completed": 93,
+          "trains_per_minute": 93.0
+        },
+        {
+          "from_tick": 7200,
+          "to_tick_exclusive": 10800,
+          "completed": 88,
+          "trains_per_minute": 88.0
+        },
+        {
+          "from_tick": 10800,
+          "to_tick_exclusive": 14400,
+          "completed": 105,
+          "trains_per_minute": 105.0
+        }
+      ],
+      "completed_cohort_mean_transit_seconds": 12.565792540792541,
+      "completed_cohort_p95_transit_seconds": 24.983333333333334,
+      "demand_trace_sha256": "db7e08c90478ace7e207797033f21844ceb3191278559fe64030e5db3aa0710e",
+      "blueprint_sha256": "7ee5237b2dc82e847a96cf910a71680afebdbddfc48cfdc1fee8ac8737d8efd5",
+      "protocol_source_sha256": "9d70df162462d393ad80d3793ce1a94dc33cbec8add00ba1d11ff6491b864ea3",
+      "engine_identity_sha256": "ee92372fe043bfd51934237008ef48568b161d0d8be58c701fb6f546ed41059e",
+      "comparison_settings": {
+        "scenario": "S1",
+        "bank": 150,
+        "gap": 40,
+        "length": 6200,
+        "spacing": 8,
+        "warmup": 3600,
+        "duration": 10800,
+        "near": 0.3333333333333333,
+        "straight": 0.3333333333333333,
+        "loaded": false,
+        "exit_clearance": 8,
+        "entry_plane": 80,
+        "exit_plane": 80,
+        "sink_plane": 400,
+        "outlet_length": 2400,
+        "stop_offset": 2300
+      },
+      "evidence_directory": "round4/protocol/experiments/bank-r4-sig-crossover-displaced-left-turn-d4-S1-5439a28cf17fe1f0"
+    },
+    {
+      "id": "r4-sig-crossover-displaced-left-turn-d4",
+      "name_zh": "交叉移位左转·d4",
+      "seed": 47,
+      "bank_per_origin": 150,
+      "warmup_ticks": 3600,
+      "measurement_ticks": 10800,
+      "completed": 273,
+      "throughput": 91.0,
+      "entered_in_window": 274,
+      "inside_start": 19,
+      "inside_end": 20,
+      "inventory_balance_verified": true,
+      "external_entry_FIFO_verified": true,
+      "all_12_od_served": true,
+      "source_banks_never_empty": true,
+      "minimum_external_bank_by_origin": [
+        46,
+        52,
+        51,
+        75
+      ],
+      "damage_events": 0,
+      "per_origin_completed": {
+        "N": 77,
+        "E": 71,
+        "S": 77,
+        "W": 48
+      },
+      "per_destination_completed": {
+        "N": 70,
+        "E": 77,
+        "S": 55,
+        "W": 71
+      },
+      "minute_bins": [
+        {
+          "from_tick": 3600,
+          "to_tick_exclusive": 7200,
+          "completed": 96,
+          "trains_per_minute": 96.0
+        },
+        {
+          "from_tick": 7200,
+          "to_tick_exclusive": 10800,
+          "completed": 87,
+          "trains_per_minute": 87.0
+        },
+        {
+          "from_tick": 10800,
+          "to_tick_exclusive": 14400,
+          "completed": 90,
+          "trains_per_minute": 90.0
+        }
+      ],
+      "completed_cohort_mean_transit_seconds": 12.322954822954824,
+      "completed_cohort_p95_transit_seconds": 23.483333333333334,
+      "demand_trace_sha256": "469b7b11b26e44c643053050effa4f24d55452923d69516ea213cb3203498c28",
+      "blueprint_sha256": "7ee5237b2dc82e847a96cf910a71680afebdbddfc48cfdc1fee8ac8737d8efd5",
+      "protocol_source_sha256": "9d70df162462d393ad80d3793ce1a94dc33cbec8add00ba1d11ff6491b864ea3",
+      "engine_identity_sha256": "ee92372fe043bfd51934237008ef48568b161d0d8be58c701fb6f546ed41059e",
+      "comparison_settings": {
+        "scenario": "S1",
+        "bank": 150,
+        "gap": 40,
+        "length": 6200,
+        "spacing": 8,
+        "warmup": 3600,
+        "duration": 10800,
+        "near": 0.3333333333333333,
+        "straight": 0.3333333333333333,
+        "loaded": false,
+        "exit_clearance": 8,
+        "entry_plane": 80,
+        "exit_plane": 80,
+        "sink_plane": 400,
+        "outlet_length": 2400,
+        "stop_offset": 2300
+      },
+      "evidence_directory": "round4/protocol/experiments/bank-r4-sig-crossover-displaced-left-turn-d4-S1-8c60b22687e3f418"
+    },
+    {
+      "id": "r4-sig-partially-unrolled-cloverleaf-d4",
+      "name_zh": "部分展开苜蓿叶·d4",
+      "seed": 17,
+      "bank_per_origin": 150,
+      "warmup_ticks": 3600,
+      "measurement_ticks": 10800,
+      "completed": 278,
+      "throughput": 92.66666666666667,
+      "entered_in_window": 282,
+      "inside_start": 17,
+      "inside_end": 21,
+      "inventory_balance_verified": true,
+      "external_entry_FIFO_verified": true,
+      "all_12_od_served": true,
+      "source_banks_never_empty": true,
+      "minimum_external_bank_by_origin": [
+        59,
+        22,
+        74,
+        63
+      ],
+      "damage_events": 0,
+      "per_origin_completed": {
+        "N": 62,
+        "E": 101,
+        "S": 57,
+        "W": 58
+      },
+      "per_destination_completed": {
+        "N": 80,
+        "E": 50,
+        "S": 70,
+        "W": 78
+      },
+      "minute_bins": [
+        {
+          "from_tick": 3600,
+          "to_tick_exclusive": 7200,
+          "completed": 91,
+          "trains_per_minute": 91.0
+        },
+        {
+          "from_tick": 7200,
+          "to_tick_exclusive": 10800,
+          "completed": 96,
+          "trains_per_minute": 96.0
+        },
+        {
+          "from_tick": 10800,
+          "to_tick_exclusive": 14400,
+          "completed": 91,
+          "trains_per_minute": 91.0
+        }
+      ],
+      "completed_cohort_mean_transit_seconds": 13.142625899280576,
+      "completed_cohort_p95_transit_seconds": 27.3,
+      "demand_trace_sha256": "315a823ae5849e4f9624241b997dc72fdb19bfd4ccce559416d173479b9b72fd",
+      "blueprint_sha256": "7628ef5086fdffcfeed1902c4008030e476e5f4161a7f8694589307486a72889",
+      "protocol_source_sha256": "9d70df162462d393ad80d3793ce1a94dc33cbec8add00ba1d11ff6491b864ea3",
+      "engine_identity_sha256": "ee92372fe043bfd51934237008ef48568b161d0d8be58c701fb6f546ed41059e",
+      "comparison_settings": {
+        "scenario": "S1",
+        "bank": 150,
+        "gap": 40,
+        "length": 6200,
+        "spacing": 8,
+        "warmup": 3600,
+        "duration": 10800,
+        "near": 0.3333333333333333,
+        "straight": 0.3333333333333333,
+        "loaded": false,
+        "exit_clearance": 8,
+        "entry_plane": 80,
+        "exit_plane": 80,
+        "sink_plane": 400,
+        "outlet_length": 2400,
+        "stop_offset": 2300
+      },
+      "evidence_directory": "round4/protocol/experiments/bank-r4-sig-partially-unrolled-cloverleaf-d4-S1-15d5dcbc52fceee1"
+    },
+    {
+      "id": "r4-sig-partially-unrolled-cloverleaf-d4",
+      "name_zh": "部分展开苜蓿叶·d4",
+      "seed": 31,
+      "bank_per_origin": 150,
+      "warmup_ticks": 3600,
+      "measurement_ticks": 10800,
+      "completed": 288,
+      "throughput": 96.0,
+      "entered_in_window": 291,
+      "inside_start": 19,
+      "inside_end": 22,
+      "inventory_balance_verified": true,
+      "external_entry_FIFO_verified": true,
+      "all_12_od_served": true,
+      "source_banks_never_empty": true,
+      "minimum_external_bank_by_origin": [
+        62,
+        19,
+        59,
+        61
+      ],
+      "damage_events": 0,
+      "per_origin_completed": {
+        "N": 69,
+        "E": 101,
+        "S": 62,
+        "W": 56
+      },
+      "per_destination_completed": {
+        "N": 79,
+        "E": 66,
+        "S": 66,
+        "W": 77
+      },
+      "minute_bins": [
+        {
+          "from_tick": 3600,
+          "to_tick_exclusive": 7200,
+          "completed": 96,
+          "trains_per_minute": 96.0
+        },
+        {
+          "from_tick": 7200,
+          "to_tick_exclusive": 10800,
+          "completed": 100,
+          "trains_per_minute": 100.0
+        },
+        {
+          "from_tick": 10800,
+          "to_tick_exclusive": 14400,
+          "completed": 92,
+          "trains_per_minute": 92.0
+        }
+      ],
+      "completed_cohort_mean_transit_seconds": 12.904918981481481,
+      "completed_cohort_p95_transit_seconds": 32.9,
+      "demand_trace_sha256": "db7e08c90478ace7e207797033f21844ceb3191278559fe64030e5db3aa0710e",
+      "blueprint_sha256": "7628ef5086fdffcfeed1902c4008030e476e5f4161a7f8694589307486a72889",
+      "protocol_source_sha256": "9d70df162462d393ad80d3793ce1a94dc33cbec8add00ba1d11ff6491b864ea3",
+      "engine_identity_sha256": "ee92372fe043bfd51934237008ef48568b161d0d8be58c701fb6f546ed41059e",
+      "comparison_settings": {
+        "scenario": "S1",
+        "bank": 150,
+        "gap": 40,
+        "length": 6200,
+        "spacing": 8,
+        "warmup": 3600,
+        "duration": 10800,
+        "near": 0.3333333333333333,
+        "straight": 0.3333333333333333,
+        "loaded": false,
+        "exit_clearance": 8,
+        "entry_plane": 80,
+        "exit_plane": 80,
+        "sink_plane": 400,
+        "outlet_length": 2400,
+        "stop_offset": 2300
+      },
+      "evidence_directory": "round4/protocol/experiments/bank-r4-sig-partially-unrolled-cloverleaf-d4-S1-28658567df5ad804"
+    },
+    {
+      "id": "r4-sig-partially-unrolled-cloverleaf-d4",
+      "name_zh": "部分展开苜蓿叶·d4",
+      "seed": 47,
+      "bank_per_origin": 150,
+      "warmup_ticks": 3600,
+      "measurement_ticks": 10800,
+      "completed": 299,
+      "throughput": 99.66666666666667,
+      "entered_in_window": 301,
+      "inside_start": 18,
+      "inside_end": 20,
+      "inventory_balance_verified": true,
+      "external_entry_FIFO_verified": true,
+      "all_12_od_served": true,
+      "source_banks_never_empty": true,
+      "minimum_external_bank_by_origin": [
+        66,
+        10,
+        68,
+        44
+      ],
+      "damage_events": 0,
+      "per_origin_completed": {
+        "N": 62,
+        "E": 106,
+        "S": 60,
+        "W": 71
+      },
+      "per_destination_completed": {
+        "N": 79,
+        "E": 78,
+        "S": 68,
+        "W": 74
+      },
+      "minute_bins": [
+        {
+          "from_tick": 3600,
+          "to_tick_exclusive": 7200,
+          "completed": 95,
+          "trains_per_minute": 95.0
+        },
+        {
+          "from_tick": 7200,
+          "to_tick_exclusive": 10800,
+          "completed": 102,
+          "trains_per_minute": 102.0
+        },
+        {
+          "from_tick": 10800,
+          "to_tick_exclusive": 14400,
+          "completed": 102,
+          "trains_per_minute": 102.0
+        }
+      ],
+      "completed_cohort_mean_transit_seconds": 11.889576365663322,
+      "completed_cohort_p95_transit_seconds": 25.916666666666668,
+      "demand_trace_sha256": "469b7b11b26e44c643053050effa4f24d55452923d69516ea213cb3203498c28",
+      "blueprint_sha256": "7628ef5086fdffcfeed1902c4008030e476e5f4161a7f8694589307486a72889",
+      "protocol_source_sha256": "9d70df162462d393ad80d3793ce1a94dc33cbec8add00ba1d11ff6491b864ea3",
+      "engine_identity_sha256": "ee92372fe043bfd51934237008ef48568b161d0d8be58c701fb6f546ed41059e",
+      "comparison_settings": {
+        "scenario": "S1",
+        "bank": 150,
+        "gap": 40,
+        "length": 6200,
+        "spacing": 8,
+        "warmup": 3600,
+        "duration": 10800,
+        "near": 0.3333333333333333,
+        "straight": 0.3333333333333333,
+        "loaded": false,
+        "exit_clearance": 8,
+        "entry_plane": 80,
+        "exit_plane": 80,
+        "sink_plane": 400,
+        "outlet_length": 2400,
+        "stop_offset": 2300
+      },
+      "evidence_directory": "round4/protocol/experiments/bank-r4-sig-partially-unrolled-cloverleaf-d4-S1-d0d73249f4c14442"
+    },
+    {
+      "id": "r4-sig-three-chunk-square-d4",
+      "name_zh": "三块方形·d4",
+      "seed": 17,
+      "bank_per_origin": 150,
+      "warmup_ticks": 3600,
+      "measurement_ticks": 10800,
+      "completed": 279,
+      "throughput": 93.0,
+      "entered_in_window": 279,
+      "inside_start": 19,
+      "inside_end": 19,
+      "inventory_balance_verified": true,
+      "external_entry_FIFO_verified": true,
+      "all_12_od_served": true,
+      "source_banks_never_empty": true,
+      "minimum_external_bank_by_origin": [
+        32,
+        65,
+        51,
+        66
+      ],
+      "damage_events": 0,
+      "per_origin_completed": {
+        "N": 87,
+        "E": 60,
+        "S": 76,
+        "W": 56
+      },
+      "per_destination_completed": {
+        "N": 72,
+        "E": 63,
+        "S": 72,
+        "W": 72
+      },
+      "minute_bins": [
+        {
+          "from_tick": 3600,
+          "to_tick_exclusive": 7200,
+          "completed": 93,
+          "trains_per_minute": 93.0
+        },
+        {
+          "from_tick": 7200,
+          "to_tick_exclusive": 10800,
+          "completed": 92,
+          "trains_per_minute": 92.0
+        },
+        {
+          "from_tick": 10800,
+          "to_tick_exclusive": 14400,
+          "completed": 94,
+          "trains_per_minute": 94.0
+        }
+      ],
+      "completed_cohort_mean_transit_seconds": 13.033094384707288,
+      "completed_cohort_p95_transit_seconds": 25.766666666666666,
+      "demand_trace_sha256": "315a823ae5849e4f9624241b997dc72fdb19bfd4ccce559416d173479b9b72fd",
+      "blueprint_sha256": "ce9a3e15dc3123aeab9aa271c7485de9a59cd7489b21d36ddc8a16a20408681e",
+      "protocol_source_sha256": "9d70df162462d393ad80d3793ce1a94dc33cbec8add00ba1d11ff6491b864ea3",
+      "engine_identity_sha256": "ee92372fe043bfd51934237008ef48568b161d0d8be58c701fb6f546ed41059e",
+      "comparison_settings": {
+        "scenario": "S1",
+        "bank": 150,
+        "gap": 40,
+        "length": 6200,
+        "spacing": 8,
+        "warmup": 3600,
+        "duration": 10800,
+        "near": 0.3333333333333333,
+        "straight": 0.3333333333333333,
+        "loaded": false,
+        "exit_clearance": 8,
+        "entry_plane": 80,
+        "exit_plane": 80,
+        "sink_plane": 400,
+        "outlet_length": 2400,
+        "stop_offset": 2300
+      },
+      "evidence_directory": "round4/protocol/experiments/bank-r4-sig-three-chunk-square-d4-S1-394b05d9cc458ef9"
+    },
+    {
+      "id": "r4-sig-three-chunk-square-d4",
+      "name_zh": "三块方形·d4",
+      "seed": 31,
+      "bank_per_origin": 150,
+      "warmup_ticks": 3600,
+      "measurement_ticks": 10800,
+      "completed": 286,
+      "throughput": 95.33333333333333,
+      "entered_in_window": 287,
+      "inside_start": 18,
+      "inside_end": 19,
+      "inventory_balance_verified": true,
+      "external_entry_FIFO_verified": true,
+      "all_12_od_served": true,
+      "source_banks_never_empty": true,
+      "minimum_external_bank_by_origin": [
+        39,
+        46,
+        67,
+        58
+      ],
+      "damage_events": 0,
+      "per_origin_completed": {
+        "N": 80,
+        "E": 85,
+        "S": 58,
+        "W": 63
+      },
+      "per_destination_completed": {
+        "N": 74,
+        "E": 74,
+        "S": 65,
+        "W": 73
+      },
+      "minute_bins": [
+        {
+          "from_tick": 3600,
+          "to_tick_exclusive": 7200,
+          "completed": 94,
+          "trains_per_minute": 94.0
+        },
+        {
+          "from_tick": 7200,
+          "to_tick_exclusive": 10800,
+          "completed": 96,
+          "trains_per_minute": 96.0
+        },
+        {
+          "from_tick": 10800,
+          "to_tick_exclusive": 14400,
+          "completed": 96,
+          "trains_per_minute": 96.0
+        }
+      ],
+      "completed_cohort_mean_transit_seconds": 11.689568764568765,
+      "completed_cohort_p95_transit_seconds": 25.65,
+      "demand_trace_sha256": "db7e08c90478ace7e207797033f21844ceb3191278559fe64030e5db3aa0710e",
+      "blueprint_sha256": "ce9a3e15dc3123aeab9aa271c7485de9a59cd7489b21d36ddc8a16a20408681e",
+      "protocol_source_sha256": "9d70df162462d393ad80d3793ce1a94dc33cbec8add00ba1d11ff6491b864ea3",
+      "engine_identity_sha256": "ee92372fe043bfd51934237008ef48568b161d0d8be58c701fb6f546ed41059e",
+      "comparison_settings": {
+        "scenario": "S1",
+        "bank": 150,
+        "gap": 40,
+        "length": 6200,
+        "spacing": 8,
+        "warmup": 3600,
+        "duration": 10800,
+        "near": 0.3333333333333333,
+        "straight": 0.3333333333333333,
+        "loaded": false,
+        "exit_clearance": 8,
+        "entry_plane": 80,
+        "exit_plane": 80,
+        "sink_plane": 400,
+        "outlet_length": 2400,
+        "stop_offset": 2300
+      },
+      "evidence_directory": "round4/protocol/experiments/bank-r4-sig-three-chunk-square-d4-S1-61dfb6c6b6afa7fa"
+    },
+    {
+      "id": "r4-sig-three-chunk-square-d4",
+      "name_zh": "三块方形·d4",
+      "seed": 47,
+      "bank_per_origin": 150,
+      "warmup_ticks": 3600,
+      "measurement_ticks": 10800,
+      "completed": 285,
+      "throughput": 95.0,
+      "entered_in_window": 289,
+      "inside_start": 16,
+      "inside_end": 20,
+      "inventory_balance_verified": true,
+      "external_entry_FIFO_verified": true,
+      "all_12_od_served": true,
+      "source_banks_never_empty": true,
+      "minimum_external_bank_by_origin": [
+        40,
+        17,
+        80,
+        66
+      ],
+      "damage_events": 0,
+      "per_origin_completed": {
+        "N": 82,
+        "E": 98,
+        "S": 47,
+        "W": 58
+      },
+      "per_destination_completed": {
+        "N": 70,
+        "E": 74,
+        "S": 69,
+        "W": 72
+      },
+      "minute_bins": [
+        {
+          "from_tick": 3600,
+          "to_tick_exclusive": 7200,
+          "completed": 92,
+          "trains_per_minute": 92.0
+        },
+        {
+          "from_tick": 7200,
+          "to_tick_exclusive": 10800,
+          "completed": 98,
+          "trains_per_minute": 98.0
+        },
+        {
+          "from_tick": 10800,
+          "to_tick_exclusive": 14400,
+          "completed": 95,
+          "trains_per_minute": 95.0
+        }
+      ],
+      "completed_cohort_mean_transit_seconds": 11.18923976608187,
+      "completed_cohort_p95_transit_seconds": 23.833333333333332,
+      "demand_trace_sha256": "469b7b11b26e44c643053050effa4f24d55452923d69516ea213cb3203498c28",
+      "blueprint_sha256": "ce9a3e15dc3123aeab9aa271c7485de9a59cd7489b21d36ddc8a16a20408681e",
+      "protocol_source_sha256": "9d70df162462d393ad80d3793ce1a94dc33cbec8add00ba1d11ff6491b864ea3",
+      "engine_identity_sha256": "ee92372fe043bfd51934237008ef48568b161d0d8be58c701fb6f546ed41059e",
+      "comparison_settings": {
+        "scenario": "S1",
+        "bank": 150,
+        "gap": 40,
+        "length": 6200,
+        "spacing": 8,
+        "warmup": 3600,
+        "duration": 10800,
+        "near": 0.3333333333333333,
+        "straight": 0.3333333333333333,
+        "loaded": false,
+        "exit_clearance": 8,
+        "entry_plane": 80,
+        "exit_plane": 80,
+        "sink_plane": 400,
+        "outlet_length": 2400,
+        "stop_offset": 2300
+      },
+      "evidence_directory": "round4/protocol/experiments/bank-r4-sig-three-chunk-square-d4-S1-a9396516015a22aa"
+    },
+    {
+      "id": "r4-dir-trident32-32",
+      "name_zh": "三分叉私有连接网",
+      "seed": 17,
+      "bank_per_origin": 150,
+      "warmup_ticks": 3600,
+      "measurement_ticks": 10800,
+      "completed": 363,
+      "throughput": 121.0,
+      "entered_in_window": 378,
+      "inside_start": 77,
+      "inside_end": 92,
+      "inventory_balance_verified": true,
+      "external_entry_FIFO_verified": true,
+      "all_12_od_served": true,
+      "source_banks_never_empty": true,
+      "minimum_external_bank_by_origin": [
+        9,
+        38,
+        9,
+        28
+      ],
+      "damage_events": 0,
+      "per_origin_completed": {
+        "N": 104,
+        "E": 73,
+        "S": 107,
+        "W": 79
+      },
+      "per_destination_completed": {
+        "N": 95,
+        "E": 83,
+        "S": 92,
+        "W": 93
+      },
+      "minute_bins": [
+        {
+          "from_tick": 3600,
+          "to_tick_exclusive": 7200,
+          "completed": 124,
+          "trains_per_minute": 124.0
+        },
+        {
+          "from_tick": 7200,
+          "to_tick_exclusive": 10800,
+          "completed": 126,
+          "trains_per_minute": 126.0
+        },
+        {
+          "from_tick": 10800,
+          "to_tick_exclusive": 14400,
+          "completed": 113,
+          "trains_per_minute": 113.0
+        }
+      ],
+      "completed_cohort_mean_transit_seconds": 39.481772268135906,
+      "completed_cohort_p95_transit_seconds": 71.7,
+      "demand_trace_sha256": "315a823ae5849e4f9624241b997dc72fdb19bfd4ccce559416d173479b9b72fd",
+      "blueprint_sha256": "a4de7224f5b42070247951511da129a23b8beada6161e048e0dd68b31dcd6f19",
+      "protocol_source_sha256": "9d70df162462d393ad80d3793ce1a94dc33cbec8add00ba1d11ff6491b864ea3",
+      "engine_identity_sha256": "ee92372fe043bfd51934237008ef48568b161d0d8be58c701fb6f546ed41059e",
+      "comparison_settings": {
+        "scenario": "S1",
+        "bank": 150,
+        "gap": 40,
+        "length": 6200,
+        "spacing": 8,
+        "warmup": 3600,
+        "duration": 10800,
+        "near": 0.3333333333333333,
+        "straight": 0.3333333333333333,
+        "loaded": false,
+        "exit_clearance": 8,
+        "entry_plane": 80,
+        "exit_plane": 80,
+        "sink_plane": 400,
+        "outlet_length": 2400,
+        "stop_offset": 2300
+      },
+      "evidence_directory": "round4/protocol/experiments/bank-r4-dir-trident32-32-S1-14427dbd4107ca3a"
+    },
+    {
+      "id": "r4-dir-trident32-32",
+      "name_zh": "三分叉私有连接网",
+      "seed": 31,
+      "bank_per_origin": 150,
+      "warmup_ticks": 3600,
+      "measurement_ticks": 10800,
+      "completed": 350,
+      "throughput": 116.66666666666667,
+      "entered_in_window": 364,
+      "inside_start": 77,
+      "inside_end": 91,
+      "inventory_balance_verified": true,
+      "external_entry_FIFO_verified": true,
+      "all_12_od_served": true,
+      "source_banks_never_empty": true,
+      "minimum_external_bank_by_origin": [
+        9,
+        36,
+        9,
+        44
+      ],
+      "damage_events": 0,
+      "per_origin_completed": {
+        "N": 107,
+        "E": 76,
+        "S": 107,
+        "W": 60
+      },
+      "per_destination_completed": {
+        "N": 85,
+        "E": 96,
+        "S": 72,
+        "W": 97
+      },
+      "minute_bins": [
+        {
+          "from_tick": 3600,
+          "to_tick_exclusive": 7200,
+          "completed": 120,
+          "trains_per_minute": 120.0
+        },
+        {
+          "from_tick": 7200,
+          "to_tick_exclusive": 10800,
+          "completed": 114,
+          "trains_per_minute": 114.0
+        },
+        {
+          "from_tick": 10800,
+          "to_tick_exclusive": 14400,
+          "completed": 116,
+          "trains_per_minute": 116.0
+        }
+      ],
+      "completed_cohort_mean_transit_seconds": 42.20180952380952,
+      "completed_cohort_p95_transit_seconds": 79.83333333333333,
+      "demand_trace_sha256": "db7e08c90478ace7e207797033f21844ceb3191278559fe64030e5db3aa0710e",
+      "blueprint_sha256": "a4de7224f5b42070247951511da129a23b8beada6161e048e0dd68b31dcd6f19",
+      "protocol_source_sha256": "9d70df162462d393ad80d3793ce1a94dc33cbec8add00ba1d11ff6491b864ea3",
+      "engine_identity_sha256": "ee92372fe043bfd51934237008ef48568b161d0d8be58c701fb6f546ed41059e",
+      "comparison_settings": {
+        "scenario": "S1",
+        "bank": 150,
+        "gap": 40,
+        "length": 6200,
+        "spacing": 8,
+        "warmup": 3600,
+        "duration": 10800,
+        "near": 0.3333333333333333,
+        "straight": 0.3333333333333333,
+        "loaded": false,
+        "exit_clearance": 8,
+        "entry_plane": 80,
+        "exit_plane": 80,
+        "sink_plane": 400,
+        "outlet_length": 2400,
+        "stop_offset": 2300
+      },
+      "evidence_directory": "round4/protocol/experiments/bank-r4-dir-trident32-32-S1-fdb0b611b369a8e3"
+    },
+    {
+      "id": "r4-dir-trident32-32",
+      "name_zh": "三分叉私有连接网",
+      "seed": 47,
+      "bank_per_origin": 150,
+      "warmup_ticks": 3600,
+      "measurement_ticks": 10800,
+      "completed": 359,
+      "throughput": 119.66666666666667,
+      "entered_in_window": 377,
+      "inside_start": 73,
+      "inside_end": 91,
+      "inventory_balance_verified": true,
+      "external_entry_FIFO_verified": true,
+      "all_12_od_served": true,
+      "source_banks_never_empty": true,
+      "minimum_external_bank_by_origin": [
+        9,
+        12,
+        9,
+        55
+      ],
+      "damage_events": 0,
+      "per_origin_completed": {
+        "N": 101,
+        "E": 102,
+        "S": 110,
+        "W": 46
+      },
+      "per_destination_completed": {
+        "N": 91,
+        "E": 95,
+        "S": 77,
+        "W": 96
+      },
+      "minute_bins": [
+        {
+          "from_tick": 3600,
+          "to_tick_exclusive": 7200,
+          "completed": 117,
+          "trains_per_minute": 117.0
+        },
+        {
+          "from_tick": 7200,
+          "to_tick_exclusive": 10800,
+          "completed": 117,
+          "trains_per_minute": 117.0
+        },
+        {
+          "from_tick": 10800,
+          "to_tick_exclusive": 14400,
+          "completed": 125,
+          "trains_per_minute": 125.0
+        }
+      ],
+      "completed_cohort_mean_transit_seconds": 39.2780408542247,
+      "completed_cohort_p95_transit_seconds": 94.0,
+      "demand_trace_sha256": "469b7b11b26e44c643053050effa4f24d55452923d69516ea213cb3203498c28",
+      "blueprint_sha256": "a4de7224f5b42070247951511da129a23b8beada6161e048e0dd68b31dcd6f19",
+      "protocol_source_sha256": "9d70df162462d393ad80d3793ce1a94dc33cbec8add00ba1d11ff6491b864ea3",
+      "engine_identity_sha256": "ee92372fe043bfd51934237008ef48568b161d0d8be58c701fb6f546ed41059e",
+      "comparison_settings": {
+        "scenario": "S1",
+        "bank": 150,
+        "gap": 40,
+        "length": 6200,
+        "spacing": 8,
+        "warmup": 3600,
+        "duration": 10800,
+        "near": 0.3333333333333333,
+        "straight": 0.3333333333333333,
+        "loaded": false,
+        "exit_clearance": 8,
+        "entry_plane": 80,
+        "exit_plane": 80,
+        "sink_plane": 400,
+        "outlet_length": 2400,
+        "stop_offset": 2300
+      },
+      "evidence_directory": "round4/protocol/experiments/bank-r4-dir-trident32-32-S1-ca2670be84781fbf"
+    },
+    {
+      "id": "r3-sig-turbine2-dense2",
+      "name_zh": "涡轮二型·364灯对照",
+      "seed": 211,
+      "bank_per_origin": 240,
+      "warmup_ticks": 7200,
+      "measurement_ticks": 14400,
+      "completed": 420,
+      "throughput": 105.0,
+      "entered_in_window": 412,
+      "inside_start": 27,
+      "inside_end": 19,
+      "inventory_balance_verified": true,
+      "external_entry_FIFO_verified": true,
+      "all_12_od_served": true,
+      "source_banks_never_empty": true,
+      "minimum_external_bank_by_origin": [
+        64,
+        103,
+        71,
+        86
+      ],
+      "damage_events": 0,
+      "per_origin_completed": {
+        "N": 119,
+        "E": 82,
+        "S": 116,
+        "W": 103
+      },
+      "per_destination_completed": {
+        "N": 112,
+        "E": 94,
+        "S": 105,
+        "W": 109
+      },
+      "minute_bins": [
+        {
+          "from_tick": 7200,
+          "to_tick_exclusive": 10800,
+          "completed": 101,
+          "trains_per_minute": 101.0
+        },
+        {
+          "from_tick": 10800,
+          "to_tick_exclusive": 14400,
+          "completed": 103,
+          "trains_per_minute": 103.0
+        },
+        {
+          "from_tick": 14400,
+          "to_tick_exclusive": 18000,
+          "completed": 104,
+          "trains_per_minute": 104.0
+        },
+        {
+          "from_tick": 18000,
+          "to_tick_exclusive": 21600,
+          "completed": 112,
+          "trains_per_minute": 112.0
+        }
+      ],
+      "completed_cohort_mean_transit_seconds": 13.317103174603174,
+      "completed_cohort_p95_transit_seconds": 31.983333333333334,
+      "demand_trace_sha256": "cb06466568f46a07bd1c3db0a28fd38ac16b52af882357df366ba0fd01e9cacd",
+      "blueprint_sha256": "5df0e4f446392fc49e81fe26d3f6767aa4802159663924bc0ede2a4852d02b89",
+      "protocol_source_sha256": "9d70df162462d393ad80d3793ce1a94dc33cbec8add00ba1d11ff6491b864ea3",
+      "engine_identity_sha256": "ee92372fe043bfd51934237008ef48568b161d0d8be58c701fb6f546ed41059e",
+      "comparison_settings": {
+        "scenario": "S1",
+        "bank": 240,
+        "gap": 40,
+        "length": 9800,
+        "spacing": 8,
+        "warmup": 7200,
+        "duration": 14400,
+        "near": 0.3333333333333333,
+        "straight": 0.3333333333333333,
+        "loaded": false,
+        "exit_clearance": 8,
+        "entry_plane": 80,
+        "exit_plane": 80,
+        "sink_plane": 400,
+        "outlet_length": 2400,
+        "stop_offset": 2300
+      },
+      "evidence_directory": "round4/protocol/experiments/bank-r3-sig-turbine2-dense2-S1-df8d2e564c770319"
+    },
+    {
+      "id": "r3-sig-turbine2-dense2",
+      "name_zh": "涡轮二型·364灯对照",
+      "seed": 307,
+      "bank_per_origin": 240,
+      "warmup_ticks": 7200,
+      "measurement_ticks": 14400,
+      "completed": 397,
+      "throughput": 99.25,
+      "entered_in_window": 391,
+      "inside_start": 26,
+      "inside_end": 20,
+      "inventory_balance_verified": true,
+      "external_entry_FIFO_verified": true,
+      "all_12_od_served": true,
+      "source_banks_never_empty": true,
+      "minimum_external_bank_by_origin": [
+        76,
+        85,
+        118,
+        76
+      ],
+      "damage_events": 0,
+      "per_origin_completed": {
+        "N": 111,
+        "E": 98,
+        "S": 85,
+        "W": 103
+      },
+      "per_destination_completed": {
+        "N": 90,
+        "E": 98,
+        "S": 100,
+        "W": 109
+      },
+      "minute_bins": [
+        {
+          "from_tick": 7200,
+          "to_tick_exclusive": 10800,
+          "completed": 100,
+          "trains_per_minute": 100.0
+        },
+        {
+          "from_tick": 10800,
+          "to_tick_exclusive": 14400,
+          "completed": 102,
+          "trains_per_minute": 102.0
+        },
+        {
+          "from_tick": 14400,
+          "to_tick_exclusive": 18000,
+          "completed": 91,
+          "trains_per_minute": 91.0
+        },
+        {
+          "from_tick": 18000,
+          "to_tick_exclusive": 21600,
+          "completed": 104,
+          "trains_per_minute": 104.0
+        }
+      ],
+      "completed_cohort_mean_transit_seconds": 13.896389588581025,
+      "completed_cohort_p95_transit_seconds": 35.18333333333333,
+      "demand_trace_sha256": "8428f38f32b2930a7a78ed037e00667e67073e8e3e03d7a0cf9b046e358e1f1a",
+      "blueprint_sha256": "5df0e4f446392fc49e81fe26d3f6767aa4802159663924bc0ede2a4852d02b89",
+      "protocol_source_sha256": "9d70df162462d393ad80d3793ce1a94dc33cbec8add00ba1d11ff6491b864ea3",
+      "engine_identity_sha256": "ee92372fe043bfd51934237008ef48568b161d0d8be58c701fb6f546ed41059e",
+      "comparison_settings": {
+        "scenario": "S1",
+        "bank": 240,
+        "gap": 40,
+        "length": 9800,
+        "spacing": 8,
+        "warmup": 7200,
+        "duration": 14400,
+        "near": 0.3333333333333333,
+        "straight": 0.3333333333333333,
+        "loaded": false,
+        "exit_clearance": 8,
+        "entry_plane": 80,
+        "exit_plane": 80,
+        "sink_plane": 400,
+        "outlet_length": 2400,
+        "stop_offset": 2300
+      },
+      "evidence_directory": "round4/protocol/experiments/bank-r3-sig-turbine2-dense2-S1-5ef314dcd1d96971"
+    },
+    {
+      "id": "r3-sig-turbine2-dense2",
+      "name_zh": "涡轮二型·364灯对照",
+      "seed": 401,
+      "bank_per_origin": 240,
+      "warmup_ticks": 7200,
+      "measurement_ticks": 14400,
+      "completed": 412,
+      "throughput": 103.0,
+      "entered_in_window": 411,
+      "inside_start": 23,
+      "inside_end": 22,
+      "inventory_balance_verified": true,
+      "external_entry_FIFO_verified": true,
+      "all_12_od_served": true,
+      "source_banks_never_empty": true,
+      "minimum_external_bank_by_origin": [
+        102,
+        86,
+        82,
+        73
+      ],
+      "damage_events": 0,
+      "per_origin_completed": {
+        "N": 83,
+        "E": 108,
+        "S": 100,
+        "W": 121
+      },
+      "per_destination_completed": {
+        "N": 97,
+        "E": 109,
+        "S": 106,
+        "W": 100
+      },
+      "minute_bins": [
+        {
+          "from_tick": 7200,
+          "to_tick_exclusive": 10800,
+          "completed": 110,
+          "trains_per_minute": 110.0
+        },
+        {
+          "from_tick": 10800,
+          "to_tick_exclusive": 14400,
+          "completed": 103,
+          "trains_per_minute": 103.0
+        },
+        {
+          "from_tick": 14400,
+          "to_tick_exclusive": 18000,
+          "completed": 100,
+          "trains_per_minute": 100.0
+        },
+        {
+          "from_tick": 18000,
+          "to_tick_exclusive": 21600,
+          "completed": 99,
+          "trains_per_minute": 99.0
+        }
+      ],
+      "completed_cohort_mean_transit_seconds": 13.61715210355987,
+      "completed_cohort_p95_transit_seconds": 31.55,
+      "demand_trace_sha256": "5aedeff77dadfab1b876562fba114a9b016f757d7bede719c824a98a082380ca",
+      "blueprint_sha256": "5df0e4f446392fc49e81fe26d3f6767aa4802159663924bc0ede2a4852d02b89",
+      "protocol_source_sha256": "9d70df162462d393ad80d3793ce1a94dc33cbec8add00ba1d11ff6491b864ea3",
+      "engine_identity_sha256": "ee92372fe043bfd51934237008ef48568b161d0d8be58c701fb6f546ed41059e",
+      "comparison_settings": {
+        "scenario": "S1",
+        "bank": 240,
+        "gap": 40,
+        "length": 9800,
+        "spacing": 8,
+        "warmup": 7200,
+        "duration": 14400,
+        "near": 0.3333333333333333,
+        "straight": 0.3333333333333333,
+        "loaded": false,
+        "exit_clearance": 8,
+        "entry_plane": 80,
+        "exit_plane": 80,
+        "sink_plane": 400,
+        "outlet_length": 2400,
+        "stop_offset": 2300
+      },
+      "evidence_directory": "round4/protocol/experiments/bank-r3-sig-turbine2-dense2-S1-271108af7b61de34"
+    },
+    {
+      "id": "r4-dir-trident32-32",
+      "name_zh": "三分叉私有连接网",
+      "seed": 211,
+      "bank_per_origin": 240,
+      "warmup_ticks": 7200,
+      "measurement_ticks": 14400,
+      "completed": 454,
+      "throughput": 113.5,
+      "entered_in_window": 451,
+      "inside_start": 92,
+      "inside_end": 89,
+      "inventory_balance_verified": true,
+      "external_entry_FIFO_verified": true,
+      "all_12_od_served": true,
+      "source_banks_never_empty": true,
+      "minimum_external_bank_by_origin": [
+        29,
+        126,
+        29,
+        49
+      ],
+      "damage_events": 0,
+      "per_origin_completed": {
+        "N": 139,
+        "E": 60,
+        "S": 143,
+        "W": 112
+      },
+      "per_destination_completed": {
+        "N": 121,
+        "E": 121,
+        "S": 100,
+        "W": 112
+      },
+      "minute_bins": [
+        {
+          "from_tick": 7200,
+          "to_tick_exclusive": 10800,
+          "completed": 114,
+          "trains_per_minute": 114.0
+        },
+        {
+          "from_tick": 10800,
+          "to_tick_exclusive": 14400,
+          "completed": 117,
+          "trains_per_minute": 117.0
+        },
+        {
+          "from_tick": 14400,
+          "to_tick_exclusive": 18000,
+          "completed": 113,
+          "trains_per_minute": 113.0
+        },
+        {
+          "from_tick": 18000,
+          "to_tick_exclusive": 21600,
+          "completed": 110,
+          "trains_per_minute": 110.0
+        }
+      ],
+      "completed_cohort_mean_transit_seconds": 45.01857562408223,
+      "completed_cohort_p95_transit_seconds": 141.6,
+      "demand_trace_sha256": "cb06466568f46a07bd1c3db0a28fd38ac16b52af882357df366ba0fd01e9cacd",
+      "blueprint_sha256": "a4de7224f5b42070247951511da129a23b8beada6161e048e0dd68b31dcd6f19",
+      "protocol_source_sha256": "9d70df162462d393ad80d3793ce1a94dc33cbec8add00ba1d11ff6491b864ea3",
+      "engine_identity_sha256": "ee92372fe043bfd51934237008ef48568b161d0d8be58c701fb6f546ed41059e",
+      "comparison_settings": {
+        "scenario": "S1",
+        "bank": 240,
+        "gap": 40,
+        "length": 9800,
+        "spacing": 8,
+        "warmup": 7200,
+        "duration": 14400,
+        "near": 0.3333333333333333,
+        "straight": 0.3333333333333333,
+        "loaded": false,
+        "exit_clearance": 8,
+        "entry_plane": 80,
+        "exit_plane": 80,
+        "sink_plane": 400,
+        "outlet_length": 2400,
+        "stop_offset": 2300
+      },
+      "evidence_directory": "round4/protocol/experiments/bank-r4-dir-trident32-32-S1-7233e67195d9a491"
+    },
+    {
+      "id": "r4-dir-trident32-32",
+      "name_zh": "三分叉私有连接网",
+      "seed": 307,
+      "bank_per_origin": 240,
+      "warmup_ticks": 7200,
+      "measurement_ticks": 14400,
+      "completed": 483,
+      "throughput": 120.75,
+      "entered_in_window": 490,
+      "inside_start": 94,
+      "inside_end": 101,
+      "inventory_balance_verified": true,
+      "external_entry_FIFO_verified": true,
+      "all_12_od_served": true,
+      "source_banks_never_empty": true,
+      "minimum_external_bank_by_origin": [
+        45,
+        54,
+        29,
+        66
+      ],
+      "damage_events": 0,
+      "per_origin_completed": {
+        "N": 117,
+        "E": 120,
+        "S": 143,
+        "W": 103
+      },
+      "per_destination_completed": {
+        "N": 118,
+        "E": 119,
+        "S": 112,
+        "W": 134
+      },
+      "minute_bins": [
+        {
+          "from_tick": 7200,
+          "to_tick_exclusive": 10800,
+          "completed": 125,
+          "trains_per_minute": 125.0
+        },
+        {
+          "from_tick": 10800,
+          "to_tick_exclusive": 14400,
+          "completed": 123,
+          "trains_per_minute": 123.0
+        },
+        {
+          "from_tick": 14400,
+          "to_tick_exclusive": 18000,
+          "completed": 113,
+          "trains_per_minute": 113.0
+        },
+        {
+          "from_tick": 18000,
+          "to_tick_exclusive": 21600,
+          "completed": 122,
+          "trains_per_minute": 122.0
+        }
+      ],
+      "completed_cohort_mean_transit_seconds": 48.51773636991028,
+      "completed_cohort_p95_transit_seconds": 86.95,
+      "demand_trace_sha256": "8428f38f32b2930a7a78ed037e00667e67073e8e3e03d7a0cf9b046e358e1f1a",
+      "blueprint_sha256": "a4de7224f5b42070247951511da129a23b8beada6161e048e0dd68b31dcd6f19",
+      "protocol_source_sha256": "9d70df162462d393ad80d3793ce1a94dc33cbec8add00ba1d11ff6491b864ea3",
+      "engine_identity_sha256": "ee92372fe043bfd51934237008ef48568b161d0d8be58c701fb6f546ed41059e",
+      "comparison_settings": {
+        "scenario": "S1",
+        "bank": 240,
+        "gap": 40,
+        "length": 9800,
+        "spacing": 8,
+        "warmup": 7200,
+        "duration": 14400,
+        "near": 0.3333333333333333,
+        "straight": 0.3333333333333333,
+        "loaded": false,
+        "exit_clearance": 8,
+        "entry_plane": 80,
+        "exit_plane": 80,
+        "sink_plane": 400,
+        "outlet_length": 2400,
+        "stop_offset": 2300
+      },
+      "evidence_directory": "round4/protocol/experiments/bank-r4-dir-trident32-32-S1-e4ac9317a6df2044"
+    },
+    {
+      "id": "r4-dir-trident32-32",
+      "name_zh": "三分叉私有连接网",
+      "seed": 401,
+      "bank_per_origin": 240,
+      "warmup_ticks": 7200,
+      "measurement_ticks": 14400,
+      "completed": 473,
+      "throughput": 118.25,
+      "entered_in_window": 471,
+      "inside_start": 96,
+      "inside_end": 94,
+      "inventory_balance_verified": true,
+      "external_entry_FIFO_verified": true,
+      "all_12_od_served": true,
+      "source_banks_never_empty": true,
+      "minimum_external_bank_by_origin": [
+        30,
+        71,
+        29,
+        84
+      ],
+      "damage_events": 0,
+      "per_origin_completed": {
+        "N": 142,
+        "E": 108,
+        "S": 140,
+        "W": 83
+      },
+      "per_destination_completed": {
+        "N": 100,
+        "E": 130,
+        "S": 122,
+        "W": 121
+      },
+      "minute_bins": [
+        {
+          "from_tick": 7200,
+          "to_tick_exclusive": 10800,
+          "completed": 123,
+          "trains_per_minute": 123.0
+        },
+        {
+          "from_tick": 10800,
+          "to_tick_exclusive": 14400,
+          "completed": 120,
+          "trains_per_minute": 120.0
+        },
+        {
+          "from_tick": 14400,
+          "to_tick_exclusive": 18000,
+          "completed": 112,
+          "trains_per_minute": 112.0
+        },
+        {
+          "from_tick": 18000,
+          "to_tick_exclusive": 21600,
+          "completed": 118,
+          "trains_per_minute": 118.0
+        }
+      ],
+      "completed_cohort_mean_transit_seconds": 45.101021846370685,
+      "completed_cohort_p95_transit_seconds": 74.43333333333334,
+      "demand_trace_sha256": "5aedeff77dadfab1b876562fba114a9b016f757d7bede719c824a98a082380ca",
+      "blueprint_sha256": "a4de7224f5b42070247951511da129a23b8beada6161e048e0dd68b31dcd6f19",
+      "protocol_source_sha256": "9d70df162462d393ad80d3793ce1a94dc33cbec8add00ba1d11ff6491b864ea3",
+      "engine_identity_sha256": "ee92372fe043bfd51934237008ef48568b161d0d8be58c701fb6f546ed41059e",
+      "comparison_settings": {
+        "scenario": "S1",
+        "bank": 240,
+        "gap": 40,
+        "length": 9800,
+        "spacing": 8,
+        "warmup": 7200,
+        "duration": 14400,
+        "near": 0.3333333333333333,
+        "straight": 0.3333333333333333,
+        "loaded": false,
+        "exit_clearance": 8,
+        "entry_plane": 80,
+        "exit_plane": 80,
+        "sink_plane": 400,
+        "outlet_length": 2400,
+        "stop_offset": 2300
+      },
+      "evidence_directory": "round4/protocol/experiments/bank-r4-dir-trident32-32-S1-c0df8aa206d7ec54"
+    }
+  ],
+  "geometry": {
+    "r3-sig-turbine2-dense2": {
+      "area": 17417.813049316406,
+      "signals": 364,
+      "entities": 816,
+      "all_12_od": true,
+      "all_signals_working": true
+    },
+    "r2-sig-stacked-cloverleaf-all4-clean": {
+      "area": 13263.56505076796,
+      "signals": 169,
+      "entities": 551,
+      "all_12_od": true,
+      "all_signals_working": true
+    },
+    "r4-dir-trident32-32": {
+      "area": 808933.8130493164,
+      "signals": 2824,
+      "entities": 8666,
+      "all_12_od": true,
+      "all_signals_working": true
+    },
+    "r4-sig-celtic-knot-d2": {
+      "area": 15870.094299316406,
+      "signals": 172,
+      "entities": 428,
+      "all_12_od": true,
+      "all_signals_working": true
+    },
+    "r4-sig-celtic-knot-d4": {
+      "area": 15870.094299316406,
+      "signals": 120,
+      "entities": 376,
+      "all_12_od": true,
+      "all_signals_working": true
+    },
+    "r4-sig-celtic-knot-d8": {
+      "area": 15870.094299316406,
+      "signals": 68,
+      "entities": 324,
+      "all_12_od": true,
+      "all_signals_working": true
+    },
+    "r4-sig-buffered-celtic-knot-d2": {
+      "area": 15870.094299316406,
+      "signals": 204,
+      "entities": 484,
+      "all_12_od": true,
+      "all_signals_working": true
+    },
+    "r4-sig-buffered-celtic-knot-d4": {
+      "area": 15870.094299316406,
+      "signals": 139,
+      "entities": 419,
+      "all_12_od": true,
+      "all_signals_working": true
+    },
+    "r4-sig-buffered-celtic-knot-d8": {
+      "area": 15870.094299316406,
+      "signals": 76,
+      "entities": 356,
+      "all_12_od": true,
+      "all_signals_working": true
+    },
+    "r4-sig-twister-d2": {
+      "area": 15870.094299316406,
+      "signals": 234,
+      "entities": 560,
+      "all_12_od": true,
+      "all_signals_working": true
+    },
+    "r4-sig-twister-d4": {
+      "area": 15870.094299316406,
+      "signals": 152,
+      "entities": 478,
+      "all_12_od": true,
+      "all_signals_working": true
+    },
+    "r4-sig-twister-d8": {
+      "area": 15870.094299316406,
+      "signals": 94,
+      "entities": 420,
+      "all_12_od": true,
+      "all_signals_working": true
+    },
+    "r4-sig-windmill-d2": {
+      "area": 17885.719299316406,
+      "signals": 304,
+      "entities": 720,
+      "all_12_od": true,
+      "all_signals_working": true
+    },
+    "r4-sig-windmill-d4": {
+      "area": 17885.719299316406,
+      "signals": 180,
+      "entities": 596,
+      "all_12_od": true,
+      "all_signals_working": true
+    },
+    "r4-sig-windmill-d8": {
+      "area": 17885.719299316406,
+      "signals": 106,
+      "entities": 522,
+      "all_12_od": true,
+      "all_signals_working": true
+    },
+    "r4-sig-pinwheel-d2": {
+      "area": 15870.094299316406,
+      "signals": 298,
+      "entities": 702,
+      "all_12_od": true,
+      "all_signals_working": true
+    },
+    "r4-sig-pinwheel-d4": {
+      "area": 15870.094299316406,
+      "signals": 171,
+      "entities": 575,
+      "all_12_od": true,
+      "all_signals_working": true
+    },
+    "r4-sig-pinwheel-d8": {
+      "area": 15870.094299316406,
+      "signals": 102,
+      "entities": 506,
+      "all_12_od": true,
+      "all_signals_working": true
+    },
+    "r4-sig-partially-unrolled-cloverleaf-d2": {
+      "area": 15881.214905568326,
+      "signals": 257,
+      "entities": 634,
+      "all_12_od": true,
+      "all_signals_working": true
+    },
+    "r4-sig-partially-unrolled-cloverleaf-d4": {
+      "area": 15881.214905568326,
+      "signals": 152,
+      "entities": 529,
+      "all_12_od": true,
+      "all_signals_working": true
+    },
+    "r4-sig-partially-unrolled-cloverleaf-d8": {
+      "area": 15881.214905568326,
+      "signals": 101,
+      "entities": 478,
+      "all_12_od": true,
+      "all_signals_working": true
+    },
+    "r4-sig-paperclip-d2": {
+      "area": 15870.094299316406,
+      "signals": 268,
+      "entities": 610,
+      "all_12_od": true,
+      "all_signals_working": true
+    },
+    "r4-sig-paperclip-d4": {
+      "area": 15870.094299316406,
+      "signals": 158,
+      "entities": 500,
+      "all_12_od": true,
+      "all_signals_working": true
+    },
+    "r4-sig-paperclip-d8": {
+      "area": 15870.094299316406,
+      "signals": 92,
+      "entities": 434,
+      "all_12_od": true,
+      "all_signals_working": true
+    },
+    "r4-sig-crossover-displaced-left-turn-d2": {
+      "area": 15892.335511820243,
+      "signals": 252,
+      "entities": 614,
+      "all_12_od": true,
+      "all_signals_working": true
+    },
+    "r4-sig-crossover-displaced-left-turn-d4": {
+      "area": 15892.335511820243,
+      "signals": 148,
+      "entities": 510,
+      "all_12_od": true,
+      "all_signals_working": true
+    },
+    "r4-sig-crossover-displaced-left-turn-d8": {
+      "area": 15892.335511820243,
+      "signals": 78,
+      "entities": 440,
+      "all_12_od": true,
+      "all_signals_working": true
+    },
+    "r4-sig-cube-d2": {
+      "area": 12094.844299316406,
+      "signals": 214,
+      "entities": 492,
+      "all_12_od": true,
+      "all_signals_working": true
+    },
+    "r4-sig-cube-d4": {
+      "area": 12094.844299316406,
+      "signals": 112,
+      "entities": 390,
+      "all_12_od": true,
+      "all_signals_working": true
+    },
+    "r4-sig-cube-d8": {
+      "area": 12094.844299316406,
+      "signals": 63,
+      "entities": 341,
+      "all_12_od": true,
+      "all_signals_working": true
+    },
+    "r4-sig-three-chunk-square-d2": {
+      "area": 12538.750549316406,
+      "signals": 232,
+      "entities": 550,
+      "all_12_od": true,
+      "all_signals_working": true
+    },
+    "r4-sig-three-chunk-square-d4": {
+      "area": 12538.750549316406,
+      "signals": 160,
+      "entities": 478,
+      "all_12_od": true,
+      "all_signals_working": true
+    },
+    "r4-sig-three-chunk-square-d8": {
+      "area": 12538.750549316406,
+      "signals": 100,
+      "entities": 418,
+      "all_12_od": true,
+      "all_signals_working": true
+    }
+  },
+  "W_blockage": [
+    {
+      "id": "r3-sig-turbine2-dense2",
+      "seed": 17,
+      "damage_events": 0,
+      "evidence_directory": "round4/blockage/experiments/bank-r3-sig-turbine2-dense2-S1-9f037e6755b7ff30",
+      "block_enabled": false,
+      "phases": {
+        "before": {
+          "from_tick": 1800,
+          "to_tick_exclusive": 3600,
+          "seconds": 30.0,
+          "completed": 58,
+          "completed_open_destinations": 43,
+          "by_destination": {
+            "N": 12,
+            "E": 14,
+            "S": 17,
+            "W": 15
+          },
+          "entered_open_destinations": 42,
+          "external_head_exposure_origin_seconds": 0
+        },
+        "closure": {
+          "from_tick": 3600,
+          "to_tick_exclusive": 7200,
+          "seconds": 60.0,
+          "completed": 107,
+          "completed_open_destinations": 79,
+          "by_destination": {
+            "N": 25,
+            "E": 27,
+            "S": 27,
+            "W": 28
+          },
+          "entered_open_destinations": 82,
+          "external_head_exposure_origin_seconds": 2
+        },
+        "first_recovery_minute": {
+          "from_tick": 7200,
+          "to_tick_exclusive": 10800,
+          "seconds": 60.0,
+          "completed": 95,
+          "completed_open_destinations": 78,
+          "by_destination": {
+            "N": 24,
+            "E": 26,
+            "S": 28,
+            "W": 17
+          },
+          "entered_open_destinations": 68,
+          "external_head_exposure_origin_seconds": 1
+        }
+      },
+      "total_requested": 320,
+      "total_completed": 320,
+      "active_world": 0,
+      "complete_drain_observed": true,
+      "retired": 320
+    },
+    {
+      "id": "r3-sig-turbine2-dense2",
+      "seed": 17,
+      "damage_events": 0,
+      "evidence_directory": "round4/blockage/experiments/bank-r3-sig-turbine2-dense2-S1-3b1631b3d050044b",
+      "block_enabled": true,
+      "phases": {
+        "before": {
+          "from_tick": 1800,
+          "to_tick_exclusive": 3600,
+          "seconds": 30.0,
+          "completed": 58,
+          "completed_open_destinations": 43,
+          "by_destination": {
+            "N": 12,
+            "E": 14,
+            "S": 17,
+            "W": 15
+          },
+          "entered_open_destinations": 42,
+          "external_head_exposure_origin_seconds": 0
+        },
+        "closure": {
+          "from_tick": 3600,
+          "to_tick_exclusive": 7200,
+          "seconds": 60.0,
+          "completed": 52,
+          "completed_open_destinations": 51,
+          "by_destination": {
+            "N": 10,
+            "E": 22,
+            "S": 19,
+            "W": 1
+          },
+          "entered_open_destinations": 45,
+          "external_head_exposure_origin_seconds": 89
+        },
+        "first_recovery_minute": {
+          "from_tick": 7200,
+          "to_tick_exclusive": 10800,
+          "seconds": 60.0,
+          "completed": 83,
+          "completed_open_destinations": 57,
+          "by_destination": {
+            "N": 18,
+            "E": 16,
+            "S": 23,
+            "W": 26
+          },
+          "entered_open_destinations": 63,
+          "external_head_exposure_origin_seconds": 15
+        }
+      },
+      "total_requested": 320,
+      "total_completed": 320,
+      "active_world": 0,
+      "complete_drain_observed": true,
+      "retired": 320
+    },
+    {
+      "id": "r4-dir-trident32-32",
+      "seed": 17,
+      "damage_events": 0,
+      "evidence_directory": "round4/blockage/experiments/bank-r4-dir-trident32-32-S1-93a9982866d5f553",
+      "block_enabled": false,
+      "phases": {
+        "before": {
+          "from_tick": 1800,
+          "to_tick_exclusive": 3600,
+          "seconds": 30.0,
+          "completed": 55,
+          "completed_open_destinations": 40,
+          "by_destination": {
+            "N": 11,
+            "E": 14,
+            "S": 15,
+            "W": 15
+          },
+          "entered_open_destinations": 54,
+          "external_head_exposure_origin_seconds": 0
+        },
+        "closure": {
+          "from_tick": 3600,
+          "to_tick_exclusive": 7200,
+          "seconds": 60.0,
+          "completed": 124,
+          "completed_open_destinations": 93,
+          "by_destination": {
+            "N": 29,
+            "E": 31,
+            "S": 33,
+            "W": 31
+          },
+          "entered_open_destinations": 108,
+          "external_head_exposure_origin_seconds": 0
+        },
+        "first_recovery_minute": {
+          "from_tick": 7200,
+          "to_tick_exclusive": 10800,
+          "seconds": 60.0,
+          "completed": 113,
+          "completed_open_destinations": 83,
+          "by_destination": {
+            "N": 26,
+            "E": 24,
+            "S": 33,
+            "W": 30
+          },
+          "entered_open_destinations": 33,
+          "external_head_exposure_origin_seconds": 0
+        }
+      },
+      "total_requested": 320,
+      "total_completed": 320,
+      "active_world": 0,
+      "complete_drain_observed": true,
+      "retired": 320
+    },
+    {
+      "id": "r4-dir-trident32-32",
+      "seed": 17,
+      "damage_events": 0,
+      "evidence_directory": "round4/blockage/experiments/bank-r4-dir-trident32-32-S1-178e476aa4e58954",
+      "block_enabled": true,
+      "phases": {
+        "before": {
+          "from_tick": 1800,
+          "to_tick_exclusive": 3600,
+          "seconds": 30.0,
+          "completed": 55,
+          "completed_open_destinations": 40,
+          "by_destination": {
+            "N": 11,
+            "E": 14,
+            "S": 15,
+            "W": 15
+          },
+          "entered_open_destinations": 54,
+          "external_head_exposure_origin_seconds": 0
+        },
+        "closure": {
+          "from_tick": 3600,
+          "to_tick_exclusive": 7200,
+          "seconds": 60.0,
+          "completed": 94,
+          "completed_open_destinations": 93,
+          "by_destination": {
+            "N": 29,
+            "E": 31,
+            "S": 33,
+            "W": 1
+          },
+          "entered_open_destinations": 108,
+          "external_head_exposure_origin_seconds": 0
+        },
+        "first_recovery_minute": {
+          "from_tick": 7200,
+          "to_tick_exclusive": 10800,
+          "seconds": 60.0,
+          "completed": 109,
+          "completed_open_destinations": 83,
+          "by_destination": {
+            "N": 26,
+            "E": 24,
+            "S": 33,
+            "W": 26
+          },
+          "entered_open_destinations": 33,
+          "external_head_exposure_origin_seconds": 0
+        }
+      },
+      "total_requested": 320,
+      "total_completed": 320,
+      "active_world": 0,
+      "complete_drain_observed": true,
+      "retired": 320
+    }
+  ]
+}

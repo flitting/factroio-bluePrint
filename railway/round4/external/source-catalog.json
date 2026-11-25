@@ -1,0 +1,169 @@
+{
+  "notice": "External sources used for private comparative research with attribution. No explicit redistribution license was found; public research publication should include provenance, hashes, results and retrieval scripts, not embed the source blueprints.",
+  "sources": [
+    {
+      "id": "r4-ext-celtic-knot",
+      "author": "Bocian / Opinionated-Blueprints contributors",
+      "upstream_label": "Celtic Knot",
+      "explicit_license": null,
+      "retrieval": "raw_json",
+      "source_url": "https://raw.githubusercontent.com/Opinionated-Blueprints/10-Books-Full-of-Rails/d14db4ae7b7f57e3045de9b0b91d70b76ba84380/Rails/%5Bfont%3Dcount-font%5D%5Bcolor%3D185%2C95%2C0%5Dinterchanges%5B-color%5D%5B-font%5D/celtic-knot.json",
+      "local_source": "round4/external/sources/bocian/celtic-knot.json",
+      "sha256": "fa34b313393111abc2e42f902358329b7ed34dd9f36fd9372ff0377de86683c6",
+      "repository_revision": "d14db4ae7b7f57e3045de9b0b91d70b76ba84380",
+      "git_revision_type": "tree"
+    },
+    {
+      "id": "r4-ext-buffered-celtic-knot",
+      "author": "Bocian / Opinionated-Blueprints contributors",
+      "upstream_label": "Buffered Celtic Knot",
+      "explicit_license": null,
+      "retrieval": "raw_json",
+      "source_url": "https://raw.githubusercontent.com/Opinionated-Blueprints/10-Books-Full-of-Rails/d14db4ae7b7f57e3045de9b0b91d70b76ba84380/Rails/%5Bfont%3Dcount-font%5D%5Bcolor%3D185%2C95%2C0%5Dinterchanges%5B-color%5D%5B-font%5D/buffered-celtic-knot.json",
+      "local_source": "round4/external/sources/bocian/buffered-celtic-knot.json",
+      "sha256": "4e018f432b6121d43baee3309e3603bd29e602c3e9883bbf1bb026ade40c2d90",
+      "repository_revision": "d14db4ae7b7f57e3045de9b0b91d70b76ba84380",
+      "git_revision_type": "tree"
+    },
+    {
+      "id": "r4-ext-twister",
+      "author": "Bocian / Opinionated-Blueprints contributors",
+      "upstream_label": "Twister",
+      "explicit_license": null,
+      "retrieval": "raw_json",
+      "source_url": "https://raw.githubusercontent.com/Opinionated-Blueprints/10-Books-Full-of-Rails/d14db4ae7b7f57e3045de9b0b91d70b76ba84380/Rails/%5Bfont%3Dcount-font%5D%5Bcolor%3D185%2C95%2C0%5Dinterchanges%5B-color%5D%5B-font%5D/twister.json",
+      "local_source": "round4/external/sources/bocian/twister.json",
+      "sha256": "91b8010df0766547ab1f9b576ec50b415812a00ac0549e24cd843d8be191648a",
+      "repository_revision": "d14db4ae7b7f57e3045de9b0b91d70b76ba84380",
+      "git_revision_type": "tree"
+    },
+    {
+      "id": "r4-ext-windmill",
+      "author": "Bocian / Opinionated-Blueprints contributors",
+      "upstream_label": "Windmill",
+      "explicit_license": null,
+      "retrieval": "raw_json",
+      "source_url": "https://raw.githubusercontent.com/Opinionated-Blueprints/10-Books-Full-of-Rails/d14db4ae7b7f57e3045de9b0b91d70b76ba84380/Rails/%5Bfont%3Dcount-font%5D%5Bcolor%3D185%2C95%2C0%5Dinterchanges%5B-color%5D%5B-font%5D/windmill.json",
+      "local_source": "round4/external/sources/bocian/windmill.json",
+      "sha256": "d06e7c2928fde700dd17d825aa4702a3f30b73d464af8fadda6a6e9cb12fca11",
+      "repository_revision": "d14db4ae7b7f57e3045de9b0b91d70b76ba84380",
+      "git_revision_type": "tree"
+    },
+    {
+      "id": "r4-ext-pinwheel",
+      "author": "Bocian / Opinionated-Blueprints contributors",
+      "upstream_label": "Pinwheel",
+      "explicit_license": null,
+      "retrieval": "raw_json",
+      "source_url": "https://raw.githubusercontent.com/Opinionated-Blueprints/10-Books-Full-of-Rails/d14db4ae7b7f57e3045de9b0b91d70b76ba84380/Rails/%5Bfont%3Dcount-font%5D%5Bcolor%3D185%2C95%2C0%5Dinterchanges%5B-color%5D%5B-font%5D/pinwheel.json",
+      "local_source": "round4/external/sources/bocian/pinwheel.json",
+      "sha256": "2e3416ae232da2debdce0b23891702cb60ee11123fa3aea898b42209d57d875a",
+      "repository_revision": "d14db4ae7b7f57e3045de9b0b91d70b76ba84380",
+      "git_revision_type": "tree"
+    },
+    {
+      "id": "r4-ext-partially-unrolled-cloverleaf",
+      "author": "Bocian / Opinionated-Blueprints contributors",
+      "upstream_label": "Partially Unrolled Cloverleaf",
+      "explicit_license": null,
+      "retrieval": "raw_json",
+      "source_url": "https://raw.githubusercontent.com/Opinionated-Blueprints/10-Books-Full-of-Rails/d14db4ae7b7f57e3045de9b0b91d70b76ba84380/Rails/%5Bfont%3Dcount-font%5D%5Bcolor%3D185%2C95%2C0%5Dinterchanges%5B-color%5D%5B-font%5D/partially-unrolled-cloverleaf.json",
+      "local_source": "round4/external/sources/bocian/partially-unrolled-cloverleaf.json",
+      "sha256": "81824e0e5ed01a4bdaaf9fc1f1dc575987480929474b04b503ce0460390887eb",
+      "repository_revision": "d14db4ae7b7f57e3045de9b0b91d70b76ba84380",
+      "git_revision_type": "tree"
+    },
+    {
+      "id": "r4-ext-paperclip",
+      "author": "Bocian / Opinionated-Blueprints contributors",
+      "upstream_label": "Paperclip",
+      "explicit_license": null,
+      "retrieval": "raw_json",
+      "source_url": "https://raw.githubusercontent.com/Opinionated-Blueprints/10-Books-Full-of-Rails/d14db4ae7b7f57e3045de9b0b91d70b76ba84380/Rails/%5Bfont%3Dcount-font%5D%5Bcolor%3D185%2C95%2C0%5Dinterchanges%5B-color%5D%5B-font%5D/paperclip.json",
+      "local_source": "round4/external/sources/bocian/paperclip.json",
+      "sha256": "b8638c2beb0b832eac25d7d378a5637cbc39297d8ef13b0d4150dd33e468421a",
+      "repository_revision": "d14db4ae7b7f57e3045de9b0b91d70b76ba84380",
+      "git_revision_type": "tree"
+    },
+    {
+      "id": "r4-ext-crossover-displaced-left-turn",
+      "author": "Bocian / Opinionated-Blueprints contributors",
+      "upstream_label": "Crossover Displaced Left Turn",
+      "explicit_license": null,
+      "retrieval": "raw_json",
+      "source_url": "https://raw.githubusercontent.com/Opinionated-Blueprints/10-Books-Full-of-Rails/d14db4ae7b7f57e3045de9b0b91d70b76ba84380/Rails/%5Bfont%3Dcount-font%5D%5Bcolor%3D185%2C95%2C0%5Dinterchanges%5B-color%5D%5B-font%5D/crossover-displaced-left-turn.json",
+      "local_source": "round4/external/sources/bocian/crossover-displaced-left-turn.json",
+      "sha256": "9d841a05f5b3f05f20cec6c0fc38800fd62650428bc602799f4e7868f817a79b",
+      "repository_revision": "d14db4ae7b7f57e3045de9b0b91d70b76ba84380",
+      "git_revision_type": "tree"
+    },
+    {
+      "id": "r4-ext-cube",
+      "author": "DaveMcW",
+      "upstream_label": "Cube RHD",
+      "explicit_license": null,
+      "retrieval": "forum_blueprint_string",
+      "source_url": "https://forums.factorio.com/viewtopic.php?p=621337",
+      "local_source": "round4/external/sources/cube-rhd.txt",
+      "sha256": "c2d8462f6cbef8059ae9ec2d01ff45d39c04a31eb925029349455de64743c073"
+    },
+    {
+      "id": "r4-ext-three-chunk-square",
+      "author": "mmmPI",
+      "upstream_label": "3 chunk Square",
+      "explicit_license": null,
+      "retrieval": "forum_blueprint_string",
+      "source_url": "https://forums.factorio.com/viewtopic.php?p=626041",
+      "local_source": "round4/external/sources/three-chunk-square.txt",
+      "sha256": "a1c131f3cfcd31a512866c2c7f1c8b963df6cc6135c0e599943f6ab039b3f785"
+    },
+    {
+      "id": "r4-ext-ground-cross",
+      "author": "Bocian / Opinionated-Blueprints contributors",
+      "upstream_label": "[virtual-signal=shape-cross] 4-way Intersection",
+      "explicit_license": null,
+      "retrieval": "raw_json",
+      "source_url": "https://raw.githubusercontent.com/Opinionated-Blueprints/10-Books-Full-of-Rails/d14db4ae7b7f57e3045de9b0b91d70b76ba84380/Rails/%5Bfont%3Dcount-font%5D%5Bcolor%3D185%2C95%2C0%5Dground%5B-color%5D%5B-font%5D/%5Bvirtual-signal%3Dshape-cross%5D-4-way-intersection.json",
+      "local_source": "round4/external/sources/bocian/ground-cross.json",
+      "sha256": "021b3d4ac2d863701c1ee3defb9f4ab14e1f499062e52675a9c4927338762f45",
+      "repository_revision": "d14db4ae7b7f57e3045de9b0b91d70b76ba84380",
+      "git_revision_type": "tree"
+    },
+    {
+      "id": "r4-ext-hyper-cross",
+      "author": "Bocian / Opinionated-Blueprints contributors",
+      "upstream_label": "[virtual-signal=shape-cross] 4-way",
+      "explicit_license": null,
+      "retrieval": "raw_json",
+      "source_url": "https://raw.githubusercontent.com/Opinionated-Blueprints/10-Books-Full-of-Rails/d14db4ae7b7f57e3045de9b0b91d70b76ba84380/Rails/%5Bfont%3Dcount-font%5D%5Bcolor%3D185%2C95%2C0%5Dhyper-modular%5B-color%5D%5B-font%5D/%5Bvirtual-signal%3Dshape-cross%5D-4-way.json",
+      "local_source": "round4/external/sources/bocian/hyper-cross.json",
+      "sha256": "d265e58904565c367736a26bd076167e42f5543d3dab7bfbbbd287014db3eb7b",
+      "repository_revision": "d14db4ae7b7f57e3045de9b0b91d70b76ba84380",
+      "git_revision_type": "tree"
+    },
+    {
+      "id": "r4-ext-level-switch-one",
+      "author": "Bocian / Opinionated-Blueprints contributors",
+      "upstream_label": "4-way (1)",
+      "explicit_license": null,
+      "retrieval": "raw_json",
+      "source_url": "https://raw.githubusercontent.com/Opinionated-Blueprints/10-Books-Full-of-Rails/d14db4ae7b7f57e3045de9b0b91d70b76ba84380/Rails/%5Bfont%3Dcount-font%5D%5Bcolor%3D185%2C95%2C0%5Dlevel-switch%5B-color%5D%5B-font%5D/4-way-%281%29.json",
+      "local_source": "round4/external/sources/bocian/level-switch-4-way-(1).json",
+      "sha256": "77b651a5542cb0956e10615e42415226317a51d1426649ed00122571b9ca69d3",
+      "repository_revision": "d14db4ae7b7f57e3045de9b0b91d70b76ba84380",
+      "git_revision_type": "tree"
+    },
+    {
+      "id": "r4-ext-level-switch-two",
+      "author": "Bocian / Opinionated-Blueprints contributors",
+      "upstream_label": "4-way (2)",
+      "explicit_license": null,
+      "retrieval": "raw_json",
+      "source_url": "https://raw.githubusercontent.com/Opinionated-Blueprints/10-Books-Full-of-Rails/d14db4ae7b7f57e3045de9b0b91d70b76ba84380/Rails/%5Bfont%3Dcount-font%5D%5Bcolor%3D185%2C95%2C0%5Dlevel-switch%5B-color%5D%5B-font%5D/4-way-%282%29.json",
+      "local_source": "round4/external/sources/bocian/level-switch-4-way-(2).json",
+      "sha256": "4e76b3a4f966b8215d107442e9f81fe516626304208ddd78255b93e180cdd7c9",
+      "repository_revision": "d14db4ae7b7f57e3045de9b0b91d70b76ba84380",
+      "git_revision_type": "tree"
+    }
+  ]
+}

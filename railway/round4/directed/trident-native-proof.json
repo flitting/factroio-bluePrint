@@ -1,0 +1,379 @@
+{
+  "evidence_files": [
+    "experiments/r4-native-graph-27ec2ebb2e963497/script-output/result.json",
+    "experiments/r4-native-graph-8c82c2842762f720/script-output/result.json"
+  ],
+  "cases": [
+    {
+      "id": "r3-sig-turbine2-dense2",
+      "first_forks": [
+        {
+          "side": "N",
+          "common_path_length_in_rails": 2,
+          "native_trunk_rail_id": 826,
+          "native_trunk_position": {
+            "y": -63,
+            "x": 1
+          },
+          "native_trunk_name": "straight-rail",
+          "rail_end": 1,
+          "native_connection_count": 2,
+          "native_next_rails": [
+            829,
+            831
+          ],
+          "distinct_od_successors": 2,
+          "od_successor_ids": [
+            829,
+            831
+          ]
+        },
+        {
+          "side": "E",
+          "common_path_length_in_rails": 1,
+          "native_trunk_rail_id": 1043,
+          "native_trunk_position": {
+            "y": -1,
+            "x": 65
+          },
+          "native_trunk_name": "straight-rail",
+          "rail_end": 1,
+          "native_connection_count": 2,
+          "native_next_rails": [
+            1042,
+            1041
+          ],
+          "distinct_od_successors": 2,
+          "od_successor_ids": [
+            1041,
+            1042
+          ]
+        },
+        {
+          "side": "S",
+          "common_path_length_in_rails": 2,
+          "native_trunk_rail_id": 1258,
+          "native_trunk_position": {
+            "y": 63,
+            "x": 3
+          },
+          "native_trunk_name": "straight-rail",
+          "rail_end": 0,
+          "native_connection_count": 2,
+          "native_next_rails": [
+            1255,
+            1254
+          ],
+          "distinct_od_successors": 2,
+          "od_successor_ids": [
+            1254,
+            1255
+          ]
+        },
+        {
+          "side": "W",
+          "common_path_length_in_rails": 3,
+          "native_trunk_rail_id": 1046,
+          "native_trunk_position": {
+            "y": 1,
+            "x": -61
+          },
+          "native_trunk_name": "straight-rail",
+          "rail_end": 0,
+          "native_connection_count": 2,
+          "native_next_rails": [
+            1047,
+            1048
+          ],
+          "distinct_od_successors": 2,
+          "od_successor_ids": [
+            1047,
+            1048
+          ]
+        }
+      ],
+      "last_merges": [
+        {
+          "side": "N",
+          "common_path_length_in_rails": 8,
+          "native_trunk_rail_id": 847,
+          "native_trunk_position": {
+            "y": -51,
+            "x": 3
+          },
+          "native_trunk_name": "straight-rail",
+          "rail_end": 1,
+          "native_connection_count": 2,
+          "native_next_rails": [
+            861,
+            855
+          ],
+          "distinct_od_successors": 2,
+          "od_successor_ids": [
+            855,
+            861
+          ]
+        },
+        {
+          "side": "E",
+          "common_path_length_in_rails": 7,
+          "native_trunk_rail_id": 1081,
+          "native_trunk_position": {
+            "y": 1,
+            "x": 53
+          },
+          "native_trunk_name": "straight-rail",
+          "rail_end": 1,
+          "native_connection_count": 2,
+          "native_next_rails": [
+            1079,
+            1080
+          ],
+          "distinct_od_successors": 2,
+          "od_successor_ids": [
+            1079,
+            1080
+          ]
+        },
+        {
+          "side": "S",
+          "common_path_length_in_rails": 8,
+          "native_trunk_rail_id": 1236,
+          "native_trunk_position": {
+            "y": 51,
+            "x": 1
+          },
+          "native_trunk_name": "straight-rail",
+          "rail_end": 0,
+          "native_connection_count": 2,
+          "native_next_rails": [
+            1227,
+            1228
+          ],
+          "distinct_od_successors": 2,
+          "od_successor_ids": [
+            1227,
+            1228
+          ]
+        },
+        {
+          "side": "W",
+          "common_path_length_in_rails": 9,
+          "native_trunk_rail_id": 1007,
+          "native_trunk_position": {
+            "y": -1,
+            "x": -49
+          },
+          "native_trunk_name": "straight-rail",
+          "rail_end": 0,
+          "native_connection_count": 2,
+          "native_next_rails": [
+            1009,
+            1008
+          ],
+          "distinct_od_successors": 2,
+          "od_successor_ids": [
+            1008,
+            1009
+          ]
+        }
+      ],
+      "all_first_forks_ternary": false,
+      "all_last_merges_ternary": false
+    },
+    {
+      "id": "r4-dir-trident32-32",
+      "first_forks": [
+        {
+          "side": "N",
+          "common_path_length_in_rails": 112,
+          "native_trunk_rail_id": 9055,
+          "native_trunk_position": {
+            "y": -243,
+            "x": -335
+          },
+          "native_trunk_name": "straight-rail",
+          "rail_end": 1,
+          "native_connection_count": 3,
+          "native_next_rails": [
+            9057,
+            9056,
+            9058
+          ],
+          "distinct_od_successors": 3,
+          "od_successor_ids": [
+            9056,
+            9057,
+            9058
+          ]
+        },
+        {
+          "side": "E",
+          "common_path_length_in_rails": 313,
+          "native_trunk_rail_id": 10625,
+          "native_trunk_position": {
+            "y": -243,
+            "x": -143
+          },
+          "native_trunk_name": "straight-rail",
+          "rail_end": 1,
+          "native_connection_count": 3,
+          "native_next_rails": [
+            10627,
+            10626,
+            10628
+          ],
+          "distinct_od_successors": 3,
+          "od_successor_ids": [
+            10626,
+            10627,
+            10628
+          ]
+        },
+        {
+          "side": "S",
+          "common_path_length_in_rails": 112,
+          "native_trunk_rail_id": 15032,
+          "native_trunk_position": {
+            "y": 243,
+            "x": 337
+          },
+          "native_trunk_name": "straight-rail",
+          "rail_end": 0,
+          "native_connection_count": 3,
+          "native_next_rails": [
+            15030,
+            15031,
+            15029
+          ],
+          "distinct_od_successors": 3,
+          "od_successor_ids": [
+            15029,
+            15030,
+            15031
+          ]
+        },
+        {
+          "side": "W",
+          "common_path_length_in_rails": 346,
+          "native_trunk_rail_id": 13477,
+          "native_trunk_position": {
+            "y": 243,
+            "x": 145
+          },
+          "native_trunk_name": "straight-rail",
+          "rail_end": 0,
+          "native_connection_count": 3,
+          "native_next_rails": [
+            13475,
+            13476,
+            13474
+          ],
+          "distinct_od_successors": 3,
+          "od_successor_ids": [
+            13474,
+            13475,
+            13476
+          ]
+        }
+      ],
+      "last_merges": [
+        {
+          "side": "N",
+          "common_path_length_in_rails": 112,
+          "native_trunk_rail_id": 9725,
+          "native_trunk_position": {
+            "y": -243,
+            "x": -239
+          },
+          "native_trunk_name": "straight-rail",
+          "rail_end": 1,
+          "native_connection_count": 3,
+          "native_next_rails": [
+            9727,
+            9726,
+            9728
+          ],
+          "distinct_od_successors": 3,
+          "od_successor_ids": [
+            9726,
+            9727,
+            9728
+          ]
+        },
+        {
+          "side": "E",
+          "common_path_length_in_rails": 265,
+          "native_trunk_rail_id": 11517,
+          "native_trunk_position": {
+            "y": 243,
+            "x": -47
+          },
+          "native_trunk_name": "straight-rail",
+          "rail_end": 0,
+          "native_connection_count": 3,
+          "native_next_rails": [
+            11515,
+            11516,
+            11514
+          ],
+          "distinct_od_successors": 3,
+          "od_successor_ids": [
+            11514,
+            11515,
+            11516
+          ]
+        },
+        {
+          "side": "S",
+          "common_path_length_in_rails": 112,
+          "native_trunk_rail_id": 14317,
+          "native_trunk_position": {
+            "y": 243,
+            "x": 241
+          },
+          "native_trunk_name": "straight-rail",
+          "rail_end": 0,
+          "native_connection_count": 3,
+          "native_next_rails": [
+            14315,
+            14316,
+            14314
+          ],
+          "distinct_od_successors": 3,
+          "od_successor_ids": [
+            14314,
+            14315,
+            14316
+          ]
+        },
+        {
+          "side": "W",
+          "common_path_length_in_rails": 298,
+          "native_trunk_rail_id": 12661,
+          "native_trunk_position": {
+            "y": -243,
+            "x": 49
+          },
+          "native_trunk_name": "straight-rail",
+          "rail_end": 1,
+          "native_connection_count": 3,
+          "native_next_rails": [
+            12663,
+            12662,
+            12664
+          ],
+          "distinct_od_successors": 3,
+          "od_successor_ids": [
+            12662,
+            12663,
+            12664
+          ]
+        }
+      ],
+      "all_first_forks_ternary": true,
+      "all_last_merges_ternary": true
+    }
+  ],
+  "claim": "Native rail endpoints at all 4 first input forks and all 4 final output merges have 3 neighbors used by the 3 OD paths in the new trident; reference T has 2. This demonstrates a real branch-graph change, not only geometry or signal density."
+}

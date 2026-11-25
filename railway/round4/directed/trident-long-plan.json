@@ -1,0 +1,60 @@
+{
+  "created_utc": "2026-11-25T03:54:38.630666+00:00",
+  "id": "r4-dir-trident32-32",
+  "stage": "Three pre-existing selection seeds, not independent confirmatory holdout",
+  "seeds": [
+    17,
+    31,
+    47
+  ],
+  "bank": 150,
+  "warmup": 3600,
+  "duration": 10800,
+  "scenario": "S1",
+  "blueprint_frozen_before_long_runs": true,
+  "files": {
+    "blueprint": {
+      "path": "blueprints/r4-dir-trident32-32.txt",
+      "sha256": "a4de7224f5b42070247951511da129a23b8beada6161e048e0dd68b31dcd6f19"
+    },
+    "blueprint_json": {
+      "path": "blueprints/r4-dir-trident32-32.json",
+      "sha256": "9e9ac975bcc2ff53f6874a1935a4e9812eb334b26c65066b9a84718200fbce73"
+    },
+    "generator": {
+      "path": "round4/directed/generate_trident.py",
+      "sha256": "1b32bbcfcee1f168f42b5b8458f3b0db0307935f064b6fdf39030bf692138650"
+    },
+    "builder": {
+      "path": "round4/directed/build.lua",
+      "sha256": "bdc034bbf6451fe8b0bb7a4bafd666c719ca659d52cb8c1881aea037aac1ab7f"
+    },
+    "traffic_observer": {
+      "path": "round4/protocol/bank.lua",
+      "sha256": "9d70df162462d393ad80d3793ce1a94dc33cbec8add00ba1d11ff6491b864ea3"
+    },
+    "traffic_runner": {
+      "path": "round4/protocol/run_bank.py",
+      "sha256": "1157c1ee40bcc720179ebf5058a0ee60b89cee85f8268ec7e598bbb739acf8da"
+    }
+  },
+  "engine": {
+    "version": "Version: 2.1.25 (build 88022, linux64, headless)\nVersion: 64\nMap input version: 1.0.0-0\nMap output version: 2.1.25-10\n",
+    "binary_sha256": "63787c3e163c6cb78ba3886c2ed27c4605a357a02d18822c547110e16eff2544",
+    "mod_infos": {
+      "base": "4a667bb071f8434a26b2ac218d315f66990ad17a34972f847614f65f60dd06b3",
+      "core": "aa1f8a1c6282b1deeb1a0982ac9eeff227a19f9b40d096bd05f797b711fe08e0",
+      "elevated-rails": "c98d52d4adf0b276b51440e13e358ceb2c776a508c4deff8bde54ff93ea4c472",
+      "quality": "4ee7e94648588a3a6efd209356164fe490b1dc08d7886437ee1122cfb039fd5c",
+      "recycler": "a4c3d48ad28deed51e7a842db9578d6e789bd904e96f2ed1e9a5ceaafd9677fd",
+      "space-age": "321ab6724ed7a805ec3b51b347117578494e045f4299958964da326307dc2369"
+    }
+  },
+  "prior_seen_result": "Only seed17 bank80 short:116/min, 12OD, damage0. Native graph gates passed.",
+  "acceptance": "12 OD completed in window, damage0, each no_upstream_ticks=0; if any bank exhausts, do not call the resulting rate a comparable saturated discharge; notify root for common bank240 reruns.",
+  "next_confirmatory_seeds_reserved_by_root": [
+    211,
+    307,
+    401
+  ]
+}

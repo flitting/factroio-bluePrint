@@ -1,0 +1,13 @@
+{
+  "base": "round2-offered-warmed-profile-v2",
+  "new": "round4-expanded-offered-warmed-profile-v1",
+  "traffic_changes": [],
+  "terrain_changes": [
+    "Central radius from blueprint extent",
+    "Fixture chunks generated around actual port positions",
+    "Larger surface boundary"
+  ],
+  "base_lua_sha256": "459b0c7d139901009e9b8aca11d79e08e29bcaf082c36165e02399bdbc31c79e",
+  "new_lua_sha256": "b37f50f5082e7c9e4ca88bb8de3f0767021add57115854ed46ec486525733f84",
+  "constraint": "All CPU candidates and controls must run in same batch and quiescent engine state; do not compare absolute microseconds to prior round."
+}

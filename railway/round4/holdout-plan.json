@@ -1,0 +1,35 @@
+{
+  "written_utc": "2026-11-25T04:07:06.376655+00:00",
+  "stage": "fresh-seed-longer-horizon-confirmation",
+  "ids": [
+    "r3-sig-turbine2-dense2",
+    "r4-dir-trident32-32"
+  ],
+  "seeds": [
+    211,
+    307,
+    401
+  ],
+  "bank": 240,
+  "warmup": 7200,
+  "duration": 14400,
+  "scenario": "S1",
+  "spacing": 8,
+  "loaded": false,
+  "timeout": 1200,
+  "reason": "Large new geometry has longer travel time and more internal train storage. Use2min warmup and4min measurement on fresh predeclared seeds, with larger preloaded bank, paired old reference. Do not pool with bank150/1+3minute selection group.",
+  "primary_endpoint": "paired difference in completed full1+4 trains per game minute, provided all12OD receive service, no rolling-stock damage and every source retains never-entered bank throughout measurement.",
+  "secondary_diagnostics": [
+    "per-origin and per-destination completions",
+    "per-OD maximum observed service gap",
+    "within-window60second bins",
+    "internal unfinished trains at warmup and end",
+    "mean andp95 crossing latency"
+  ],
+  "blueprint_sha256": {
+    "r3-sig-turbine2-dense2": "5df0e4f446392fc49e81fe26d3f6767aa4802159663924bc0ede2a4852d02b89",
+    "r4-dir-trident32-32": "a4de7224f5b42070247951511da129a23b8beada6161e048e0dd68b31dcd6f19"
+  },
+  "protocol_lua_sha256": "9d70df162462d393ad80d3793ce1a94dc33cbec8add00ba1d11ff6491b864ea3",
+  "no_pooled_cross_protocol_capacity_claim": true
+}

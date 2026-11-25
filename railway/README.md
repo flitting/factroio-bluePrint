@@ -2,6 +2,17 @@
 
 Factorio 2.1.25 Headless 原生验证；每方向一入一出，1 个火车头加 4 节货车。
 
+## 第四轮：不同构型搜索与三分叉新结构
+
+- [第四轮完整报告](round4/REPORT.zh-CN.md)
+- [三分叉研究候选与紧凑对照蓝图册](round4/junctions-round4.txt)
+- [三分叉单图](round4/trident-research.txt)
+- [配对结果、原生CPU与恢复证据](round4/results-summary.json)
+- [全部完成流量案例及协议分组](round4/completed-flow-catalog.json)
+- [原创实验蓝图说明](blueprints/ROUND4-EXPERIMENTS.md)
+
+136次完成流量案例、95种新实体配置、54种不同轨道几何（不是54个抽象拓扑家族）。独立较长三种子确认：涡轮对照102.42→三分叉117.50列/游戏分钟（+14.73%）；代价为46.44倍占地、约2.48倍原生寻路计时均值、更多延迟和部分方向服务下降。单W及全出口关闭恢复有完整原生证据；有限试验不证明稳定容量、全局最优或任意流量无死锁。生成/运行源码与原创实验蓝图已加入，完整逐车数据见本会话的railway-optimization-round4.zip。
+
 ## 第三轮：拓扑、信号组合与队首阻塞
 
 - [第三轮完整报告](round3/REPORT.zh-CN.md)

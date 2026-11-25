@@ -1,0 +1,28 @@
+{
+  "stage": "geometry-and-signal-selection-confirmation",
+  "ids": [
+    "r3-sig-turbine2-dense2",
+    "r2-sig-stacked-cloverleaf-all4-clean",
+    "r4-sig-crossover-displaced-left-turn-d4",
+    "r4-sig-partially-unrolled-cloverleaf-d4",
+    "r4-sig-three-chunk-square-d4"
+  ],
+  "seeds": [
+    17,
+    31,
+    47
+  ],
+  "bank": 150,
+  "warmup": 3600,
+  "duration": 10800,
+  "scenario": "S1",
+  "spacing": 8,
+  "selection": "Two throughput leaders from first8 external geometry density sweep, compact3Chunk, plus old dense/compact controls. Not final holdout. Fresh holdout211/307/401 reserved after freezing contenders.",
+  "blueprint_sha256": {
+    "r3-sig-turbine2-dense2": "5df0e4f446392fc49e81fe26d3f6767aa4802159663924bc0ede2a4852d02b89",
+    "r2-sig-stacked-cloverleaf-all4-clean": "bbcc02668b1919cf01be7f2787ebb35157b98bd16731ebc185b4f2e7cd4f5e74",
+    "r4-sig-crossover-displaced-left-turn-d4": "7ee5237b2dc82e847a96cf910a71680afebdbddfc48cfdc1fee8ac8737d8efd5",
+    "r4-sig-partially-unrolled-cloverleaf-d4": "7628ef5086fdffcfeed1902c4008030e476e5f4161a7f8694589307486a72889",
+    "r4-sig-three-chunk-square-d4": "ce9a3e15dc3123aeab9aa271c7485de9a59cd7489b21d36ddc8a16a20408681e"
+  }
+}

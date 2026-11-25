@@ -1,0 +1,59 @@
+{
+  "cases": [
+    {
+      "requested_phase_ticks": 360,
+      "counter_phase_first_change_tick": 362,
+      "gate_first_clock_transition_tick": 363,
+      "gate_first_condition_evaluation_tick": 1,
+      "initial_tick0_gate_states": [
+        0,
+        0,
+        0
+      ],
+      "counter_phase_durations_after_startup": [
+        360
+      ],
+      "actual_gate_phase_durations_after_startup": [
+        360
+      ],
+      "each_observed_steady_empty_track_state_has_exactly_one_green": true
+    },
+    {
+      "requested_phase_ticks": 900,
+      "counter_phase_first_change_tick": 902,
+      "gate_first_clock_transition_tick": 903,
+      "gate_first_condition_evaluation_tick": 1,
+      "initial_tick0_gate_states": [
+        0,
+        0,
+        0
+      ],
+      "counter_phase_durations_after_startup": [
+        900
+      ],
+      "actual_gate_phase_durations_after_startup": [
+        900
+      ],
+      "each_observed_steady_empty_track_state_has_exactly_one_green": true
+    },
+    {
+      "requested_phase_ticks": 1800,
+      "counter_phase_first_change_tick": 1802,
+      "gate_first_clock_transition_tick": 1803,
+      "gate_first_condition_evaluation_tick": 1,
+      "initial_tick0_gate_states": [
+        0,
+        0,
+        0
+      ],
+      "counter_phase_durations_after_startup": [
+        1800
+      ],
+      "actual_gate_phase_durations_after_startup": [
+        1800
+      ],
+      "each_observed_steady_empty_track_state_has_exactly_one_green": true
+    }
+  ],
+  "note": "At native new-build tick0 circuit behavior has not updated; empty signals initially default open. From tick1 onward the intended one-of-three condition applies. P changes at requested+2 ticks initially, the rail signals one tick later; subsequent actual gate phases have exactly the requested tick durations. Traffic starts 120 tiles upstream and measurement begins after90seconds."
+}

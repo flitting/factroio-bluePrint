@@ -1,0 +1,16 @@
+{
+  "recorded_utc": "2026-11-25T04:51:18.854663+00:00",
+  "all_flow_request_statuses_nonrunning": true,
+  "agent_idle_confirmations": [
+    "r4_directed: sessions67113 and48001 exited; no further engine work",
+    "r4_networks: session35419 exited0; paused all computation",
+    "r4_external: session7558 exited0; no further engine work"
+  ],
+  "root_completed_sessions": [
+    62915,
+    23419,
+    4463,
+    53982
+  ],
+  "comparative_timing": "Serial Dense then Trident,3 repetitions per warmed save. Other task-owned engines stopped. Shared host background load cannot be globally controlled."
+}
