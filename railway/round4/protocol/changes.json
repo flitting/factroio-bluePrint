@@ -1,0 +1,12 @@
+{
+  "protocol": "round4-expanded-terrain-v1",
+  "base": "round3-cached-observer-v1",
+  "changes": [
+    "Expand central terrain to contain every candidate based on full blueprint extent.",
+    "Generate fixture terrain around actual detected port coordinates instead of only compass axes.",
+    "Increase map boundary when required; retain native rail, signal, train, spawn, random, measuring and retirement actions unchanged."
+  ],
+  "base_lua_sha256": "87c1dd8ce5c106c0a6897026d84b1f3a9225d9c20ee939aa3b47b05a88d3cb90",
+  "lua_sha256": "9d70df162462d393ad80d3793ce1a94dc33cbec8add00ba1d11ff6491b864ea3",
+  "equivalence_gate": "Reference candidate seed17 must produce identical records, samples and measured summary to round3 on same bank/warmup/duration before comparing."
+}

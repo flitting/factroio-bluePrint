@@ -1,0 +1,31 @@
+{
+  "book_sha256": "1568f2091ffeed5695407e10835093a9b4fcc6be67c38b13e835bd507c59def4",
+  "entries": [
+    {
+      "id": "r4-dir-trident32-32",
+      "label": "三分叉私有连接网｜大型研究候选",
+      "entities": 8666,
+      "only_label_changed": true,
+      "source_blueprint_sha256": "a4de7224f5b42070247951511da129a23b8beada6161e048e0dd68b31dcd6f19",
+      "entity_sha256": "fdcbba9d5f1a38533ec97a7dc5f685aad4e38b182a3a56acce98ea8da49f435c"
+    },
+    {
+      "id": "r3-sig-turbine2-dense2",
+      "label": "涡轮二型｜364灯紧凑对照",
+      "entities": 816,
+      "only_label_changed": true,
+      "source_blueprint_sha256": "5df0e4f446392fc49e81fe26d3f6767aa4802159663924bc0ede2a4852d02b89",
+      "entity_sha256": "64a7c39187f671701a1e7bf67bfbed535f0100121ac82783116981c85696584a"
+    },
+    {
+      "id": "r2-sig-stacked-cloverleaf-all4-clean",
+      "label": "叠层苜蓿叶｜169灯紧凑对照",
+      "entities": 551,
+      "only_label_changed": true,
+      "source_blueprint_sha256": "bbcc02668b1919cf01be7f2787ebb35157b98bd16731ebc185b4f2e7cd4f5e74",
+      "entity_sha256": "c4803a429f13040a935a92e15187bb4e90edb7d2ac5ea2cd9c516db218b9d69b"
+    }
+  ],
+  "all_non_label_blueprint_fields_preserved": true,
+  "standalone_trident_byte_identical": true
+}

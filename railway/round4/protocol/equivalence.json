@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "checks": {
+    "records": true,
+    "samples": true,
+    "completed": true,
+    "total_completed": true,
+    "entered": true,
+    "remaining": true,
+    "throughput": true,
+    "od": true,
+    "damage_events": true,
+    "retired": true,
+    "entry_supply_min": true,
+    "no_upstream_ticks": true,
+    "first_exit_signals": true
+  },
+  "trains_compared": 320,
+  "reference": "round3/protocol/experiments/bank-r3-sig-turbine2-dense2-S1-b1811fb1b0a9f12d",
+  "new": "round4/protocol/experiments/bank-r3-sig-turbine2-dense2-S1-38ad0e046f06df67",
+  "scope": "Full per-train records and 600-tick sample equality; native opaque final rail unit IDs not compared, no traffic actions changed."
+}

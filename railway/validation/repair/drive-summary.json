@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "rolling_stock_damage_events": 0,
+  "cases": [
+    {
+      "id": "turbine-original",
+      "completed": 12,
+      "trials": 12,
+      "all_native_found_path": true
+    },
+    {
+      "id": "turbine-repaired",
+      "completed": 12,
+      "trials": 12,
+      "all_native_found_path": true
+    },
+    {
+      "id": "turbine-2-original",
+      "completed": 12,
+      "trials": 12,
+      "all_native_found_path": true
+    },
+    {
+      "id": "turbine-2-repaired",
+      "completed": 12,
+      "trials": 12,
+      "all_native_found_path": true
+    }
+  ],
+  "pair_comparisons": [
+    {
+      "original": "turbine-original",
+      "fixed": "turbine-repaired",
+      "path_length_cost_steps_same": true,
+      "all_transit_ticks_same": true
+    },
+    {
+      "original": "turbine-2-original",
+      "fixed": "turbine-2-repaired",
+      "path_length_cost_steps_same": true,
+      "all_transit_ticks_same": true
+    }
+  ]
+}

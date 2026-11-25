@@ -1,0 +1,48 @@
+{
+  "engine": "2.1.25",
+  "mods": {
+    "base": "2.1.25",
+    "elevated-rails": "2.1.25",
+    "recycler": "2.1.25",
+    "quality": "2.1.25",
+    "space-age": "2.1.25"
+  },
+  "books": [
+    {
+      "file": "junctions-round3.txt",
+      "label": "\u94c1\u8def\u4f18\u5316\u7b2c\u4e09\u8f6e\uff5c\u541e\u5410\u5019\u9009\u4e0e\u57fa\u51c6",
+      "import_status": 0,
+      "entry_count": 3,
+      "total_entities": 2053,
+      "entries": [
+        {
+          "source_id": "r3-sig-turbine2-dense2",
+          "slot": 1,
+          "label": "\u6da1\u8f6e\u4e8c\u578b\uff5c364\u706f\u5bc6\u96c6\u7248\u00b7\u541e\u5410\u5019\u9009",
+          "entities": 816,
+          "expected_entities": 816,
+          "matched": true
+        },
+        {
+          "source_id": "r2-sig-turbine-2-trim-all4-clean",
+          "slot": 2,
+          "label": "\u6da1\u8f6e\u4e8c\u578b\uff5c234\u706f\u57fa\u51c6",
+          "entities": 686,
+          "expected_entities": 686,
+          "matched": true
+        },
+        {
+          "source_id": "r2-sig-stacked-cloverleaf-all4-clean",
+          "slot": 3,
+          "label": "\u53e0\u5c42\u5f0f\u82dc\u84ff\u53f6\uff5c169\u706f\u7d27\u51d1\u57fa\u51c6",
+          "entities": 551,
+          "expected_entities": 551,
+          "matched": true
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "evidence_directory": "experiments/r3-final-blueprint-books-a25a141a1a145887"
+}

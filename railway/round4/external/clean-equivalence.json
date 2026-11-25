@@ -1,0 +1,11 @@
+{
+  "scope": "same bank80 S1 seed17, native traffic records/samples after deleting the one unconnected signal",
+  "original": "round4/protocol/experiments/bank-r4-ext-three-chunk-square-S1-428371f1a3025eeb",
+  "clean": "round4/protocol/experiments/bank-r4-ext-three-chunk-square-clean-S1-877f330cc2006670",
+  "records_exact_equal": true,
+  "samples_exact_equal": true,
+  "damage_events_original": 0,
+  "damage_events_clean": 0,
+  "complete_original": 97,
+  "complete_clean": 97
+}

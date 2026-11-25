@@ -1,0 +1,213 @@
+{
+  "review_scope": "Read-only review after all native runs; no new network requests were made for this review.",
+  "catalog_entries": 14,
+  "raw_json_entries": 12,
+  "forum_string_entries": 2,
+  "all_preserved_local_hashes_match_catalog": true,
+  "repository_revision": {
+    "value": "d14db4ae7b7f57e3045de9b0b91d70b76ba84380",
+    "object_type": "Git tree, not commit",
+    "catalog_revision_type": "tree",
+    "raw_url_uses_tree_sha": true,
+    "tree_metadata_file": "round4/external/sources/bocian-tree.json"
+  },
+  "earlier_live_get_verification": {
+    "id": "r4-ext-celtic-knot",
+    "source_url": "https://raw.githubusercontent.com/Opinionated-Blueprints/10-Books-Full-of-Rails/d14db4ae7b7f57e3045de9b0b91d70b76ba84380/Rails/%5Bfont%3Dcount-font%5D%5Bcolor%3D185%2C95%2C0%5Dinterchanges%5B-color%5D%5B-font%5D/celtic-knot.json",
+    "date": "2026-11-25",
+    "http_status": 200,
+    "downloaded_response_bytes": 33350,
+    "downloaded_response_sha256": "fa34b313393111abc2e42f902358329b7ed34dd9f36fd9372ff0377de86683c6",
+    "matched_catalog_and_preserved_source": true,
+    "evidence": "A live urllib GET earlier in this agent session printed status200, bytes33350, hash_matchesTrue. Its response was not separately saved because the preserved source had identical bytes. This is a single-source remote-byte verification, not a claim that all twelve raw files were re-fetched."
+  },
+  "fetcher_review": {
+    "file": "round4/external/fetch_sources.py",
+    "sha256": "aa5537ccee21f3fc0b0d582698f4bc964c8db7adaa91ba5954c5016bd3c33b1d",
+    "raw_json_code_path": "urlopen(...).read() -> SHA-256 check -> Path.write_bytes(data); no parse/reindent round trip for raw JSON.",
+    "local_existing_behavior": "An existing matching source returns already_verified without a network request; this proves local integrity only.",
+    "forum_code_path": "Extract original encoded string, append LF, check SHA; a separately decoded/indented JSON is a derived convenience file and is not the canonical source hash.",
+    "failure_exit_behavior": "Per-source exceptions are printed as status=failed and caught; the current main function does not set a nonzero final exit status. Automation must inspect each returned status."
+  },
+  "license": {
+    "repository_license_metadata": null,
+    "explicit_redistribution_license_found": false,
+    "publication_scope": "Sources, fixed tree/blob references, hashes, retrieval/conversion code and aggregate results only; no third-party blueprint bodies."
+  },
+  "limitations": [
+    "Only Celtic Knot was independently re-downloaded and byte-verified in the additional live check. Other eleven raw inputs are locally intact against their recorded hashes; do not label them all newly remote-verified.",
+    "Forum source hashes are hashes of the extracted blueprint string plus LF, not the HTML response. Forum access was blocked for direct requests during acquisition; the author page may need manual extraction and hash verification.",
+    "A tree SHA fixes content identity, not commit identity, author date or ongoing upstream availability. The verified raw endpoint accepts this tree SHA; do not describe it as a pinned commit.",
+    "Upstream deletion, edits, HTML changes, access restrictions or raw endpoint availability can prevent future retrieval. A mismatch is rejected rather than silently replacing the experiment input."
+  ],
+  "sources": [
+    {
+      "id": "r4-ext-celtic-knot",
+      "retrieval": "raw_json",
+      "source_url": "https://raw.githubusercontent.com/Opinionated-Blueprints/10-Books-Full-of-Rails/d14db4ae7b7f57e3045de9b0b91d70b76ba84380/Rails/%5Bfont%3Dcount-font%5D%5Bcolor%3D185%2C95%2C0%5Dinterchanges%5B-color%5D%5B-font%5D/celtic-knot.json",
+      "local_source": "round4/external/sources/bocian/celtic-knot.json",
+      "local_bytes": 33350,
+      "catalog_sha256": "fa34b313393111abc2e42f902358329b7ed34dd9f36fd9372ff0377de86683c6",
+      "observed_local_sha256": "fa34b313393111abc2e42f902358329b7ed34dd9f36fd9372ff0377de86683c6",
+      "local_hash_matches_catalog": true,
+      "hash_definition": "verbatim raw JSON body expected by fetcher",
+      "forum_canonical_text_matches": null
+    },
+    {
+      "id": "r4-ext-buffered-celtic-knot",
+      "retrieval": "raw_json",
+      "source_url": "https://raw.githubusercontent.com/Opinionated-Blueprints/10-Books-Full-of-Rails/d14db4ae7b7f57e3045de9b0b91d70b76ba84380/Rails/%5Bfont%3Dcount-font%5D%5Bcolor%3D185%2C95%2C0%5Dinterchanges%5B-color%5D%5B-font%5D/buffered-celtic-knot.json",
+      "local_source": "round4/external/sources/bocian/buffered-celtic-knot.json",
+      "local_bytes": 36851,
+      "catalog_sha256": "4e018f432b6121d43baee3309e3603bd29e602c3e9883bbf1bb026ade40c2d90",
+      "observed_local_sha256": "4e018f432b6121d43baee3309e3603bd29e602c3e9883bbf1bb026ade40c2d90",
+      "local_hash_matches_catalog": true,
+      "hash_definition": "verbatim raw JSON body expected by fetcher",
+      "forum_canonical_text_matches": null
+    },
+    {
+      "id": "r4-ext-twister",
+      "retrieval": "raw_json",
+      "source_url": "https://raw.githubusercontent.com/Opinionated-Blueprints/10-Books-Full-of-Rails/d14db4ae7b7f57e3045de9b0b91d70b76ba84380/Rails/%5Bfont%3Dcount-font%5D%5Bcolor%3D185%2C95%2C0%5Dinterchanges%5B-color%5D%5B-font%5D/twister.json",
+      "local_source": "round4/external/sources/bocian/twister.json",
+      "local_bytes": 42428,
+      "catalog_sha256": "91b8010df0766547ab1f9b576ec50b415812a00ac0549e24cd843d8be191648a",
+      "observed_local_sha256": "91b8010df0766547ab1f9b576ec50b415812a00ac0549e24cd843d8be191648a",
+      "local_hash_matches_catalog": true,
+      "hash_definition": "verbatim raw JSON body expected by fetcher",
+      "forum_canonical_text_matches": null
+    },
+    {
+      "id": "r4-ext-windmill",
+      "retrieval": "raw_json",
+      "source_url": "https://raw.githubusercontent.com/Opinionated-Blueprints/10-Books-Full-of-Rails/d14db4ae7b7f57e3045de9b0b91d70b76ba84380/Rails/%5Bfont%3Dcount-font%5D%5Bcolor%3D185%2C95%2C0%5Dinterchanges%5B-color%5D%5B-font%5D/windmill.json",
+      "local_source": "round4/external/sources/bocian/windmill.json",
+      "local_bytes": 50531,
+      "catalog_sha256": "d06e7c2928fde700dd17d825aa4702a3f30b73d464af8fadda6a6e9cb12fca11",
+      "observed_local_sha256": "d06e7c2928fde700dd17d825aa4702a3f30b73d464af8fadda6a6e9cb12fca11",
+      "local_hash_matches_catalog": true,
+      "hash_definition": "verbatim raw JSON body expected by fetcher",
+      "forum_canonical_text_matches": null
+    },
+    {
+      "id": "r4-ext-pinwheel",
+      "retrieval": "raw_json",
+      "source_url": "https://raw.githubusercontent.com/Opinionated-Blueprints/10-Books-Full-of-Rails/d14db4ae7b7f57e3045de9b0b91d70b76ba84380/Rails/%5Bfont%3Dcount-font%5D%5Bcolor%3D185%2C95%2C0%5Dinterchanges%5B-color%5D%5B-font%5D/pinwheel.json",
+      "local_source": "round4/external/sources/bocian/pinwheel.json",
+      "local_bytes": 48344,
+      "catalog_sha256": "2e3416ae232da2debdce0b23891702cb60ee11123fa3aea898b42209d57d875a",
+      "observed_local_sha256": "2e3416ae232da2debdce0b23891702cb60ee11123fa3aea898b42209d57d875a",
+      "local_hash_matches_catalog": true,
+      "hash_definition": "verbatim raw JSON body expected by fetcher",
+      "forum_canonical_text_matches": null
+    },
+    {
+      "id": "r4-ext-partially-unrolled-cloverleaf",
+      "retrieval": "raw_json",
+      "source_url": "https://raw.githubusercontent.com/Opinionated-Blueprints/10-Books-Full-of-Rails/d14db4ae7b7f57e3045de9b0b91d70b76ba84380/Rails/%5Bfont%3Dcount-font%5D%5Bcolor%3D185%2C95%2C0%5Dinterchanges%5B-color%5D%5B-font%5D/partially-unrolled-cloverleaf.json",
+      "local_source": "round4/external/sources/bocian/partially-unrolled-cloverleaf.json",
+      "local_bytes": 46713,
+      "catalog_sha256": "81824e0e5ed01a4bdaaf9fc1f1dc575987480929474b04b503ce0460390887eb",
+      "observed_local_sha256": "81824e0e5ed01a4bdaaf9fc1f1dc575987480929474b04b503ce0460390887eb",
+      "local_hash_matches_catalog": true,
+      "hash_definition": "verbatim raw JSON body expected by fetcher",
+      "forum_canonical_text_matches": null
+    },
+    {
+      "id": "r4-ext-paperclip",
+      "retrieval": "raw_json",
+      "source_url": "https://raw.githubusercontent.com/Opinionated-Blueprints/10-Books-Full-of-Rails/d14db4ae7b7f57e3045de9b0b91d70b76ba84380/Rails/%5Bfont%3Dcount-font%5D%5Bcolor%3D185%2C95%2C0%5Dinterchanges%5B-color%5D%5B-font%5D/paperclip.json",
+      "local_source": "round4/external/sources/bocian/paperclip.json",
+      "local_bytes": 40159,
+      "catalog_sha256": "b8638c2beb0b832eac25d7d378a5637cbc39297d8ef13b0d4150dd33e468421a",
+      "observed_local_sha256": "b8638c2beb0b832eac25d7d378a5637cbc39297d8ef13b0d4150dd33e468421a",
+      "local_hash_matches_catalog": true,
+      "hash_definition": "verbatim raw JSON body expected by fetcher",
+      "forum_canonical_text_matches": null
+    },
+    {
+      "id": "r4-ext-crossover-displaced-left-turn",
+      "retrieval": "raw_json",
+      "source_url": "https://raw.githubusercontent.com/Opinionated-Blueprints/10-Books-Full-of-Rails/d14db4ae7b7f57e3045de9b0b91d70b76ba84380/Rails/%5Bfont%3Dcount-font%5D%5Bcolor%3D185%2C95%2C0%5Dinterchanges%5B-color%5D%5B-font%5D/crossover-displaced-left-turn.json",
+      "local_source": "round4/external/sources/bocian/crossover-displaced-left-turn.json",
+      "local_bytes": 40787,
+      "catalog_sha256": "9d841a05f5b3f05f20cec6c0fc38800fd62650428bc602799f4e7868f817a79b",
+      "observed_local_sha256": "9d841a05f5b3f05f20cec6c0fc38800fd62650428bc602799f4e7868f817a79b",
+      "local_hash_matches_catalog": true,
+      "hash_definition": "verbatim raw JSON body expected by fetcher",
+      "forum_canonical_text_matches": null
+    },
+    {
+      "id": "r4-ext-cube",
+      "retrieval": "forum_blueprint_string",
+      "source_url": "https://forums.factorio.com/viewtopic.php?p=621337",
+      "local_source": "round4/external/sources/cube-rhd.txt",
+      "local_bytes": 2782,
+      "catalog_sha256": "c2d8462f6cbef8059ae9ec2d01ff45d39c04a31eb925029349455de64743c073",
+      "observed_local_sha256": "c2d8462f6cbef8059ae9ec2d01ff45d39c04a31eb925029349455de64743c073",
+      "local_hash_matches_catalog": true,
+      "hash_definition": "extracted original blueprint string plus one LF; not the forum HTML response body",
+      "forum_canonical_text_matches": true
+    },
+    {
+      "id": "r4-ext-three-chunk-square",
+      "retrieval": "forum_blueprint_string",
+      "source_url": "https://forums.factorio.com/viewtopic.php?p=626041",
+      "local_source": "round4/external/sources/three-chunk-square.txt",
+      "local_bytes": 4222,
+      "catalog_sha256": "a1c131f3cfcd31a512866c2c7f1c8b963df6cc6135c0e599943f6ab039b3f785",
+      "observed_local_sha256": "a1c131f3cfcd31a512866c2c7f1c8b963df6cc6135c0e599943f6ab039b3f785",
+      "local_hash_matches_catalog": true,
+      "hash_definition": "extracted original blueprint string plus one LF; not the forum HTML response body",
+      "forum_canonical_text_matches": true
+    },
+    {
+      "id": "r4-ext-ground-cross",
+      "retrieval": "raw_json",
+      "source_url": "https://raw.githubusercontent.com/Opinionated-Blueprints/10-Books-Full-of-Rails/d14db4ae7b7f57e3045de9b0b91d70b76ba84380/Rails/%5Bfont%3Dcount-font%5D%5Bcolor%3D185%2C95%2C0%5Dground%5B-color%5D%5B-font%5D/%5Bvirtual-signal%3Dshape-cross%5D-4-way-intersection.json",
+      "local_source": "round4/external/sources/bocian/ground-cross.json",
+      "local_bytes": 16369,
+      "catalog_sha256": "021b3d4ac2d863701c1ee3defb9f4ab14e1f499062e52675a9c4927338762f45",
+      "observed_local_sha256": "021b3d4ac2d863701c1ee3defb9f4ab14e1f499062e52675a9c4927338762f45",
+      "local_hash_matches_catalog": true,
+      "hash_definition": "verbatim raw JSON body expected by fetcher",
+      "forum_canonical_text_matches": null
+    },
+    {
+      "id": "r4-ext-hyper-cross",
+      "retrieval": "raw_json",
+      "source_url": "https://raw.githubusercontent.com/Opinionated-Blueprints/10-Books-Full-of-Rails/d14db4ae7b7f57e3045de9b0b91d70b76ba84380/Rails/%5Bfont%3Dcount-font%5D%5Bcolor%3D185%2C95%2C0%5Dhyper-modular%5B-color%5D%5B-font%5D/%5Bvirtual-signal%3Dshape-cross%5D-4-way.json",
+      "local_source": "round4/external/sources/bocian/hyper-cross.json",
+      "local_bytes": 16737,
+      "catalog_sha256": "d265e58904565c367736a26bd076167e42f5543d3dab7bfbbbd287014db3eb7b",
+      "observed_local_sha256": "d265e58904565c367736a26bd076167e42f5543d3dab7bfbbbd287014db3eb7b",
+      "local_hash_matches_catalog": true,
+      "hash_definition": "verbatim raw JSON body expected by fetcher",
+      "forum_canonical_text_matches": null
+    },
+    {
+      "id": "r4-ext-level-switch-one",
+      "retrieval": "raw_json",
+      "source_url": "https://raw.githubusercontent.com/Opinionated-Blueprints/10-Books-Full-of-Rails/d14db4ae7b7f57e3045de9b0b91d70b76ba84380/Rails/%5Bfont%3Dcount-font%5D%5Bcolor%3D185%2C95%2C0%5Dlevel-switch%5B-color%5D%5B-font%5D/4-way-%281%29.json",
+      "local_source": "round4/external/sources/bocian/level-switch-4-way-(1).json",
+      "local_bytes": 30278,
+      "catalog_sha256": "77b651a5542cb0956e10615e42415226317a51d1426649ed00122571b9ca69d3",
+      "observed_local_sha256": "77b651a5542cb0956e10615e42415226317a51d1426649ed00122571b9ca69d3",
+      "local_hash_matches_catalog": true,
+      "hash_definition": "verbatim raw JSON body expected by fetcher",
+      "forum_canonical_text_matches": null
+    },
+    {
+      "id": "r4-ext-level-switch-two",
+      "retrieval": "raw_json",
+      "source_url": "https://raw.githubusercontent.com/Opinionated-Blueprints/10-Books-Full-of-Rails/d14db4ae7b7f57e3045de9b0b91d70b76ba84380/Rails/%5Bfont%3Dcount-font%5D%5Bcolor%3D185%2C95%2C0%5Dlevel-switch%5B-color%5D%5B-font%5D/4-way-%282%29.json",
+      "local_source": "round4/external/sources/bocian/level-switch-4-way-(2).json",
+      "local_bytes": 30539,
+      "catalog_sha256": "4e76b3a4f966b8215d107442e9f81fe516626304208ddd78255b93e180cdd7c9",
+      "observed_local_sha256": "4e76b3a4f966b8215d107442e9f81fe516626304208ddd78255b93e180cdd7c9",
+      "local_hash_matches_catalog": true,
+      "hash_definition": "verbatim raw JSON body expected by fetcher",
+      "forum_canonical_text_matches": null
+    }
+  ]
+}

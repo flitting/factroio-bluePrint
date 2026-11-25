@@ -1,0 +1,592 @@
+{
+  "engine": {
+    "version": "Version: 2.1.25 (build 88022, linux64, headless)\nVersion: 64\nMap input version: 1.0.0-0\nMap output version: 2.1.25-10\n",
+    "binary_sha256": "63787c3e163c6cb78ba3886c2ed27c4605a357a02d18822c547110e16eff2544",
+    "mod_infos": {
+      "base": "4a667bb071f8434a26b2ac218d315f66990ad17a34972f847614f65f60dd06b3",
+      "core": "aa1f8a1c6282b1deeb1a0982ac9eeff227a19f9b40d096bd05f797b711fe08e0",
+      "elevated-rails": "c98d52d4adf0b276b51440e13e358ceb2c776a508c4deff8bde54ff93ea4c472",
+      "quality": "4ee7e94648588a3a6efd209356164fe490b1dc08d7886437ee1122cfb039fd5c",
+      "recycler": "a4c3d48ad28deed51e7a842db9578d6e789bd904e96f2ed1e9a5ceaafd9677fd",
+      "space-age": "321ab6724ed7a805ec3b51b347117578494e045f4299958964da326307dc2369"
+    }
+  },
+  "protocol": {
+    "scenario": "S1",
+    "bank": 150,
+    "gap": 40,
+    "length": 6200,
+    "spacing": 8,
+    "warmup": 3600,
+    "duration": 10800,
+    "near": 0.3333333333333333,
+    "straight": 0.3333333333333333,
+    "loaded": false,
+    "exit_clearance": 8,
+    "entry_plane": 80,
+    "exit_plane": 80,
+    "sink_plane": 400,
+    "outlet_length": 2400,
+    "stop_offset": 2300
+  },
+  "long_window_measured_on": "original all4 variants; final clean strings separately passed exact native equivalence",
+  "throughput": [
+    {
+      "id": "stacked-cloverleaf",
+      "n": 3,
+      "mean": 74.11111111111111,
+      "sample_sd": 1.8358568490953697,
+      "area": 13263.56505076796,
+      "signal_count": 42,
+      "area_normalized_tpm_per_1000_tiles": 5.5875709756344945,
+      "seed_results": [
+        {
+          "seed": 17,
+          "throughput": 76.0,
+          "damage_events": 0,
+          "all_od_completed_in_window": true,
+          "ticks_without_external_bank_by_origin": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "evidence_directory": "round2/protocol/experiments/bank-stacked-cloverleaf-S1-b72c936538706709"
+        },
+        {
+          "seed": 31,
+          "throughput": 74.0,
+          "damage_events": 0,
+          "all_od_completed_in_window": true,
+          "ticks_without_external_bank_by_origin": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "evidence_directory": "round2/protocol/experiments/bank-stacked-cloverleaf-S1-d09897f7ecb3601d"
+        },
+        {
+          "seed": 47,
+          "throughput": 72.33333333333333,
+          "damage_events": 0,
+          "all_od_completed_in_window": true,
+          "ticks_without_external_bank_by_origin": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "evidence_directory": "round2/protocol/experiments/bank-stacked-cloverleaf-S1-3340d4911bd63d5c"
+        }
+      ]
+    },
+    {
+      "id": "r2-sig-stacked-cloverleaf-all4",
+      "n": 3,
+      "mean": 93.77777777777779,
+      "sample_sd": 3.371997978998561,
+      "area": 13263.56505076796,
+      "signal_count": 171,
+      "area_normalized_tpm_per_1000_tiles": 7.0703296903081165,
+      "seed_results": [
+        {
+          "seed": 17,
+          "throughput": 91.66666666666667,
+          "damage_events": 0,
+          "all_od_completed_in_window": true,
+          "ticks_without_external_bank_by_origin": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "evidence_directory": "round2/protocol/experiments/bank-r2-sig-stacked-cloverleaf-all4-S1-7f89183400a1fba0"
+        },
+        {
+          "seed": 31,
+          "throughput": 97.66666666666667,
+          "damage_events": 0,
+          "all_od_completed_in_window": true,
+          "ticks_without_external_bank_by_origin": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "evidence_directory": "round2/protocol/experiments/bank-r2-sig-stacked-cloverleaf-all4-S1-ff1342ecd22be3fb"
+        },
+        {
+          "seed": 47,
+          "throughput": 92.0,
+          "damage_events": 0,
+          "all_od_completed_in_window": true,
+          "ticks_without_external_bank_by_origin": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "evidence_directory": "round2/protocol/experiments/bank-r2-sig-stacked-cloverleaf-all4-S1-6979e091743b398a"
+        }
+      ]
+    },
+    {
+      "id": "r2-sig-turbine-2-trim-all4",
+      "n": 3,
+      "mean": 99.22222222222223,
+      "sample_sd": 2.6943012562182482,
+      "area": 17417.813049316406,
+      "signal_count": 238,
+      "area_normalized_tpm_per_1000_tiles": 5.696594741330995,
+      "seed_results": [
+        {
+          "seed": 17,
+          "throughput": 97.66666666666667,
+          "damage_events": 0,
+          "all_od_completed_in_window": true,
+          "ticks_without_external_bank_by_origin": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "evidence_directory": "round2/protocol/experiments/bank-r2-sig-turbine-2-trim-all4-S1-a14539504ce42c37"
+        },
+        {
+          "seed": 31,
+          "throughput": 102.33333333333333,
+          "damage_events": 0,
+          "all_od_completed_in_window": true,
+          "ticks_without_external_bank_by_origin": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "evidence_directory": "round2/protocol/experiments/bank-r2-sig-turbine-2-trim-all4-S1-04eb7826974133e9"
+        },
+        {
+          "seed": 47,
+          "throughput": 97.66666666666667,
+          "damage_events": 0,
+          "all_od_completed_in_window": true,
+          "ticks_without_external_bank_by_origin": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "evidence_directory": "round2/protocol/experiments/bank-r2-sig-turbine-2-trim-all4-S1-3d7a043827680f48"
+        }
+      ]
+    }
+  ],
+  "cpu": {
+    "checks": {
+      "all_configs_identical_except_candidate": true,
+      "all_profile_source_hashes_identical": true,
+      "all_engine_identity_identical": true,
+      "all_external_request_records_identical": true,
+      "all_measurement_boundaries_correct": true,
+      "all_halfopen_equivalent_conservation": true
+    },
+    "cases": [
+      {
+        "id": "stacked-cloverleaf",
+        "flow": {
+          "protocol": "round2-offered-warmed-profile-v2",
+          "id": "stacked-cloverleaf",
+          "scenario": "S1",
+          "seed": 17,
+          "measurement_ticks": 7200,
+          "first_tick": 7201,
+          "last_tick": 14400,
+          "checkpoint_tick": 7200,
+          "completed": 112,
+          "entered": 110,
+          "arrived": 114,
+          "active_world": 15,
+          "uncompleted_active": 12,
+          "pending_requests": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "mean_active_world": 18.07638888888889,
+          "mean_stopped_world": 0.10027777777777777,
+          "mean_virtual_pending": 1.7968055555555555,
+          "damage_events": 0,
+          "next_event": 219,
+          "total_completed": 205,
+          "total_records": 218,
+          "demand_sha256": "677d5188072c4933a75005c010f8b1e809947ac591f49e06853ca8777ec399ff",
+          "no_train_speed_writes": true,
+          "no_teleports": true
+        },
+        "Q_start": 11,
+        "Q_end": 13,
+        "timers": {
+          "trainPathFinder": {
+            "mean_us_per_tick": 33.108139861111106,
+            "sample_sd_us_per_tick": 2.8945795578659914,
+            "run_us_per_tick": [
+              29.780318333333334,
+              35.04185375,
+              34.502247499999996
+            ],
+            "mean_ms_per_completed_train": 2.1283804196428573,
+            "vs_baseline_percent": 0.0
+          },
+          "trains": {
+            "mean_us_per_tick": 185.1340297222222,
+            "sample_sd_us_per_tick": 11.116354544124148,
+            "run_us_per_tick": [
+              173.38095402777776,
+              195.47959958333334,
+              186.54153555555555
+            ],
+            "mean_ms_per_completed_train": 11.901473339285713,
+            "vs_baseline_percent": 0.0
+          },
+          "scriptUpdate": {
+            "mean_us_per_tick": 126.75408263888889,
+            "sample_sd_us_per_tick": 7.795835901990023,
+            "run_us_per_tick": [
+              118.12488319444444,
+              133.28853486111112,
+              128.8488298611111
+            ],
+            "mean_ms_per_completed_train": 8.148476741071429,
+            "vs_baseline_percent": 0.0
+          },
+          "wholeUpdate": {
+            "mean_us_per_tick": 693.2216912962963,
+            "sample_sd_us_per_tick": 48.79802951124372,
+            "run_us_per_tick": [
+              643.371441111111,
+              740.8946097222222,
+              695.3990230555555
+            ],
+            "mean_ms_per_completed_train": 44.56425158333334,
+            "vs_baseline_percent": 0.0
+          }
+        }
+      },
+      {
+        "id": "r2-sig-stacked-cloverleaf-all4-clean",
+        "flow": {
+          "protocol": "round2-offered-warmed-profile-v2",
+          "id": "r2-sig-stacked-cloverleaf-all4-clean",
+          "scenario": "S1",
+          "seed": 17,
+          "measurement_ticks": 7200,
+          "first_tick": 7201,
+          "last_tick": 14400,
+          "checkpoint_tick": 7200,
+          "completed": 111,
+          "entered": 110,
+          "arrived": 114,
+          "active_world": 15,
+          "uncompleted_active": 12,
+          "pending_requests": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "mean_active_world": 17.277916666666666,
+          "mean_stopped_world": 0.056805555555555554,
+          "mean_virtual_pending": 1.7968055555555555,
+          "damage_events": 0,
+          "next_event": 219,
+          "total_completed": 205,
+          "total_records": 218,
+          "demand_sha256": "677d5188072c4933a75005c010f8b1e809947ac591f49e06853ca8777ec399ff",
+          "no_train_speed_writes": true,
+          "no_teleports": true
+        },
+        "Q_start": 10,
+        "Q_end": 13,
+        "timers": {
+          "trainPathFinder": {
+            "mean_us_per_tick": 36.006483287037035,
+            "sample_sd_us_per_tick": 1.0905031200923703,
+            "run_us_per_tick": [
+              34.968732361111115,
+              35.907700416666664,
+              37.14301708333333
+            ],
+            "mean_ms_per_completed_train": 2.3355556726726725,
+            "vs_baseline_percent": 8.75417174774693
+          },
+          "trains": {
+            "mean_us_per_tick": 180.56047060185185,
+            "sample_sd_us_per_tick": 4.1024892814959415,
+            "run_us_per_tick": [
+              176.13111694444444,
+              181.32048666666665,
+              184.22980819444444
+            ],
+            "mean_ms_per_completed_train": 11.712030525525526,
+            "vs_baseline_percent": -2.4704043482619564
+          },
+          "scriptUpdate": {
+            "mean_us_per_tick": 117.27072930555555,
+            "sample_sd_us_per_tick": 3.0707345189896507,
+            "run_us_per_tick": [
+              115.27267638888888,
+              115.73297652777778,
+              120.806535
+            ],
+            "mean_ms_per_completed_train": 7.6067500090090086,
+            "vs_baseline_percent": -7.4816945820597835
+          },
+          "wholeUpdate": {
+            "mean_us_per_tick": 663.9253193981482,
+            "sample_sd_us_per_tick": 21.211699269019196,
+            "run_us_per_tick": [
+              647.4733280555556,
+              656.4371440277778,
+              687.8654861111111
+            ],
+            "mean_ms_per_completed_train": 43.065426123123125,
+            "vs_baseline_percent": -4.226118753347874
+          }
+        }
+      },
+      {
+        "id": "r2-sig-turbine-2-trim-all4-clean",
+        "flow": {
+          "protocol": "round2-offered-warmed-profile-v2",
+          "id": "r2-sig-turbine-2-trim-all4-clean",
+          "scenario": "S1",
+          "seed": 17,
+          "measurement_ticks": 7200,
+          "first_tick": 7201,
+          "last_tick": 14400,
+          "checkpoint_tick": 7200,
+          "completed": 111,
+          "entered": 110,
+          "arrived": 114,
+          "active_world": 15,
+          "uncompleted_active": 12,
+          "pending_requests": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "mean_active_world": 17.266666666666666,
+          "mean_stopped_world": 0.061527777777777785,
+          "mean_virtual_pending": 1.7968055555555555,
+          "damage_events": 0,
+          "next_event": 219,
+          "total_completed": 205,
+          "total_records": 218,
+          "demand_sha256": "677d5188072c4933a75005c010f8b1e809947ac591f49e06853ca8777ec399ff",
+          "no_train_speed_writes": true,
+          "no_teleports": true
+        },
+        "Q_start": 10,
+        "Q_end": 13,
+        "timers": {
+          "trainPathFinder": {
+            "mean_us_per_tick": 39.70616208333334,
+            "sample_sd_us_per_tick": 2.7712910907025745,
+            "run_us_per_tick": [
+              38.97315541666667,
+              37.37505902777778,
+              42.77027180555555
+            ],
+            "mean_ms_per_completed_train": 2.575534837837838,
+            "vs_baseline_percent": 19.928701068380718
+          },
+          "trains": {
+            "mean_us_per_tick": 189.1576540277778,
+            "sample_sd_us_per_tick": 8.165173682922038,
+            "run_us_per_tick": [
+              186.85499277777777,
+              182.3910698611111,
+              198.22689944444446
+            ],
+            "mean_ms_per_completed_train": 12.269685666666668,
+            "vs_baseline_percent": 2.173357492186967
+          },
+          "scriptUpdate": {
+            "mean_us_per_tick": 120.69149490740742,
+            "sample_sd_us_per_tick": 6.736303881014425,
+            "run_us_per_tick": [
+              117.14384805555555,
+              116.47045041666668,
+              128.46018625
+            ],
+            "mean_ms_per_completed_train": 7.828637507507507,
+            "vs_baseline_percent": -4.782952631792736
+          },
+          "wholeUpdate": {
+            "mean_us_per_tick": 657.7041083796296,
+            "sample_sd_us_per_tick": 29.469512648052444,
+            "run_us_per_tick": [
+              650.1777898611111,
+              632.727607361111,
+              690.2069279166666
+            ],
+            "mean_ms_per_completed_train": 42.66188811111111,
+            "vs_baseline_percent": -5.123553310954588
+          }
+        }
+      }
+    ]
+  },
+  "clean_equivalence": {
+    "native": [
+      {
+        "original": "r2-sig-stacked-cloverleaf-all4",
+        "clean": "r2-sig-stacked-cloverleaf-all4-clean",
+        "passed": true,
+        "gates": {
+          "normal_build_complete": true,
+          "all_clean_signals_working_at_tick60": true,
+          "rail_node_geometry_identical": true,
+          "directed_rail_connections_identical": true,
+          "rail_block_partition_identical": true,
+          "rail_block_count_identical": true,
+          "rail_segment_count_identical": true,
+          "native_bounds_identical": true,
+          "all_12_od_completed": true,
+          "ordered_native_rail_paths_identical": true,
+          "native_path_probe_fields_identical": true,
+          "independent_train_ticks_identical": true,
+          "no_rolling_stock_damage": true
+        },
+        "audit_evidence": "round2/signals/validation/audit-292be660b141810a",
+        "drive_evidence": "round2/signals/validation/drive-dc7ac1efb23e0741",
+        "status_evidence": "experiments/r2-sig-status-probe-05c443c53efd7568"
+      },
+      {
+        "original": "r2-sig-turbine-2-trim-all4",
+        "clean": "r2-sig-turbine-2-trim-all4-clean",
+        "passed": true,
+        "gates": {
+          "normal_build_complete": true,
+          "all_clean_signals_working_at_tick60": true,
+          "rail_node_geometry_identical": true,
+          "directed_rail_connections_identical": true,
+          "rail_block_partition_identical": true,
+          "rail_block_count_identical": true,
+          "rail_segment_count_identical": true,
+          "native_bounds_identical": true,
+          "all_12_od_completed": true,
+          "ordered_native_rail_paths_identical": true,
+          "native_path_probe_fields_identical": true,
+          "independent_train_ticks_identical": true,
+          "no_rolling_stock_damage": true
+        },
+        "audit_evidence": "round2/signals/validation/audit-292be660b141810a",
+        "drive_evidence": "round2/signals/validation/drive-dc7ac1efb23e0741",
+        "status_evidence": "experiments/r2-sig-status-probe-05c443c53efd7568"
+      }
+    ],
+    "bank": [
+      {
+        "original": "r2-sig-stacked-cloverleaf-all4",
+        "clean": "r2-sig-stacked-cloverleaf-all4-clean",
+        "same_protocol": true,
+        "original_record_count": 320,
+        "clean_record_count": 320,
+        "all_records_all_fields_exactly_identical": true,
+        "samples_exactly_identical": true,
+        "block_history_exactly_identical": true,
+        "no_damage": true,
+        "arrival_spawn_entry_complete_sink_speed_missingness_preserved": true,
+        "first_mismatches": [],
+        "passed": true,
+        "original_evidence": "round2/protocol/experiments/bank-r2-sig-stacked-cloverleaf-all4-S1-95d1bed713643683",
+        "clean_evidence": "round2/protocol/experiments/bank-r2-sig-stacked-cloverleaf-all4-clean-S1-8de2eba68e42f99c"
+      },
+      {
+        "original": "r2-sig-turbine-2-trim-all4",
+        "clean": "r2-sig-turbine-2-trim-all4-clean",
+        "same_protocol": true,
+        "original_record_count": 320,
+        "clean_record_count": 320,
+        "all_records_all_fields_exactly_identical": true,
+        "samples_exactly_identical": true,
+        "block_history_exactly_identical": true,
+        "no_damage": true,
+        "arrival_spawn_entry_complete_sink_speed_missingness_preserved": true,
+        "first_mismatches": [],
+        "passed": true,
+        "original_evidence": "round2/protocol/experiments/bank-r2-sig-turbine-2-trim-all4-S1-fb9d01a3007baeeb",
+        "clean_evidence": "round2/protocol/experiments/bank-r2-sig-turbine-2-trim-all4-clean-S1-2aed425153a1816a"
+      }
+    ],
+    "drain": [
+      {
+        "original": "r2-sig-stacked-cloverleaf-all4",
+        "clean": "r2-sig-stacked-cloverleaf-all4-clean",
+        "same_protocol": true,
+        "original_record_count": 242,
+        "clean_record_count": 242,
+        "all_records_all_fields_exactly_identical": true,
+        "samples_exactly_identical": true,
+        "block_history_exactly_identical": true,
+        "no_damage": true,
+        "arrival_spawn_entry_complete_sink_speed_missingness_preserved": true,
+        "first_mismatches": [],
+        "passed": true,
+        "original_evidence": "round2/protocol/experiments/offered-r2-sig-stacked-cloverleaf-all4-S7-drain-NESW-27a2636361bbbafc",
+        "clean_evidence": "round2/protocol/experiments/offered-r2-sig-stacked-cloverleaf-all4-clean-S7-drain-NESW-6c06c45a1ba92aa1",
+        "clean_drain_acceptance_passed": true
+      },
+      {
+        "original": "r2-sig-turbine-2-trim-all4",
+        "clean": "r2-sig-turbine-2-trim-all4-clean",
+        "same_protocol": true,
+        "original_record_count": 242,
+        "clean_record_count": 242,
+        "all_records_all_fields_exactly_identical": true,
+        "samples_exactly_identical": true,
+        "block_history_exactly_identical": true,
+        "no_damage": true,
+        "arrival_spawn_entry_complete_sink_speed_missingness_preserved": true,
+        "first_mismatches": [],
+        "passed": true,
+        "original_evidence": "round2/protocol/experiments/offered-r2-sig-turbine-2-trim-all4-S7-drain-NESW-7124b5188bef603c",
+        "clean_evidence": "round2/protocol/experiments/offered-r2-sig-turbine-2-trim-all4-clean-S7-drain-NESW-f1c100828a378307",
+        "clean_drain_acceptance_passed": true
+      }
+    ],
+    "complete": true,
+    "all_observed_stages_passed": true,
+    "passed": true,
+    "scope": "Exact equality of these observed native graphs, all 12 independent OD routes, bank80 seed17 traces and all-exit drain seed17 traces. Long-window tests ran on original all4 blueprints, not the clean strings; this is not a formal proof for every possible demand."
+  },
+  "acceptance_audit": {
+    "snapshot_utc": "2026-11-24T17:02:22.094114+00:00",
+    "case_count": 19,
+    "input_case_counts": {
+      "drain-acceptance.json": 4,
+      "all-exits-drain.json": 2,
+      "steady-acceptance.json": 8,
+      "turbine-drain.json": 2,
+      "turbine-all-exits-drain.json": 1,
+      "turbine-steady84.json": 2
+    },
+    "passed_all_accounting_and_block_checks": true,
+    "all_native_exit_codes_zero": true,
+    "all_damage_events_zero": true,
+    "drain_count": 9,
+    "drain_cases_all_12_od_finished_and_world_empty": true,
+    "failed_cases": []
+  },
+  "evidence_manifest_sha256": "30e593d211ddd51c9404bc6e69c9e593181befe169c71d223592f8e01d728698",
+  "limits": [
+    "Finite preloaded discharge is not maximum stable capacity.",
+    "Offered-load source observed about 22 trains/min per inlet; high-load conclusions are source-limited.",
+    "No global topology optimum or deterministic deadlock-free proof.",
+    "CPU scopes include the whole common test fixture; three repeats are hardware repetitions, not independent demand seeds."
+  ]
+}

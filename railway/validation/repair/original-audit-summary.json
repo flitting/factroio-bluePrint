@@ -1,0 +1,128 @@
+[
+  {
+    "id": "source-00",
+    "name": "苜蓿叶十字路口",
+    "complete": true,
+    "entities": 288,
+    "components": [
+      268
+    ],
+    "rail_blocks": 16,
+    "rail_segments": 44
+  },
+  {
+    "id": "source-01",
+    "name": "叠层式苜蓿叶十字路口",
+    "complete": true,
+    "entities": 424,
+    "components": [
+      382
+    ],
+    "rail_blocks": 38,
+    "rail_segments": 57
+  },
+  {
+    "id": "source-02",
+    "name": "涡轮式立交",
+    "complete": true,
+    "entities": 542,
+    "components": [
+      478,
+      2,
+      2
+    ],
+    "rail_blocks": 39,
+    "rail_segments": 58
+  },
+  {
+    "id": "source-03",
+    "name": "涡轮式立交-2",
+    "complete": true,
+    "entities": 500,
+    "components": [
+      436,
+      2,
+      2
+    ],
+    "rail_blocks": 39,
+    "rail_segments": 62
+  },
+  {
+    "id": "source-04",
+    "name": "丁字路口1",
+    "complete": true,
+    "entities": 203,
+    "components": [
+      198
+    ],
+    "rail_blocks": 1,
+    "rail_segments": 12
+  },
+  {
+    "id": "source-05",
+    "name": "丁字路口2",
+    "complete": true,
+    "entities": 174,
+    "components": [
+      172
+    ],
+    "rail_blocks": 1,
+    "rail_segments": 12
+  },
+  {
+    "id": "source-06",
+    "name": "入口",
+    "complete": true,
+    "entities": 85,
+    "components": [
+      76
+    ],
+    "rail_blocks": 8,
+    "rail_segments": 11
+  },
+  {
+    "id": "source-07",
+    "name": "出口",
+    "complete": true,
+    "entities": 89,
+    "components": [
+      78
+    ],
+    "rail_blocks": 10,
+    "rail_segments": 13
+  },
+  {
+    "id": "source-08",
+    "name": "入口2",
+    "complete": true,
+    "entities": 92,
+    "components": [
+      58,
+      27
+    ],
+    "rail_blocks": 7,
+    "rail_segments": 10
+  },
+  {
+    "id": "source-09",
+    "name": "出口2",
+    "complete": true,
+    "entities": 95,
+    "components": [
+      88
+    ],
+    "rail_blocks": 7,
+    "rail_segments": 11
+  },
+  {
+    "id": "source-10",
+    "name": "上下货",
+    "complete": true,
+    "entities": 201,
+    "components": [
+      181
+    ],
+    "rail_blocks": 16,
+    "rail_segments": 23
+  }
+]

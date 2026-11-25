@@ -1,0 +1,31 @@
+{
+  "book_sha256": "92eca6b65dd33b11d40abf4c2375948ce22e82270587172d78eb9d582515823d",
+  "entries": [
+    {
+      "id": "r3-sig-turbine2-dense2",
+      "label": "涡轮二型｜364灯密集版·吞吐候选",
+      "source": "blueprints/r3-sig-turbine2-dense2.json",
+      "entities": 816,
+      "entity_sha256": "64a7c39187f671701a1e7bf67bfbed535f0100121ac82783116981c85696584a",
+      "only_label_changed": true
+    },
+    {
+      "id": "r2-sig-turbine-2-trim-all4-clean",
+      "label": "涡轮二型｜234灯基准",
+      "source": "blueprints/r2-sig-turbine-2-trim-all4-clean.json",
+      "entities": 686,
+      "entity_sha256": "368d3e4661aa9f240b01c09861bf7fb37bcbe781a1444c65851f76a7f575ebc0",
+      "only_label_changed": true
+    },
+    {
+      "id": "r2-sig-stacked-cloverleaf-all4-clean",
+      "label": "叠层式苜蓿叶｜169灯紧凑基准",
+      "source": "blueprints/r2-sig-stacked-cloverleaf-all4-clean.json",
+      "entities": 551,
+      "entity_sha256": "c4803a429f13040a935a92e15187bb4e90edb7d2ac5ea2cd9c516db218b9d69b",
+      "only_label_changed": true
+    }
+  ],
+  "research_variants_excluded_from_recommended_book": true,
+  "standalone_blueprints_unchanged_from_native_test_inputs": true
+}

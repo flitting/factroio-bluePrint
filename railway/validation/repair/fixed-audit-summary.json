@@ -1,0 +1,59 @@
+[
+  {
+    "id": "turbine-repaired",
+    "complete": true,
+    "entities": 538,
+    "components": [
+      478
+    ],
+    "rail_blocks": 40,
+    "rail_segments": 56,
+    "bounds": {
+      "min_x": -65.98828125,
+      "min_y": -65.98828125,
+      "max_x": 67.98828125,
+      "max_y": 65.98828125,
+      "width": 133.9765625,
+      "height": 131.9765625,
+      "area": 17681.766174316406
+    }
+  },
+  {
+    "id": "turbine-2-repaired",
+    "complete": true,
+    "entities": 496,
+    "components": [
+      436
+    ],
+    "rail_blocks": 40,
+    "rail_segments": 60,
+    "bounds": {
+      "min_x": -65.98828125,
+      "min_y": -65.98828125,
+      "max_x": 65.98828125,
+      "max_y": 65.98828125,
+      "width": 131.9765625,
+      "height": 131.9765625,
+      "area": 17417.813049316406
+    }
+  },
+  {
+    "id": "entrance2-boundary-extension",
+    "complete": true,
+    "entities": 93,
+    "components": [
+      86
+    ],
+    "rail_blocks": 7,
+    "rail_segments": 11,
+    "bounds": {
+      "min_x": -24.59765625,
+      "min_y": -27.98828125,
+      "max_x": 23.98828125,
+      "max_y": 27.98828125,
+      "width": 48.5859375,
+      "height": 55.9765625,
+      "area": 2719.6737670898438
+    }
+  }
+]

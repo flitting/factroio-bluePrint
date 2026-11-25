@@ -1,0 +1,108 @@
+{
+  "source_sha256": "f7f79fde115540dc0650211bd25ff06c4d3f42361a03a9c60a94a2e9019eeae6",
+  "new_sha256": "c52a8091edc91ba2f9228c3429d782fe6ebd0dcaf2aac06d6df8714cf937055f",
+  "original_book_entries": 11,
+  "retained_unchanged_entries": 9,
+  "changes": [
+    {
+      "source_index": 2,
+      "label": "涡轮式立交",
+      "slug": "turbine",
+      "old_entity_count": 542,
+      "new_entity_count": 538,
+      "removed_entities": [
+        {
+          "entity_number": 247,
+          "name": "straight-rail",
+          "position": {
+            "x": 1727,
+            "y": 477
+          },
+          "direction": 4
+        },
+        {
+          "entity_number": 249,
+          "name": "straight-rail",
+          "position": {
+            "x": 1729,
+            "y": 477
+          },
+          "direction": 4
+        },
+        {
+          "entity_number": 298,
+          "name": "straight-rail",
+          "position": {
+            "x": 1727,
+            "y": 479
+          },
+          "direction": 4
+        },
+        {
+          "entity_number": 300,
+          "name": "straight-rail",
+          "position": {
+            "x": 1729,
+            "y": 479
+          },
+          "direction": 4
+        }
+      ],
+      "placement_translation": {
+        "x": -1726,
+        "y": -476
+      },
+      "reason": "Two isolated two-rail stubs are disconnected from all boundary routes; remove only these four extraneous ground straight rails."
+    },
+    {
+      "source_index": 3,
+      "label": "涡轮式立交-2",
+      "slug": "turbine-2",
+      "old_entity_count": 500,
+      "new_entity_count": 496,
+      "removed_entities": [
+        {
+          "entity_number": 226,
+          "name": "straight-rail",
+          "position": {
+            "x": 1727,
+            "y": 835
+          },
+          "direction": 4
+        },
+        {
+          "entity_number": 228,
+          "name": "straight-rail",
+          "position": {
+            "x": 1729,
+            "y": 835
+          },
+          "direction": 4
+        },
+        {
+          "entity_number": 273,
+          "name": "straight-rail",
+          "position": {
+            "x": 1727,
+            "y": 837
+          },
+          "direction": 4
+        },
+        {
+          "entity_number": 275,
+          "name": "straight-rail",
+          "position": {
+            "x": 1729,
+            "y": 837
+          },
+          "direction": 4
+        }
+      ],
+      "placement_translation": {
+        "x": -1726,
+        "y": -836
+      },
+      "reason": "Two isolated two-rail stubs are disconnected from all boundary routes; remove only these four extraneous ground straight rails."
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+[
+  {
+    "id": "r4-batch-h64-phase15",
+    "controllers": 4,
+    "observed_shared_networks": [
+      {
+        "network_id": 3,
+        "gate_count": 3,
+        "phases": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "network_id": 7,
+        "gate_count": 3,
+        "phases": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "network_id": 10,
+        "gate_count": 3,
+        "phases": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "network_id": 14,
+        "gate_count": 3,
+        "phases": [
+          0,
+          1,
+          2
+        ]
+      }
+    ],
+    "actual_phase_ticks": [
+      [
+        900
+      ],
+      [
+        900
+      ],
+      [
+        900
+      ],
+      [
+        900
+      ]
+    ],
+    "condition_mismatch_samples": 0,
+    "wrong_phase_green_samples": 0,
+    "signal_status_not_working_samples": 0,
+    "combinator_minimum_energy_after_warmup": 71.11111111111111,
+    "accumulator_minimum_energy_after_warmup": 4867705.953025818,
+    "states": [
+      {
+        "closed_by_condition": false,
+        "native_signal_state": 0,
+        "one_second_observations": 289
+      },
+      {
+        "closed_by_condition": false,
+        "native_signal_state": 1,
+        "one_second_observations": 298
+      },
+      {
+        "closed_by_condition": false,
+        "native_signal_state": 2,
+        "one_second_observations": 133
+      },
+      {
+        "closed_by_condition": true,
+        "native_signal_state": 1,
+        "one_second_observations": 240
+      },
+      {
+        "closed_by_condition": true,
+        "native_signal_state": 2,
+        "one_second_observations": 2
+      },
+      {
+        "closed_by_condition": true,
+        "native_signal_state": 3,
+        "one_second_observations": 1198
+      }
+    ],
+    "interpretation": "Signal states 0=open,1=red,2=reserved/orange,3=reserved by circuit. Reservations can remain honored when a circuit condition becomes true; this is native safe behavior. One-second sample counts are observations, not counts of trains or exact duration at a state. Power minima refer to the one-second sampling grid. Tick0 power transients are excluded from measurement power checks."
+  },
+  {
+    "id": "r4-batch-h64-phase30",
+    "controllers": 4,
+    "observed_shared_networks": [
+      {
+        "network_id": 3,
+        "gate_count": 3,
+        "phases": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "network_id": 7,
+        "gate_count": 3,
+        "phases": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "network_id": 10,
+        "gate_count": 3,
+        "phases": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "network_id": 14,
+        "gate_count": 3,
+        "phases": [
+          0,
+          1,
+          2
+        ]
+      }
+    ],
+    "actual_phase_ticks": [
+      [
+        1800
+      ],
+      [
+        1800
+      ],
+      [
+        1800
+      ],
+      [
+        1800
+      ]
+    ],
+    "condition_mismatch_samples": 0,
+    "wrong_phase_green_samples": 0,
+    "signal_status_not_working_samples": 0,
+    "combinator_minimum_energy_after_warmup": 71.11111111111111,
+    "accumulator_minimum_energy_after_warmup": 4867705.953025818,
+    "states": [
+      {
+        "closed_by_condition": false,
+        "native_signal_state": 0,
+        "one_second_observations": 334
+      },
+      {
+        "closed_by_condition": false,
+        "native_signal_state": 1,
+        "one_second_observations": 241
+      },
+      {
+        "closed_by_condition": false,
+        "native_signal_state": 2,
+        "one_second_observations": 145
+      },
+      {
+        "closed_by_condition": true,
+        "native_signal_state": 1,
+        "one_second_observations": 249
+      },
+      {
+        "closed_by_condition": true,
+        "native_signal_state": 2,
+        "one_second_observations": 1
+      },
+      {
+        "closed_by_condition": true,
+        "native_signal_state": 3,
+        "one_second_observations": 1190
+      }
+    ],
+    "interpretation": "Signal states 0=open,1=red,2=reserved/orange,3=reserved by circuit. Reservations can remain honored when a circuit condition becomes true; this is native safe behavior. One-second sample counts are observations, not counts of trains or exact duration at a state. Power minima refer to the one-second sampling grid. Tick0 power transients are excluded from measurement power checks."
+  },
+  {
+    "id": "r4-dir-crossbar64-source",
+    "controllers": 0,
+    "observed_shared_networks": [],
+    "actual_phase_ticks": [],
+    "condition_mismatch_samples": 0,
+    "wrong_phase_green_samples": 0,
+    "signal_status_not_working_samples": 0,
+    "combinator_minimum_energy_after_warmup": null,
+    "accumulator_minimum_energy_after_warmup": null,
+    "states": [],
+    "interpretation": "Signal states 0=open,1=red,2=reserved/orange,3=reserved by circuit. Reservations can remain honored when a circuit condition becomes true; this is native safe behavior. One-second sample counts are observations, not counts of trains or exact duration at a state. Power minima refer to the one-second sampling grid. Tick0 power transients are excluded from measurement power checks."
+  }
+]

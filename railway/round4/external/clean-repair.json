@@ -1,0 +1,32 @@
+{
+  "id": "r4-ext-three-chunk-square-clean",
+  "base": "r4-ext-three-chunk-square",
+  "removed_nonworking_signal": [
+    {
+      "entity_number": 264,
+      "name": "rail-signal",
+      "position": {
+        "x": 44.5,
+        "y": 4.5
+      },
+      "direction": 11
+    }
+  ],
+  "native_nonworking_signal": [
+    {
+      "name": "rail-signal",
+      "position": {
+        "y": 4.5,
+        "x": 44.5
+      },
+      "direction": 11,
+      "rail_layer": 0,
+      "status": "not_connected_to_rail",
+      "state": 0
+    }
+  ],
+  "native_graph_evidence": "experiments/r4-external-extra-geometry-graph-f49218e7b072523e",
+  "non_signal_entities_changed": false,
+  "test_blueprint_sha256": "16a682ec85c6157bb25c591aa73c603e5556477fc195fcd99b1c37e358207fcb",
+  "classification": "repair configuration of existing external geometry; not a new topology"
+}

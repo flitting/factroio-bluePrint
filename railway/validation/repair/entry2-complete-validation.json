@@ -1,0 +1,10 @@
+{
+  "id": "entry2-complete",
+  "complete": true,
+  "entities": 93,
+  "components": [
+    86
+  ],
+  "rail_blocks": 7,
+  "rail_segments": 11
+}

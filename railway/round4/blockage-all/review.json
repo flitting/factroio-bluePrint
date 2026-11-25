@@ -1,0 +1,23 @@
+{
+  "scope": "Static review before the one requested native all-exit recovery case; no additional engine run.",
+  "all_exit_lua_before_sha256": "b06b723ac0eff4fde64a33ae746667632f1de40eff9ecca1f348c16c1c3a2dc3",
+  "all_exit_lua_after_sha256": "c83db3779b27653beedd911e0334428219bdfbd8ab39cd4dfcaa865df097b1f2",
+  "frozen_main_protocol_sha256_unchanged": "9d70df162462d393ad80d3793ce1a94dc33cbec8add00ba1d11ff6491b864ea3",
+  "all_exits_build_assertions": "Exactly 4 unique N/E/S/W controllers, each wired to that side's first outlet signal.",
+  "observations": "Native signal state names/numbers sampled near transitions and at closure midpoint. Pre-reserved trains may legitimately pass during native signal propagation; no forced state mutation.",
+  "runner_assertions": "8 expected close/open commands at3600/7200, four first-signal offsets8, exact side set.",
+  "traffic_actions": "Same as root all-exit fixture: native constant combinator and rail signal close condition. Added assertions/observations only; schedules, movement, spawning, retirement and frozen capacity protocol unchanged.",
+  "python_syntax": "ast.parse passed",
+  "lua_syntax": "Small reviewed edits; actual requested engine test will compile it.",
+  "inherited_hol_proxy": "Single-blocked-destination/open-next proxy not meaningful for ALL; explicitly annotated in result.",
+  "signal_enum_reference": {
+    "url": "https://lua-api.factorio.com/latest/defines.html#signal_state",
+    "version_on_page": "2.1.25",
+    "red_state_names": [
+      "closed",
+      "reserved_by_circuit_network"
+    ],
+    "note": "Confirmed official enum names before first native all-exit run; red is a color description, not the enum key."
+  },
+  "python_runner_after_sha256": "68735b1b42128c7b6a9e9d05fe33c4d1e1751e33c1767c813cb4fca5aac08299"
+}

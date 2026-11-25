@@ -1,0 +1,244 @@
+{
+  "generated_utc": "2026-11-25T04:56:05.482632+00:00",
+  "reviewer": "r4_networks independent final lightweight review",
+  "scope": "Read final aggregates and report text only; no Factorio execution, no full original-record rescan, no edits to reviewed artifacts.",
+  "overall_status": "passed",
+  "required_fixes": [],
+  "blocking_findings": [],
+  "checks": [
+    {
+      "check": "search_counts",
+      "status": "pass",
+      "values": {
+        "completed_cases": 136,
+        "new_exact_configurations_tested": 95,
+        "new_distinct_non_signal_geometries_tested": 54
+      },
+      "note_zh": "与先前独立最终审计136/95/54一致；不将配置或几何数表述为抽象拓扑家族/成功方案数。"
+    },
+    {
+      "check": "holdout_arithmetic",
+      "status": "pass",
+      "reference_mean": 102.41666666666667,
+      "trident_mean": 117.5,
+      "mean_difference": 15.083333333333329,
+      "relative_gain_percent": 14.727420667209113,
+      "seed_wins": "3/3",
+      "note_zh": "正文和HTML按两位小数正确四舍五入；相对提升使用组均值之比。"
+    },
+    {
+      "check": "protocol_separation",
+      "status": "pass",
+      "selection_cases": 18,
+      "holdout_cases": 6,
+      "note_zh": "bank150/3600+10800与bank240/7200+14400分组；aggregate已增加共同交通设置/源/引擎一致性断言。"
+    },
+    {
+      "check": "directional_service",
+      "status": "pass",
+      "reference_rates": {
+        "N": 26.083333333333332,
+        "E": 24.0,
+        "S": 25.083333333333332,
+        "W": 27.25
+      },
+      "trident_rates": {
+        "N": 33.166666666666664,
+        "E": 24.0,
+        "S": 35.5,
+        "W": 24.833333333333332
+      },
+      "differences": {
+        "N": 7.083333333333333,
+        "E": 0.0,
+        "S": 10.416666666666666,
+        "W": -2.4166666666666665
+      },
+      "note_zh": "报告明确总量提高不代表每方向改善，W平均下降2.4167，E只是三种子平均不变；不宣称长期均匀到达率稳定。"
+    },
+    {
+      "check": "inventory_and_latency",
+      "status": "pass",
+      "rows_checked": 6,
+      "note_zh": "六例进入/完成/在途库存和延迟值与汇总一致；严格半开窗守恒成立。延迟明确限定窗内已完成车，滞留车不进入P95；不将库存排出解释为稳态容量。"
+    },
+    {
+      "check": "native_cpu_statistics",
+      "status": "pass",
+      "timers": {
+        "r3-sig-turbine2-dense2": {
+          "trainPathFinder": {
+            "unit": "microseconds/tick",
+            "mean": 23.063085694444442,
+            "sample_sd": 0.37754919568041934,
+            "repeat_values": [
+              23.498704166666666,
+              22.86013597222222,
+              22.830416944444444
+            ]
+          },
+          "trains": {
+            "unit": "microseconds/tick",
+            "mean": 106.46397375000001,
+            "sample_sd": 1.0761773534799293,
+            "repeat_values": [
+              107.70657805555555,
+              105.83225041666667,
+              105.85309277777779
+            ]
+          },
+          "scriptUpdate": {
+            "unit": "microseconds/tick",
+            "mean": 67.46936782407408,
+            "sample_sd": 1.0780275223248719,
+            "repeat_values": [
+              68.51266347222223,
+              67.5357625,
+              66.3596775
+            ]
+          },
+          "wholeUpdate": {
+            "unit": "microseconds/tick",
+            "mean": 417.8670278703704,
+            "sample_sd": 22.16601799833675,
+            "repeat_values": [
+              443.17833583333334,
+              401.91962347222227,
+              408.50312430555556
+            ]
+          }
+        },
+        "r4-dir-trident32-32": {
+          "trainPathFinder": {
+            "unit": "microseconds/tick",
+            "mean": 57.12938166666667,
+            "sample_sd": 8.99815385064632,
+            "repeat_values": [
+              49.25030861111111,
+              66.9346601388889,
+              55.20317625
+            ]
+          },
+          "trains": {
+            "unit": "microseconds/tick",
+            "mean": 248.12418074074074,
+            "sample_sd": 30.182925096401753,
+            "repeat_values": [
+              224.18761347222224,
+              282.03077625,
+              238.1541525
+            ]
+          },
+          "scriptUpdate": {
+            "unit": "microseconds/tick",
+            "mean": 139.72306953703702,
+            "sample_sd": 15.620784443039348,
+            "repeat_values": [
+              127.09200236111111,
+              157.18988166666665,
+              134.88732458333334
+            ]
+          },
+          "wholeUpdate": {
+            "unit": "microseconds/tick",
+            "mean": 747.5221000462963,
+            "sample_sd": 125.6200336356163,
+            "repeat_values": [
+              657.1360505555555,
+              890.9656433333333,
+              694.46460625
+            ]
+          }
+        }
+      },
+      "pathfinder_ratio": 2.4770918524761103,
+      "note_zh": "均值和样本SD由3次值复算吻合，单位为微秒/tick。新图寻路49.250/66.935/55.203存在明显波动，现有表格SD与图中重复点正确体现；未宣称固定确定倍数或CPU总体置信结论。"
+    },
+    {
+      "check": "cpu_workload_boundary",
+      "status": "pass",
+      "arrivals_per_measurement": 114,
+      "realized_arrivals_per_minute": 57.0,
+      "reference_completions": 111,
+      "trident_completions": 114,
+      "reference_mean_active_world": 17.264027777777777,
+      "trident_mean_active_world": 33.9025,
+      "note_zh": "同外生需求非同在场列车数，正文正确披露111/114完成及17.26/33.90活动车；48为名义率，57为此样本实际率。CPU范围可嵌套，不能求和，也不外推饱和负载。"
+    },
+    {
+      "check": "hol_matched_cohort",
+      "status": "pass",
+      "cohort_count": 242,
+      "reference": {
+        "id": "r3-sig-turbine2-dense2",
+        "seed": 17,
+        "cohort_count": 242,
+        "cohort_definition": "Every requested train whose destination is not W, including unaffected preclosure completions; identical logical IDs in open and closed runs. Negative differences retained.",
+        "mean_added_completion_seconds": 17.06728650137741,
+        "median_added_completion_seconds": 0.0,
+        "p95_added_completion_seconds": 71.13333333333334,
+        "negative_differences": 42,
+        "zero_differences": 99,
+        "positive_differences": 101,
+        "cohort_ids_sha256": "6d5304f886ce79c99f5819488b6ae2072de56dd1b2b08a23a6406518c83c7543"
+      },
+      "trident": {
+        "id": "r4-dir-trident32-32",
+        "seed": 17,
+        "cohort_count": 242,
+        "cohort_definition": "Every requested train whose destination is not W, including unaffected preclosure completions; identical logical IDs in open and closed runs. Negative differences retained.",
+        "mean_added_completion_seconds": 0.0,
+        "median_added_completion_seconds": 0.0,
+        "p95_added_completion_seconds": 0.0,
+        "negative_differences": 0,
+        "zero_differences": 242,
+        "positive_differences": 0,
+        "cohort_ids_sha256": "6d5304f886ce79c99f5819488b6ae2072de56dd1b2b08a23a6406518c83c7543"
+      },
+      "reference_closure_open_destination_counts": [
+        79,
+        51
+      ],
+      "trident_closure_open_destination_counts": [
+        93,
+        93
+      ],
+      "note_zh": "同一开放终点请求ID，不只筛已完成子集，包含关闭前零影响车辆并保留负差。三分叉242列的入口/完成/退场事件在附加摘要中完全一致。"
+    },
+    {
+      "check": "recovery_and_deadlock_language",
+      "status": "pass",
+      "W_pair_runs": 4,
+      "all_exits_runs": 1,
+      "note_zh": "有限320列全部完成并退休被正确称为本例恢复；未推广为所有需求无死锁。最后退场追加延迟32.27/33.23与退休定义匹配，未与完成线32.25/32.85混用。"
+    },
+    {
+      "check": "artifact_consistency",
+      "status": "pass",
+      "note_zh": "HTML关键指标和限制与Markdown一致；结构图明确不是游戏截图。此次不重复执行图表像素排版验收。"
+    }
+  ],
+  "optional_editorial_notes": [
+    {
+      "severity": "optional",
+      "location": "REPORT.zh-CN.md section8; report.html corresponding CPU section",
+      "suggestion_zh": "若需让明显计时波动更直观，可在正文补三分叉寻路3次49.250、66.935、55.203微秒/tick；当前均值±样本SD和图中重复点已正确表达，不是发布阻碍。"
+    },
+    {
+      "severity": "optional",
+      "location": "REPORT.zh-CN.md section7 direction table",
+      "suggestion_zh": "可补一句E的三种子平均相同不代表逐种子相同：seed211是20.5→15.0，seed307是24.5→30.0；当前表题已经明确为均值，数值和表述无误。"
+    }
+  ],
+  "reviewed_file_sha256": {
+    "round4/final/results-summary.json": "d9eea69fe944abf29474fbd99c194227d441486d53c9352e5317d078a93fcaf0",
+    "round4/final/REPORT.zh-CN.md": "d17fd893af4705a58429822780ae0b5603fc5c6d3139f74e45644674da413533",
+    "round4/final/report.html": "554ad81c686629fd491a3907b3a237dd665d9b5cdcafa39a29037ede74e10eef",
+    "round4/external/hol-comparison.json": "f8133141762876c00cef30b10066ebd2402fcb103d4ce4a6e1f776a747ebe77b",
+    "round4/analyze_final.py": "f4aa59dc5e8be7f41320248a8c72dc177e14d425100a32aabc8cf4d970b18cb2"
+  },
+  "prior_independent_count_audit": "round4/networks/audit-result-index-data.json",
+  "modified_files": [
+    "round4/final/final-review.json"
+  ]
+}

@@ -1,0 +1,1068 @@
+{
+  "title": "铁路优化第三轮：拓扑、信号组合与入口队首阻塞",
+  "engine": "Factorio Headless 2.1.25 build 88022",
+  "scope": {
+    "ports": "N/E/S/W each one incoming and one outgoing one-way track",
+    "train": "1 locomotive + 4 empty cargo wagons; normal quality; nuclear fuel; braking-force 1..7",
+    "od": "12 non-U-turn movements, S1 equal near/straight/far probability",
+    "native_behavior": "Native physics, pathfinder, signals and collision; no speed writes or teleports",
+    "area_metric": "Bounding rectangle of native transformed entity boxes, including elevated projection; common fixture excluded"
+  },
+  "search_counts": {
+    "new_legal_configurations": 39,
+    "construction_rejections": 29,
+    "named_controls_or_noop_aliases": 7,
+    "new_concurrent_deadlock_failures_included_in_39": 1,
+    "breakdown": {
+      "signals": 20,
+      "hol_buffers": 7,
+      "continuous_elevation_signal_pairs": 6,
+      "delayed_exit_merges": 4,
+      "chain_repairs": 2
+    }
+  },
+  "indexed_flow_experiments": {
+    "completed_native_experiments": 94,
+    "matched_demand_groups": 12,
+    "paired_demand_consistency": true,
+    "grouping_note": "Bank size is part of the demand group: the legacy per-origin sequential PRNG changes E/S/W sequences when bank depth changes. Interrupted attempts are excluded.",
+    "service_gap_note": "Per-origin service gaps are diagnostic. Judge starvation only alongside continuing input supply; drain tails or disabled exits are not stationary capacity."
+  },
+  "long_protocol": {
+    "bank_per_origin": 150,
+    "warmup_ticks": 3600,
+    "measurement_ticks": 10800,
+    "unit": "trains per game-minute",
+    "seeds": [
+      17,
+      31,
+      47
+    ]
+  },
+  "three_seed_comparison": [
+    {
+      "id": "r3-sig-turbine2-dense2",
+      "name_zh": "涡轮二型·364 灯密集版",
+      "seed_values": {
+        "17": 105.33333333333333,
+        "31": 101.0,
+        "47": 98.66666666666667
+      },
+      "n": 3,
+      "mean_trains_per_game_minute": 101.66666666666667,
+      "sample_sd": 3.3829638550307353,
+      "bounding_rectangle_tiles2": 17417.813049316406,
+      "signals": 364,
+      "chain_signals": 0,
+      "all_12_od_served": true,
+      "damage_events": 0,
+      "all_source_banks_nonempty": true,
+      "evidence_directories": [
+        "round3/protocol/experiments/bank-r3-sig-turbine2-dense2-S1-09ebfb8b9f62235a",
+        "round3/protocol/experiments/bank-r3-sig-turbine2-dense2-S1-91701eed6c4c6cb8",
+        "round3/protocol/experiments/bank-r3-sig-turbine2-dense2-S1-a42fa343a82b28ac"
+      ]
+    },
+    {
+      "id": "r2-sig-turbine-2-trim-all4-clean",
+      "name_zh": "涡轮二型·234 灯基准",
+      "seed_values": {
+        "17": 97.66666666666667,
+        "31": 102.33333333333333,
+        "47": 97.66666666666667
+      },
+      "n": 3,
+      "mean_trains_per_game_minute": 99.22222222222223,
+      "sample_sd": 2.6943012562182482,
+      "bounding_rectangle_tiles2": 17417.813049316406,
+      "signals": 234,
+      "chain_signals": 0,
+      "all_12_od_served": true,
+      "damage_events": 0,
+      "all_source_banks_nonempty": true,
+      "evidence_directories": [
+        "round3/protocol/experiments/bank-r2-sig-turbine-2-trim-all4-clean-S1-528622866f96c2dc",
+        "round3/protocol/experiments/bank-r2-sig-turbine-2-trim-all4-clean-S1-ea3ca6eb5c6b88b1",
+        "round3/protocol/experiments/bank-r2-sig-turbine-2-trim-all4-clean-S1-29644ace17e37e32"
+      ]
+    },
+    {
+      "id": "r3-sig-turbine2-local-prune16-reverse",
+      "name_zh": "涡轮二型·230 灯局部精简",
+      "seed_values": {
+        "17": 96.33333333333333,
+        "31": 102.66666666666667,
+        "47": 97.66666666666667
+      },
+      "n": 3,
+      "mean_trains_per_game_minute": 98.88888888888889,
+      "sample_sd": 3.3388842669592744,
+      "bounding_rectangle_tiles2": 17417.813049316406,
+      "signals": 230,
+      "chain_signals": 0,
+      "all_12_od_served": true,
+      "damage_events": 0,
+      "all_source_banks_nonempty": true,
+      "evidence_directories": [
+        "round3/protocol/experiments/bank-r3-sig-turbine2-local-prune16-reverse-S1-7a18d9f9cb6472c6",
+        "round3/protocol/experiments/bank-r3-sig-turbine2-local-prune16-reverse-S1-4a6e64ac67e3b67c",
+        "round3/protocol/experiments/bank-r3-sig-turbine2-local-prune16-reverse-S1-7caf5dad64f7d79d"
+      ]
+    },
+    {
+      "id": "r3-sig-turbine2-space3-reverse",
+      "name_zh": "涡轮二型·反向布灯",
+      "seed_values": {
+        "17": 98.0,
+        "31": 101.33333333333333,
+        "47": 91.66666666666667
+      },
+      "n": 3,
+      "mean_trains_per_game_minute": 97.0,
+      "sample_sd": 4.910306620885407,
+      "bounding_rectangle_tiles2": 17417.813049316406,
+      "signals": 246,
+      "chain_signals": 0,
+      "all_12_od_served": true,
+      "damage_events": 0,
+      "all_source_banks_nonempty": true,
+      "evidence_directories": [
+        "round3/protocol/experiments/bank-r3-sig-turbine2-space3-reverse-S1-28a5c3c8176100a3",
+        "round3/protocol/experiments/bank-r3-sig-turbine2-space3-reverse-S1-2b974cd08bd31402",
+        "round3/protocol/experiments/bank-r3-sig-turbine2-space3-reverse-S1-963175961ac34b4a"
+      ]
+    },
+    {
+      "id": "r3-sig-stacked-merge-chain",
+      "name_zh": "叠层·合流连锁信号",
+      "seed_values": {
+        "17": 95.66666666666667,
+        "31": 93.0,
+        "47": 93.0
+      },
+      "n": 3,
+      "mean_trains_per_game_minute": 93.88888888888889,
+      "sample_sd": 1.5396007178390048,
+      "bounding_rectangle_tiles2": 13263.56505076796,
+      "signals": 169,
+      "chain_signals": 10,
+      "all_12_od_served": true,
+      "damage_events": 0,
+      "all_source_banks_nonempty": true,
+      "evidence_directories": [
+        "round3/protocol/experiments/bank-r3-sig-stacked-merge-chain-S1-9a293cdaefdc7f77",
+        "round3/protocol/experiments/bank-r3-sig-stacked-merge-chain-S1-1f9dd41bb8e07ca8",
+        "round3/protocol/experiments/bank-r3-sig-stacked-merge-chain-S1-a6302d0089244f77"
+      ]
+    },
+    {
+      "id": "r2-sig-stacked-cloverleaf-all4-clean",
+      "name_zh": "叠层苜蓿叶·169 灯基准",
+      "seed_values": {
+        "17": 91.66666666666667,
+        "31": 97.66666666666667,
+        "47": 92.0
+      },
+      "n": 3,
+      "mean_trains_per_game_minute": 93.77777777777779,
+      "sample_sd": 3.371997978998561,
+      "bounding_rectangle_tiles2": 13263.56505076796,
+      "signals": 169,
+      "chain_signals": 0,
+      "all_12_od_served": true,
+      "damage_events": 0,
+      "all_source_banks_nonempty": true,
+      "evidence_directories": [
+        "round3/protocol/experiments/bank-r2-sig-stacked-cloverleaf-all4-clean-S1-70e7b7bc694c6f93",
+        "round3/protocol/experiments/bank-r2-sig-stacked-cloverleaf-all4-clean-S1-a968c26d0facadb4",
+        "round3/protocol/experiments/bank-r2-sig-stacked-cloverleaf-all4-clean-S1-015c3996e000b8a5"
+      ]
+    },
+    {
+      "id": "r3-hol-stacked-loop32",
+      "name_zh": "叠层·回环 32 格缓冲",
+      "seed_values": {
+        "17": 85.66666666666667,
+        "31": 94.66666666666667,
+        "47": 97.66666666666667
+      },
+      "n": 3,
+      "mean_trains_per_game_minute": 92.66666666666667,
+      "sample_sd": 6.244997998398398,
+      "bounding_rectangle_tiles2": 19790.06505076796,
+      "signals": 248,
+      "chain_signals": 0,
+      "all_12_od_served": true,
+      "damage_events": 0,
+      "all_source_banks_nonempty": true,
+      "evidence_directories": [
+        "round3/protocol/experiments/bank-r3-hol-stacked-loop32-S1-7ce6dc3e92727f50",
+        "round3/protocol/experiments/bank-r3-hol-stacked-loop32-S1-f00d9a8c94a6be80",
+        "round3/protocol/experiments/bank-r3-hol-stacked-loop32-S1-a08e5de14ff9dca2"
+      ]
+    },
+    {
+      "id": "r3-hol-stacked-outer48",
+      "name_zh": "叠层·外扩 48 格缓冲",
+      "seed_values": {
+        "17": 87.33333333333333,
+        "31": 96.66666666666667,
+        "47": 92.66666666666667
+      },
+      "n": 3,
+      "mean_trains_per_game_minute": 92.22222222222223,
+      "sample_sd": 4.682512779045667,
+      "bounding_rectangle_tiles2": 23053.31505076796,
+      "signals": 265,
+      "chain_signals": 0,
+      "all_12_od_served": true,
+      "damage_events": 0,
+      "all_source_banks_nonempty": true,
+      "evidence_directories": [
+        "round3/protocol/experiments/bank-r3-hol-stacked-outer48-S1-dc9bd9f9302825f4",
+        "round3/protocol/experiments/bank-r3-hol-stacked-outer48-S1-d4767b26af190c55",
+        "round3/protocol/experiments/bank-r3-hol-stacked-outer48-S1-22c0d749dcefc2f4"
+      ]
+    },
+    {
+      "id": "r3-exit-sw32",
+      "name_zh": "涡轮·西南出口延后合流 32 格",
+      "seed_values": {
+        "17": 87.0,
+        "31": 96.66666666666667,
+        "47": 81.33333333333333
+      },
+      "n": 3,
+      "mean_trains_per_game_minute": 88.33333333333333,
+      "sample_sd": 7.753135566408676,
+      "bounding_rectangle_tiles2": 21641.063049316406,
+      "signals": 256,
+      "chain_signals": 0,
+      "all_12_od_served": true,
+      "damage_events": 0,
+      "all_source_banks_nonempty": true,
+      "evidence_directories": [
+        "round3/protocol/experiments/bank-r3-exit-sw32-S1-17cd162fea6a02ab",
+        "round3/protocol/experiments/bank-r3-exit-sw32-S1-a1c3bfd0bb1f85a5",
+        "round3/protocol/experiments/bank-r3-exit-sw32-S1-9cf3ba8f9c94c144"
+      ]
+    }
+  ],
+  "six_seed_paired": {
+    "rows": [
+      {
+        "seed": 17,
+        "stage": "selection",
+        "reference": 97.66666666666667,
+        "dense": 105.33333333333333,
+        "difference": 7.666666666666657,
+        "evidence_directories": [
+          "round3/protocol/experiments/bank-r2-sig-turbine-2-trim-all4-clean-S1-528622866f96c2dc",
+          "round3/protocol/experiments/bank-r3-sig-turbine2-dense2-S1-09ebfb8b9f62235a"
+        ]
+      },
+      {
+        "seed": 31,
+        "stage": "selection",
+        "reference": 102.33333333333333,
+        "dense": 101.0,
+        "difference": -1.3333333333333286,
+        "evidence_directories": [
+          "round3/protocol/experiments/bank-r2-sig-turbine-2-trim-all4-clean-S1-ea3ca6eb5c6b88b1",
+          "round3/protocol/experiments/bank-r3-sig-turbine2-dense2-S1-91701eed6c4c6cb8"
+        ]
+      },
+      {
+        "seed": 47,
+        "stage": "selection",
+        "reference": 97.66666666666667,
+        "dense": 98.66666666666667,
+        "difference": 1.0,
+        "evidence_directories": [
+          "round3/protocol/experiments/bank-r2-sig-turbine-2-trim-all4-clean-S1-29644ace17e37e32",
+          "round3/protocol/experiments/bank-r3-sig-turbine2-dense2-S1-a42fa343a82b28ac"
+        ]
+      },
+      {
+        "seed": 73,
+        "stage": "predeclared_holdout",
+        "reference": 90.66666666666667,
+        "dense": 97.66666666666667,
+        "difference": 7.0,
+        "evidence_directories": [
+          "round3/protocol/experiments/bank-r2-sig-turbine-2-trim-all4-clean-S1-7d1c5bde83dd1b53",
+          "round3/protocol/experiments/bank-r3-sig-turbine2-dense2-S1-4a2e60fa5dfdf8cc"
+        ]
+      },
+      {
+        "seed": 101,
+        "stage": "predeclared_holdout",
+        "reference": 97.0,
+        "dense": 100.0,
+        "difference": 3.0,
+        "evidence_directories": [
+          "round3/protocol/experiments/bank-r2-sig-turbine-2-trim-all4-clean-S1-558fb91ef1419175",
+          "round3/protocol/experiments/bank-r3-sig-turbine2-dense2-S1-b8c3dba229d41906"
+        ]
+      },
+      {
+        "seed": 137,
+        "stage": "predeclared_holdout",
+        "reference": 96.66666666666667,
+        "dense": 100.33333333333333,
+        "difference": 3.666666666666657,
+        "evidence_directories": [
+          "round3/protocol/experiments/bank-r2-sig-turbine-2-trim-all4-clean-S1-8ccceab8727b4212",
+          "round3/protocol/experiments/bank-r3-sig-turbine2-dense2-S1-6790ffa88cf27a32"
+        ]
+      }
+    ],
+    "reference_mean": 97.0,
+    "dense_mean": 100.5,
+    "relative_gain_percent": 3.6082474226804218,
+    "wins": 5,
+    "holdout_reference_mean": 94.77777777777779,
+    "holdout_dense_mean": 99.33333333333333,
+    "claim": "Finite saturated discharge, small paired sample; not a maximum stable capacity or global optimum"
+  },
+  "cpu_protocol": {
+    "nominal_rate": 48,
+    "actual_arrivals": 114,
+    "actual_rate_in_window": 57,
+    "warmup_ticks": 7200,
+    "measurement_ticks": 7200,
+    "repeats": 3,
+    "serial": true,
+    "unit": "microseconds per tick",
+    "limits": "Same warmed save per layout, common offered demand, lower load than discharge; common fixture/script included. Timers may be nested. Shared host variability remains."
+  },
+  "cpu": [
+    {
+      "id": "r2-sig-turbine-2-trim-all4-clean",
+      "timers": {
+        "trainPathFinder": {
+          "unit": "microseconds_per_tick",
+          "mean": 22.926179907407406,
+          "sample_sd": 1.0360573837492517,
+          "repeat_values": [
+            22.042895694444443,
+            22.669057638888887,
+            24.06658638888889
+          ]
+        },
+        "trains": {
+          "unit": "microseconds_per_tick",
+          "mean": 106.56027782407408,
+          "sample_sd": 3.408533510155584,
+          "repeat_values": [
+            104.63146527777778,
+            104.55351222222222,
+            110.49585597222223
+          ]
+        },
+        "scriptUpdate": {
+          "unit": "microseconds_per_tick",
+          "mean": 69.9640674537037,
+          "sample_sd": 1.31978642326391,
+          "repeat_values": [
+            69.10119291666666,
+            69.30765277777778,
+            71.48335666666668
+          ]
+        },
+        "wholeUpdate": {
+          "unit": "microseconds_per_tick",
+          "mean": 431.8981077777778,
+          "sample_sd": 17.0862442936574,
+          "repeat_values": [
+            444.4308151388889,
+            412.4356115277778,
+            438.8278966666667
+          ]
+        }
+      },
+      "evidence_directory": "round3/cpu/profiles/r2-sig-turbine-2-trim-all4-clean-3ed93d0ab7b65e98",
+      "completed_per_repeat": 111,
+      "arrived_per_repeat": 114,
+      "demand_sha256": "677d5188072c4933a75005c010f8b1e809947ac591f49e06853ca8777ec399ff",
+      "repeated_flow_identical": true
+    },
+    {
+      "id": "r3-sig-turbine2-dense2",
+      "timers": {
+        "trainPathFinder": {
+          "unit": "microseconds_per_tick",
+          "mean": 25.077484166666668,
+          "sample_sd": 2.260967036425835,
+          "repeat_values": [
+            22.501769444444445,
+            25.996231527777777,
+            26.73445152777778
+          ]
+        },
+        "trains": {
+          "unit": "microseconds_per_tick",
+          "mean": 114.89848912037037,
+          "sample_sd": 8.566266896761798,
+          "repeat_values": [
+            105.07343166666666,
+            118.82000166666667,
+            120.80203402777778
+          ]
+        },
+        "scriptUpdate": {
+          "unit": "microseconds_per_tick",
+          "mean": 74.12040935185185,
+          "sample_sd": 7.583679742589658,
+          "repeat_values": [
+            65.77148375,
+            76.00712666666666,
+            80.58261763888889
+          ]
+        },
+        "wholeUpdate": {
+          "unit": "microseconds_per_tick",
+          "mean": 465.36588949074076,
+          "sample_sd": 54.77427301718325,
+          "repeat_values": [
+            402.11801041666666,
+            497.00796833333334,
+            496.9716897222222
+          ]
+        }
+      },
+      "evidence_directory": "round3/cpu/profiles/r3-sig-turbine2-dense2-49addd774c9e9758",
+      "completed_per_repeat": 111,
+      "arrived_per_repeat": 114,
+      "demand_sha256": "677d5188072c4933a75005c010f8b1e809947ac591f49e06853ca8777ec399ff",
+      "repeated_flow_identical": true
+    },
+    {
+      "id": "r3-sig-turbine2-local-prune16-reverse",
+      "timers": {
+        "trainPathFinder": {
+          "unit": "microseconds_per_tick",
+          "mean": 22.78828125,
+          "sample_sd": 1.1865620068900602,
+          "repeat_values": [
+            23.777380416666666,
+            21.47264,
+            23.114823333333334
+          ]
+        },
+        "trains": {
+          "unit": "microseconds_per_tick",
+          "mean": 109.94780277777777,
+          "sample_sd": 2.8359726638603733,
+          "repeat_values": [
+            112.93695555555556,
+            107.29500999999999,
+            109.61144277777777
+          ]
+        },
+        "scriptUpdate": {
+          "unit": "microseconds_per_tick",
+          "mean": 73.82980689814815,
+          "sample_sd": 3.5550005989224065,
+          "repeat_values": [
+            77.92324875,
+            71.5169476388889,
+            72.04922430555555
+          ]
+        },
+        "wholeUpdate": {
+          "unit": "microseconds_per_tick",
+          "mean": 440.0805637962963,
+          "sample_sd": 12.360105963747268,
+          "repeat_values": [
+            453.07026319444446,
+            438.7065540277778,
+            428.4648741666666
+          ]
+        }
+      },
+      "evidence_directory": "round3/cpu/profiles/r3-sig-turbine2-local-prune16-reverse-a6f429a86d8dff11",
+      "completed_per_repeat": 111,
+      "arrived_per_repeat": 114,
+      "demand_sha256": "677d5188072c4933a75005c010f8b1e809947ac591f49e06853ca8777ec399ff",
+      "repeated_flow_identical": true
+    }
+  ],
+  "dense_pathfinder_mean_change_percent": 9.383614138717377,
+  "W_blockage": {
+    "closure_ticks": [
+      3600,
+      7200
+    ],
+    "total_run_ticks": 21600,
+    "rows": [
+      {
+        "id": "r2-sig-stacked-cloverleaf-all4-clean",
+        "open_destination_completions_control": 71,
+        "open_destination_completions_W_closed": 45,
+        "total_requested": 320,
+        "total_completed_both": 320,
+        "evidence_directories": [
+          "round3/blockage/experiments/bank-r2-sig-stacked-cloverleaf-all4-clean-S1-90a767a936baf415",
+          "round3/blockage/experiments/bank-r2-sig-stacked-cloverleaf-all4-clean-S1-e11d885be3369a0b"
+        ]
+      },
+      {
+        "id": "r2-sig-turbine-2-trim-all4-clean",
+        "open_destination_completions_control": 71,
+        "open_destination_completions_W_closed": 49,
+        "total_requested": 320,
+        "total_completed_both": 320,
+        "evidence_directories": [
+          "round3/blockage/experiments/bank-r2-sig-turbine-2-trim-all4-clean-S1-2a44d87dddd978fe",
+          "round3/blockage/experiments/bank-r2-sig-turbine-2-trim-all4-clean-S1-7550b37bb3bbfd8f"
+        ]
+      },
+      {
+        "id": "r3-hol-stacked-outer48",
+        "open_destination_completions_control": 71,
+        "open_destination_completions_W_closed": 51,
+        "total_requested": 320,
+        "total_completed_both": 320,
+        "evidence_directories": [
+          "round3/blockage/experiments/bank-r3-hol-stacked-outer48-S1-ffe677acff1f39a3",
+          "round3/blockage/experiments/bank-r3-hol-stacked-outer48-S1-afd522d16ec35d6f"
+        ]
+      },
+      {
+        "id": "r3-sig-turbine2-dense2",
+        "open_destination_completions_control": 79,
+        "open_destination_completions_W_closed": 51,
+        "total_requested": 320,
+        "total_completed_both": 320,
+        "evidence_directories": [
+          "round3/blockage/experiments/bank-r3-sig-turbine2-dense2-S1-089f117fb48bee56",
+          "round3/blockage/experiments/bank-r3-sig-turbine2-dense2-S1-7671eed999533df7"
+        ]
+      }
+    ],
+    "common_168_train_cohort": {
+      "definition": "Exactly the same logical train IDs across all three layouts; open destination and unfinished at closure onset in every unblocked layout. This avoids changing the delay cohort when comparing layouts.",
+      "train_count": 168,
+      "layouts": [
+        {
+          "id": "r2-sig-stacked-cloverleaf-all4-clean",
+          "mean_delay_seconds": 22.952579365079366,
+          "median_delay_seconds": 52.641666666666666,
+          "p95_delay_seconds": 70.45,
+          "min_delay_seconds": -75.53333333333333,
+          "max_delay_seconds": 78.66666666666667,
+          "delay_by_origin": {
+            "N": {
+              "trains": 39,
+              "mean_delay_seconds": 64.00213675213675
+            },
+            "E": {
+              "trains": 38,
+              "mean_delay_seconds": 39.3359649122807
+            },
+            "S": {
+              "trains": 36,
+              "mean_delay_seconds": 66.27037037037037
+            },
+            "W": {
+              "trains": 55,
+              "mean_delay_seconds": -45.82818181818182
+            }
+          }
+        },
+        {
+          "id": "r2-sig-turbine-2-trim-all4-clean",
+          "mean_delay_seconds": 22.027281746031747,
+          "median_delay_seconds": 40.266666666666666,
+          "p95_delay_seconds": 60.1,
+          "min_delay_seconds": -54.95,
+          "max_delay_seconds": 65.13333333333334,
+          "delay_by_origin": {
+            "N": {
+              "trains": 39,
+              "mean_delay_seconds": 47.61282051282051
+            },
+            "E": {
+              "trains": 38,
+              "mean_delay_seconds": 42.20745614035088
+            },
+            "S": {
+              "trains": 36,
+              "mean_delay_seconds": 50.35787037037037
+            },
+            "W": {
+              "trains": 55,
+              "mean_delay_seconds": -28.60151515151515
+            }
+          }
+        },
+        {
+          "id": "r3-hol-stacked-outer48",
+          "mean_delay_seconds": 17.06121031746032,
+          "median_delay_seconds": 28.391666666666666,
+          "p95_delay_seconds": 76.48333333333333,
+          "min_delay_seconds": -66.76666666666667,
+          "max_delay_seconds": 80.25,
+          "delay_by_origin": {
+            "N": {
+              "trains": 39,
+              "mean_delay_seconds": 35.72649572649573
+            },
+            "E": {
+              "trains": 38,
+              "mean_delay_seconds": 27.153947368421054
+            },
+            "S": {
+              "trains": 36,
+              "mean_delay_seconds": 69.79074074074074
+            },
+            "W": {
+              "trains": 55,
+              "mean_delay_seconds": -37.661212121212124
+            }
+          }
+        }
+      ]
+    },
+    "spillback_proxy": [
+      {
+        "id": "r2-sig-stacked-cloverleaf-all4-clean",
+        "open_destination_head_stop_seconds_unblocked": 23,
+        "open_destination_head_stop_seconds_blocked": 151,
+        "added_open_destination_head_stop_origin_seconds": 128
+      },
+      {
+        "id": "r2-sig-turbine-2-trim-all4-clean",
+        "open_destination_head_stop_seconds_unblocked": 40,
+        "open_destination_head_stop_seconds_blocked": 154,
+        "added_open_destination_head_stop_origin_seconds": 114
+      },
+      {
+        "id": "r3-hol-stacked-outer48",
+        "open_destination_head_stop_seconds_unblocked": 32,
+        "open_destination_head_stop_seconds_blocked": 134,
+        "added_open_destination_head_stop_origin_seconds": 102
+      }
+    ]
+  },
+  "dense_recovery": {
+    "id": "r3-sig-turbine2-dense2",
+    "blueprint_sha256": "5df0e4f446392fc49e81fe26d3f6767aa4802159663924bc0ede2a4852d02b89",
+    "exact_validated_blueprint_tested": true,
+    "paired_bank": [
+      {
+        "block_enabled": false,
+        "total_requested": 320,
+        "total_completed": 320,
+        "remaining": 0,
+        "active_world": 0,
+        "damage_events": 0,
+        "last_complete_tick": 12249,
+        "phases": {
+          "before": {
+            "from_tick": 1800,
+            "to_tick_exclusive": 3600,
+            "seconds": 30.0,
+            "completed": 58,
+            "completed_open_destinations": 43,
+            "by_destination": {
+              "N": 12,
+              "E": 14,
+              "S": 17,
+              "W": 15
+            },
+            "entered_open_destinations": 42,
+            "external_head_exposure_origin_seconds": 0
+          },
+          "closure": {
+            "from_tick": 3600,
+            "to_tick_exclusive": 7200,
+            "seconds": 60.0,
+            "completed": 107,
+            "completed_open_destinations": 79,
+            "by_destination": {
+              "N": 25,
+              "E": 27,
+              "S": 27,
+              "W": 28
+            },
+            "entered_open_destinations": 82,
+            "external_head_exposure_origin_seconds": 2
+          },
+          "first_recovery_minute": {
+            "from_tick": 7200,
+            "to_tick_exclusive": 10800,
+            "seconds": 60.0,
+            "completed": 95,
+            "completed_open_destinations": 78,
+            "by_destination": {
+              "N": 24,
+              "E": 26,
+              "S": 28,
+              "W": 17
+            },
+            "entered_open_destinations": 68,
+            "external_head_exposure_origin_seconds": 1
+          }
+        },
+        "block_history": {},
+        "evidence_directory": "round3/blockage/experiments/bank-r3-sig-turbine2-dense2-S1-089f117fb48bee56",
+        "last_sink_tick": 12481,
+        "complete_drain_observed": true,
+        "seconds_from_unblock_to_last_completion": null,
+        "seconds_from_unblock_to_empty_world": null
+      },
+      {
+        "block_enabled": true,
+        "total_requested": 320,
+        "total_completed": 320,
+        "remaining": 0,
+        "active_world": 0,
+        "damage_events": 0,
+        "last_complete_tick": 14184,
+        "phases": {
+          "before": {
+            "from_tick": 1800,
+            "to_tick_exclusive": 3600,
+            "seconds": 30.0,
+            "completed": 58,
+            "completed_open_destinations": 43,
+            "by_destination": {
+              "N": 12,
+              "E": 14,
+              "S": 17,
+              "W": 15
+            },
+            "entered_open_destinations": 42,
+            "external_head_exposure_origin_seconds": 0
+          },
+          "closure": {
+            "from_tick": 3600,
+            "to_tick_exclusive": 7200,
+            "seconds": 60.0,
+            "completed": 52,
+            "completed_open_destinations": 51,
+            "by_destination": {
+              "N": 10,
+              "E": 22,
+              "S": 19,
+              "W": 1
+            },
+            "entered_open_destinations": 45,
+            "external_head_exposure_origin_seconds": 89
+          },
+          "first_recovery_minute": {
+            "from_tick": 7200,
+            "to_tick_exclusive": 10800,
+            "seconds": 60.0,
+            "completed": 83,
+            "completed_open_destinations": 57,
+            "by_destination": {
+              "N": 18,
+              "E": 16,
+              "S": 23,
+              "W": 26
+            },
+            "entered_open_destinations": 63,
+            "external_head_exposure_origin_seconds": 15
+          }
+        },
+        "block_history": [
+          {
+            "tick": 3600,
+            "exit": "W",
+            "closed": true
+          },
+          {
+            "tick": 7200,
+            "exit": "W",
+            "closed": false
+          }
+        ],
+        "evidence_directory": "round3/blockage/experiments/bank-r3-sig-turbine2-dense2-S1-7671eed999533df7",
+        "last_sink_tick": 14417,
+        "complete_drain_observed": true,
+        "seconds_from_unblock_to_last_completion": 116.4,
+        "seconds_from_unblock_to_empty_world": 120.28333333333333
+      }
+    ],
+    "paired_only_configuration_difference": [
+      "block_enabled"
+    ],
+    "paired_events_before_closure_identical": true,
+    "offered_all_four_exits": {
+      "seed": 17,
+      "rate": 60,
+      "total_requested": 242,
+      "total_completed": 242,
+      "retired": 242,
+      "pending_requests": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "active_world": 0,
+      "final_remaining": 0,
+      "last_arrival_tick": 14304,
+      "last_complete_tick": 16900,
+      "request_cutoff_tick": 14400,
+      "block_history": [
+        {
+          "tick": 5400,
+          "exit": "N",
+          "closed": true
+        },
+        {
+          "tick": 5400,
+          "exit": "E",
+          "closed": true
+        },
+        {
+          "tick": 5400,
+          "exit": "S",
+          "closed": true
+        },
+        {
+          "tick": 5400,
+          "exit": "W",
+          "closed": true
+        },
+        {
+          "tick": 9000,
+          "exit": "N",
+          "closed": false
+        },
+        {
+          "tick": 9000,
+          "exit": "E",
+          "closed": false
+        },
+        {
+          "tick": 9000,
+          "exit": "S",
+          "closed": false
+        },
+        {
+          "tick": 9000,
+          "exit": "W",
+          "closed": false
+        }
+      ],
+      "od_totals": {
+        "N-E": {
+          "requested": 23,
+          "completed": 23
+        },
+        "N-S": {
+          "requested": 15,
+          "completed": 15
+        },
+        "N-W": {
+          "requested": 24,
+          "completed": 24
+        },
+        "E-N": {
+          "requested": 23,
+          "completed": 23
+        },
+        "E-S": {
+          "requested": 20,
+          "completed": 20
+        },
+        "E-W": {
+          "requested": 22,
+          "completed": 22
+        },
+        "S-N": {
+          "requested": 21,
+          "completed": 21
+        },
+        "S-E": {
+          "requested": 21,
+          "completed": 21
+        },
+        "S-W": {
+          "requested": 19,
+          "completed": 19
+        },
+        "W-N": {
+          "requested": 18,
+          "completed": 18
+        },
+        "W-E": {
+          "requested": 20,
+          "completed": 20
+        },
+        "W-S": {
+          "requested": 16,
+          "completed": 16
+        }
+      },
+      "total_request_to_complete_p95_seconds": 82.4,
+      "acceptance_passed": true,
+      "evidence_directory": "round3/signals/acceptance/experiments/offered-r3-sig-turbine2-dense2-S7-drain-NESW-89659fb20fe3467b",
+      "last_sink_tick": 17159,
+      "seconds_after_request_cutoff_to_last_completion": 41.666666666666664,
+      "seconds_after_request_cutoff_to_empty_world": 45.983333333333334,
+      "lua_byte_identical_to_round2": true,
+      "lua_sha256": "dbbb063c1cd4d63512848ed7d7f56d8e2f19a7b3c1ef638fa69b08836263b5f3",
+      "damage_events": 0
+    },
+    "all_specified_gates_passed": true,
+    "claims": "These finite native cases observed complete recovery and zero rolling-stock damage. They do not prove universal deadlock freedom or estimate stationary throughput from the drained intervals."
+  },
+  "new_topology_deadlock": {
+    "id": "r3-exit-ne-sw32",
+    "wait_cycle_train_ids": [
+      14,
+      176,
+      172,
+      168,
+      17,
+      16
+    ],
+    "crossing_native_blocks": [
+      200,
+      21
+    ],
+    "total_requested": 320,
+    "completed": 90,
+    "last_complete_tick": 3869,
+    "extended_until_tick": 18000,
+    "remaining": 230,
+    "chain_a": {
+      "changed_signals": 32,
+      "short_tpm": 88,
+      "drained": 320,
+      "last_complete_tick": 16757
+    },
+    "chain_b": {
+      "changed_signals": 46,
+      "short_tpm": 74,
+      "drained": 320,
+      "last_complete_tick": 20146
+    },
+    "source": [
+      "round3/topology/exit-double-wait-cycle.json",
+      "round3/exitbuffers/stall.json",
+      "round3/exitbuffers/chain-screen.json",
+      "round3/exitbuffers/chain-drain.json"
+    ]
+  },
+  "fairness_counterexample": {
+    "id": "r3-exit-sw32",
+    "seed": 17,
+    "scenario": "S1",
+    "baseline_id": "r2-sig-turbine-2-trim-all4-clean",
+    "baseline_throughput": 97.66666666666667,
+    "candidate_throughput": 87.0,
+    "delta": -10.666666666666671,
+    "baseline_origin_completions": {
+      "N": 86,
+      "E": 67,
+      "S": 80,
+      "W": 60
+    },
+    "candidate_origin_completions": {
+      "N": 94,
+      "E": 75,
+      "S": 31,
+      "W": 61
+    },
+    "origin_completion_delta": {
+      "N": 8,
+      "E": 8,
+      "S": -49,
+      "W": 1
+    },
+    "baseline_origin_completion_gaps": {
+      "N": {
+        "seconds": 7.566666666666666,
+        "from_tick": 13729,
+        "to_tick": 14183,
+        "touches_window_boundary": false
+      },
+      "E": {
+        "seconds": 11.366666666666667,
+        "from_tick": 7088,
+        "to_tick": 7770,
+        "touches_window_boundary": false
+      },
+      "S": {
+        "seconds": 11.25,
+        "from_tick": 5352,
+        "to_tick": 6027,
+        "touches_window_boundary": false
+      },
+      "W": {
+        "seconds": 15.6,
+        "from_tick": 11823,
+        "to_tick": 12759,
+        "touches_window_boundary": false
+      }
+    },
+    "candidate_origin_completion_gaps": {
+      "N": {
+        "seconds": 13.383333333333333,
+        "from_tick": 4119,
+        "to_tick": 4922,
+        "touches_window_boundary": false
+      },
+      "E": {
+        "seconds": 12.9,
+        "from_tick": 11841,
+        "to_tick": 12615,
+        "touches_window_boundary": false
+      },
+      "S": {
+        "seconds": 98.65,
+        "from_tick": 7943,
+        "to_tick": 13862,
+        "touches_window_boundary": false
+      },
+      "W": {
+        "seconds": 15.566666666666666,
+        "from_tick": 10545,
+        "to_tick": 11479,
+        "touches_window_boundary": false
+      }
+    },
+    "all_protocol_fields_equal": true,
+    "logical_train_id_and_od_sequence_exact": true,
+    "candidate_damage_events": 0,
+    "candidate_all_od_completed_in_window": true,
+    "candidate_ticks_without_external_bank": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "baseline_evidence": "round3/protocol/experiments/bank-r2-sig-turbine-2-trim-all4-clean-S1-528622866f96c2dc",
+    "candidate_evidence": "round3/protocol/experiments/bank-r3-exit-sw32-S1-17cd162fea6a02ab"
+  },
+  "source_sha256": {
+    "round3/long-signal.json": "b5d1cb0e4992868bc7c00d74fc6a0ecedc7ea78ea47b166500c775342f35cf6e",
+    "round3/long-dense.json": "2af2b605727a6ecd33c1f925039ff26e1eae38164ba7ca0fcc6305198db12dd1",
+    "round3/long-loop.json": "6fcba8895b21c5fa2076960dde93143c7a3c4b56b1c7ece4fc8f8ebc634772a3",
+    "round3/hol/long-outer48.json": "0b35d1079e11ec1210d32f4cb85f0d77fbe6131a075ac41de94f1a0d43f62aa7",
+    "round3/signals/local-long.json": "957b7bef99996c91195b502b03a50c4b7b8ba626ca72bea0e00f80df27768cba",
+    "round3/signals/stack-merge-long.json": "8765dd6cdd3cd88805aa7502e32eb2532e576866ccb60f89183531cf805a9dbd",
+    "round3/exitbuffers/long-sw32.json": "74493fd8ecca939f17253340401c595e08d5da0e0d94083eaa087ec87dbf4b2b",
+    "round3/holdout-plan.json": "06f1be46219b7806cbcf85656f79e3359a2d4ef87edbc820bd072b837b0af6d5",
+    "round3/holdout-turbine.json": "ad3731b4f5061b4cc3fb5a8a4b26d2a26a46e740b797cd77a3b5de3b3109342c",
+    "round3/holdout-dense.json": "9534d657c9dac4450e7f943aa400d5e19eaca6888474fe3703a2b3269069de7b",
+    "round3/cpu/profile-comparison.json": "2303d5b407c1c88a80846cb17f4f7a35c3509e8e22a5f5b4abc032b4d41536a9",
+    "round3/results-index.json": "68c6ce4a2d90998cbf60eff2bfc8e1f682e17d7a8e234d5b0f113409b35e1326",
+    "round3/signals/safety-summary.json": "d49d89c42a975afdefb0d134e1adb372b93277232966d8f3659d39fd950eb5d7",
+    "round3/hol/blockage-propagation.json": "b94dd44995d31d3e37cfa9127ec7383b65035943ec0cf2a02eb7f72cc254b192"
+  },
+  "review_file": "round3/final-review.json",
+  "final_book_native_import": {
+    "passed": true,
+    "entries": 3,
+    "total_entities": 2053,
+    "evidence_directory": "experiments/r3-final-blueprint-books-a25a141a1a145887"
+  }
+}
