@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="612pt" height="504pt" viewBox="0 0 612 504" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-25T09:56:57.482999</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 504 
+L 612 504 
+L 612 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 336.313155 109.687975 
+Q 367.285919 127.570109 395.838069 144.0547 
+" style="fill: none; stroke: #a94438; stroke-width: 2.5; stroke-linecap: round"/>
+    <path d="M 391.402686 137.337008 
+L 395.838069 144.0547 
+L 387.802686 143.572391 
+z
+" style="fill: #a94438; stroke: #a94438; stroke-width: 2.5; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 10px; font-family: 'Noto Sans CJK JP'; text-anchor: middle; fill: #a94438" x="381.296867" y="107.136375" transform="rotate(-0 381.296867 107.136375)">区块 200</text>
+   </g>
+   <g id="patch_3">
+    <path d="M 429.437488 198.45595 
+Q 429.437488 234.220217 429.437488 267.1894 
+" style="fill: none; stroke: #778798; stroke-width: 2.5; stroke-linecap: round"/>
+    <path d="M 433.037488 259.9894 
+L 429.437488 267.1894 
+L 425.837488 259.9894 
+z
+" style="fill: #778798; stroke: #778798; stroke-width: 2.5; stroke-linecap: round"/>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 10px; font-family: 'Noto Sans CJK JP'; text-anchor: middle; fill: #778798" x="456.593735" y="237.554375" transform="rotate(-0 456.593735 237.554375)">区块 161</text>
+   </g>
+   <g id="patch_4">
+    <path d="M 399.124333 323.487975 
+Q 368.151568 341.370109 339.599419 357.8547 
+" style="fill: none; stroke: #778798; stroke-width: 2.5; stroke-linecap: round"/>
+    <path d="M 347.634802 357.372391 
+L 339.599419 357.8547 
+L 344.034802 351.137008 
+z
+" style="fill: #778798; stroke: #778798; stroke-width: 2.5; stroke-linecap: round"/>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 10px; font-family: 'Noto Sans CJK JP'; text-anchor: middle; fill: #778798" x="381.296867" y="367.972375" transform="rotate(-0 381.296867 367.972375)">区块 131</text>
+   </g>
+   <g id="patch_5">
+    <path d="M 275.686845 359.752025 
+Q 244.714081 341.869891 216.161931 325.3853 
+" style="fill: none; stroke: #a94438; stroke-width: 2.5; stroke-linecap: round"/>
+    <path d="M 220.597314 332.102992 
+L 216.161931 325.3853 
+L 224.197314 325.867609 
+z
+" style="fill: #a94438; stroke: #a94438; stroke-width: 2.5; stroke-linecap: round"/>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 10px; font-family: 'Noto Sans CJK JP'; text-anchor: middle; fill: #a94438" x="230.703133" y="367.972375" transform="rotate(-0 230.703133 367.972375)">区块 21</text>
+   </g>
+   <g id="patch_6">
+    <path d="M 182.562512 270.98405 
+Q 182.562512 235.219783 182.562512 202.2506 
+" style="fill: none; stroke: #778798; stroke-width: 2.5; stroke-linecap: round"/>
+    <path d="M 178.962512 209.4506 
+L 182.562512 202.2506 
+L 186.162512 209.4506 
+z
+" style="fill: #778798; stroke: #778798; stroke-width: 2.5; stroke-linecap: round"/>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 10px; font-family: 'Noto Sans CJK JP'; text-anchor: middle; fill: #778798" x="155.406265" y="237.554375" transform="rotate(-0 155.406265 237.554375)">区块 71</text>
+   </g>
+   <g id="patch_7">
+    <path d="M 212.875667 145.952025 
+Q 243.848432 128.069891 272.400581 111.5853 
+" style="fill: none; stroke: #778798; stroke-width: 2.5; stroke-linecap: round"/>
+    <path d="M 264.365198 112.067609 
+L 272.400581 111.5853 
+L 267.965198 118.302992 
+z
+" style="fill: #778798; stroke: #778798; stroke-width: 2.5; stroke-linecap: round"/>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 10px; font-family: 'Noto Sans CJK JP'; text-anchor: middle; fill: #778798" x="230.703133" y="107.136375" transform="rotate(-0 230.703133 107.136375)">区块 103</text>
+   </g>
+   <g id="PathCollection_1">
+    <defs>
+     <path id="m5b1070803e" d="M 0 22.912878 
+C 6.076566 22.912878 11.90507 20.498633 16.201852 16.201852 
+C 20.498633 11.90507 22.912878 6.076566 22.912878 0 
+C 22.912878 -6.076566 20.498633 -11.90507 16.201852 -16.201852 
+C 11.90507 -20.498633 6.076566 -22.912878 0 -22.912878 
+C -6.076566 -22.912878 -11.90507 -20.498633 -16.201852 -16.201852 
+C -20.498633 -11.90507 -22.912878 -6.076566 -22.912878 0 
+C -22.912878 6.076566 -20.498633 11.90507 -16.201852 16.201852 
+C -11.90507 20.498633 -6.076566 22.912878 0 22.912878 
+z
+" style="stroke: #b5463c"/>
+    </defs>
+    <g clip-path="url(#pa007b432ab)">
+     <use xlink:href="#m5b1070803e" x="306" y="92.186667" style="fill: #b5463c; stroke: #b5463c"/>
+    </g>
+   </g>
+   <g id="PathCollection_2">
+    <defs>
+     <path id="m6184146cc8" d="M 0 22.912878 
+C 6.076566 22.912878 11.90507 20.498633 16.201852 16.201852 
+C 20.498633 11.90507 22.912878 6.076566 22.912878 0 
+C 22.912878 -6.076566 20.498633 -11.90507 16.201852 -16.201852 
+C 11.90507 -20.498633 6.076566 -22.912878 0 -22.912878 
+C -6.076566 -22.912878 -11.90507 -20.498633 -16.201852 -16.201852 
+C -20.498633 -11.90507 -22.912878 -6.076566 -22.912878 0 
+C -22.912878 6.076566 -20.498633 11.90507 -16.201852 16.201852 
+C -11.90507 20.498633 -6.076566 22.912878 0 22.912878 
+z
+" style="stroke: #3567a8"/>
+    </defs>
+    <g clip-path="url(#pa007b432ab)">
+     <use xlink:href="#m6184146cc8" x="429.437488" y="163.453333" style="fill: #3567a8; stroke: #3567a8"/>
+    </g>
+   </g>
+   <g id="PathCollection_3">
+    <g clip-path="url(#pa007b432ab)">
+     <use xlink:href="#m6184146cc8" x="429.437488" y="305.986667" style="fill: #3567a8; stroke: #3567a8"/>
+    </g>
+   </g>
+   <g id="PathCollection_4">
+    <g clip-path="url(#pa007b432ab)">
+     <use xlink:href="#m6184146cc8" x="306" y="377.253333" style="fill: #3567a8; stroke: #3567a8"/>
+    </g>
+   </g>
+   <g id="PathCollection_5">
+    <g clip-path="url(#pa007b432ab)">
+     <use xlink:href="#m5b1070803e" x="182.562512" y="305.986667" style="fill: #b5463c; stroke: #b5463c"/>
+    </g>
+   </g>
+   <g id="PathCollection_6">
+    <g clip-path="url(#pa007b432ab)">
+     <use xlink:href="#m5b1070803e" x="182.562512" y="163.453333" style="fill: #b5463c; stroke: #b5463c"/>
+    </g>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'Noto Sans CJK JP'; text-anchor: middle" x="306" y="24.3" transform="rotate(-0 306 24.3)">实际六车等待环：箭头指向占着下一块的列车</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Noto Sans CJK JP'; fill: #ffffff" transform="translate(290.633594 88.354307)">N→E</text>
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Noto Sans CJK JP'; fill: #ffffff" transform="translate(298.33 103.59762)">14</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Noto Sans CJK JP'; fill: #ffffff" transform="translate(412.933581 159.620974)">S→W</text>
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Noto Sans CJK JP'; fill: #ffffff" transform="translate(417.932488 174.864286)">176</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Noto Sans CJK JP'; fill: #ffffff" transform="translate(412.933581 302.154307)">S→W</text>
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Noto Sans CJK JP'; fill: #ffffff" transform="translate(417.932488 317.39762)">172</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Noto Sans CJK JP'; fill: #ffffff" transform="translate(289.496094 373.420974)">S→W</text>
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Noto Sans CJK JP'; fill: #ffffff" transform="translate(294.495 388.664286)">168</text>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Noto Sans CJK JP'; fill: #ffffff" transform="translate(167.196106 302.154307)">N→E</text>
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Noto Sans CJK JP'; fill: #ffffff" transform="translate(174.892512 317.39762)">17</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Noto Sans CJK JP'; fill: #ffffff" transform="translate(167.196106 159.620974)">N→E</text>
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Noto Sans CJK JP'; fill: #ffffff" transform="translate(174.892512 174.864286)">16</text>
+   </g>
+  </g>
+  <g id="text_14">
+   <text style="font-size: 10px; font-family: 'Noto Sans CJK JP'; fill: #506176" transform="translate(30.6 459.398125)">原始快照 tick 5400；未修复延长至 tick 18000，仍为 90 / 320 完成。</text>
+   <text style="font-size: 10px; font-family: 'Noto Sans CJK JP'; fill: #506176" transform="translate(30.6 471.24)">A / B 信号修复均在六分钟内完成并退场 320 / 320；不是普遍无死锁证明。</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pa007b432ab">
+   <rect x="85.073333" y="42.3" width="441.853333" height="384.84"/>
+  </clipPath>
+ </defs>
+</svg>
